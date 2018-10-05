@@ -1,7 +1,8 @@
 (ns cradius.dictionary
   (require  
             [clojure.string :as s]
-            [clojure.java.io :as io]))
+            [clojure.java.io :as io]
+            [cradius.util :as u]))
 
 (defn process-value [result [collection name code]]
     (-> result
@@ -37,7 +38,7 @@
     
 (defn load-dictionary
   [file-name]
-  (let [  lines (-> file-name io/resource slurp s/split-lines)
+  (let [  lines (-> file-name slurp s/split-lines)  ; todo - use canonical path?
           [vendor vendor-id] (get-vendor lines)]
     (reduce (fn [result line]
               (let [tokens (s/split line #"\s+")]
@@ -52,7 +53,23 @@
                     result)))
             {} lines)))
 
-            
-; TODO
-; - load-dictionaries (process multiple files)
-; 
+(def dictionaries (atom {}))
+
+(defn load-dictionaries []
+  (let [files (->
+                (.getCanonicalPath (clojure.java.io/file "./resources/dictionaries"))
+                (clojure.java.io/file)
+                (file-seq)
+                (rest)) ; skip 1st (directory)
+        ds    (reduce (fn [result file] 
+                          (println (.getPath file))
+                          (u/deep-merge result (load-dictionary (.getPath file))))        
+                  {} files)]
+      (reset! dictionaries ds)))
+
+
+
+(defn attribute [k]
+  (let [attr (get-in @dictionaries [:attributes k])]
+    attr))
+    

@@ -1,0 +1,3430 @@
+{:vsa
+ {"Cisco"
+  {:attributes
+   {"191"
+    {:name "Cisco-Pre-Output-Octets", :code "191", :type "integer"},
+    "Cisco-Xmit-Rate"
+    {:name "Cisco-Xmit-Rate", :code "255", :type "integer"},
+    "108"
+    {:name "h323-redirect-ip-address", :code "108", :type "string"},
+    "9" {:name "Cisco-Fax-Recipient-Count", :code "9", :type "string"},
+    "253" {:name "Cisco-Control-Info", :code "253", :type "string"},
+    "188"
+    {:name "Cisco-Num-In-Multilink", :code "188", :type "integer"},
+    "Cisco-Target-Util"
+    {:name "Cisco-Target-Util", :code "234", :type "integer"},
+    "h323-gw-id" {:name "h323-gw-id", :code "33", :type "string"},
+    "3"
+    {:name "Cisco-Fax-Account-Id-Origin", :code "3", :type "string"},
+    "dsp-id" {:name "dsp-id", :code "151", :type "string"},
+    "Cisco-Route-IP"
+    {:name "Cisco-Route-IP", :code "228", :type "integer"},
+    "141" {:name "call-id", :code "141", :type "string"},
+    "Cisco-PPP-Async-Map"
+    {:name "Cisco-PPP-Async-Map", :code "212", :type "integer"},
+    "Cisco-Assign-IP-Pool"
+    {:name "Cisco-Assign-IP-Pool", :code "218", :type "integer"},
+    "26" {:name "h323-call-origin", :code "26", :type "string"},
+    "Cisco-Fax-Process-Abort-Flag"
+    {:name "Cisco-Fax-Process-Abort-Flag", :code "10", :type "string"},
+    "Cisco-AVPair" {:name "Cisco-AVPair", :code "1", :type "string"},
+    "Cisco-Fax-Coverpage-Flag"
+    {:name "Cisco-Fax-Coverpage-Flag", :code "6", :type "string"},
+    "4" {:name "Cisco-Fax-Msg-Id", :code "4", :type "string"},
+    "195"
+    {:name "Cisco-Disconnect-Cause", :code "195", :type "integer"},
+    "Cisco-Fax-Mdn-Address"
+    {:name "Cisco-Fax-Mdn-Address", :code "13", :type "string"},
+    "8" {:name "Cisco-Fax-Connect-Speed", :code "8", :type "string"},
+    "234" {:name "Cisco-Target-Util", :code "234", :type "integer"},
+    "193"
+    {:name "Cisco-Pre-Output-Packets", :code "193", :type "integer"},
+    "Cisco-Fax-Auth-Status"
+    {:name "Cisco-Fax-Auth-Status", :code "15", :type "string"},
+    "105" {:name "h323-time-and-day", :code "105", :type "string"},
+    "28" {:name "h323-connect-time", :code "28", :type "string"},
+    "14" {:name "Cisco-Fax-Mdn-Flag", :code "14", :type "string"},
+    "Cisco-Call-Filter"
+    {:name "Cisco-Call-Filter", :code "243", :type "integer"},
+    "h323-time-and-day"
+    {:name "h323-time-and-day", :code "105", :type "string"},
+    "101" {:name "h323-credit-amount", :code "101", :type "string"},
+    "Cisco-Account-Info"
+    {:name "Cisco-Account-Info", :code "250", :type "string"},
+    "h323-disconnect-cause"
+    {:name "h323-disconnect-cause", :code "30", :type "string"},
+    "116" {:name "gw-rxd-cgn", :code "116", :type "string"},
+    "251" {:name "Cisco-Service-Info", :code "251", :type "string"},
+    "h323-conf-id" {:name "h323-conf-id", :code "24", :type "string"},
+    "h323-redirect-ip-address"
+    {:name "h323-redirect-ip-address", :code "108", :type "string"},
+    "Cisco-Idle-Limit"
+    {:name "Cisco-Idle-Limit", :code "244", :type "integer"},
+    "30" {:name "h323-disconnect-cause", :code "30", :type "string"},
+    "21" {:name "Cisco-Abort-Cause", :code "21", :type "string"},
+    "method" {:name "method", :code "143", :type "string"},
+    "h323-setup-time"
+    {:name "h323-setup-time", :code "25", :type "string"},
+    "outgoing-req-uri"
+    {:name "outgoing-req-uri", :code "147", :type "string"},
+    "Cisco-Email-Server-Address"
+    {:name "Cisco-Email-Server-Address", :code "16", :type "string"},
+    "h323-voice-quality"
+    {:name "h323-voice-quality", :code "31", :type "string"},
+    "192"
+    {:name "Cisco-Pre-Input-Packets", :code "192", :type "integer"},
+    "33" {:name "h323-gw-id", :code "33", :type "string"},
+    "20" {:name "Cisco-Port-Used", :code "20", :type "string"},
+    "prev-hop-ip" {:name "prev-hop-ip", :code "145", :type "string"},
+    "h323-credit-time"
+    {:name "h323-credit-time", :code "102", :type "string"},
+    "113" {:name "gw-final-xlated-cdn", :code "113", :type "string"},
+    "h323-currency"
+    {:name "h323-currency", :code "110", :type "string"},
+    "Cisco-Data-Rate"
+    {:name "Cisco-Data-Rate", :code "197", :type "integer"},
+    "197" {:name "Cisco-Data-Rate", :code "197", :type "integer"},
+    "107" {:name "h323-preferred-lang", :code "107", :type "string"},
+    "249"
+    {:name "Cisco-Subscriber-Password", :code "249", :type "string"},
+    "19" {:name "Cisco-Call-Type", :code "19", :type "string"},
+    "h323-credit-amount"
+    {:name "h323-credit-amount", :code "101", :type "string"},
+    "Cisco-Maximum-Time"
+    {:name "Cisco-Maximum-Time", :code "194", :type "integer"},
+    "17"
+    {:name "Cisco-Email-Server-Ack-Flag", :code "17", :type "string"},
+    "228" {:name "Cisco-Route-IP", :code "228", :type "integer"},
+    "Cisco-PPP-VJ-Slot-Comp"
+    {:name "Cisco-PPP-VJ-Slot-Comp", :code "210", :type "integer"},
+    "25" {:name "h323-setup-time", :code "25", :type "string"},
+    "gw-final-xlated-cdn"
+    {:name "gw-final-xlated-cdn", :code "113", :type "string"},
+    "Cisco-Fax-Dsn-Address"
+    {:name "Cisco-Fax-Dsn-Address", :code "11", :type "string"},
+    "Cisco-Pre-Output-Packets"
+    {:name "Cisco-Pre-Output-Packets", :code "193", :type "integer"},
+    "115" {:name "release-source", :code "115", :type "string"},
+    "244" {:name "Cisco-Idle-Limit", :code "244", :type "integer"},
+    "111" {:name "subscriber", :code "111", :type "string"},
+    "sip-hdr" {:name "sip-hdr", :code "150", :type "string"},
+    "h323-call-type"
+    {:name "h323-call-type", :code "27", :type "string"},
+    "incoming-req-uri"
+    {:name "incoming-req-uri", :code "146", :type "string"},
+    "15" {:name "Cisco-Fax-Auth-Status", :code "15", :type "string"},
+    "212" {:name "Cisco-PPP-Async-Map", :code "212", :type "integer"},
+    "7" {:name "Cisco-Fax-Modem-Time", :code "7", :type "string"},
+    "145" {:name "prev-hop-ip", :code "145", :type "string"},
+    "Cisco-Gateway-Id"
+    {:name "Cisco-Gateway-Id", :code "18", :type "string"},
+    "210"
+    {:name "Cisco-PPP-VJ-Slot-Comp", :code "210", :type "integer"},
+    "h323-connect-time"
+    {:name "h323-connect-time", :code "28", :type "string"},
+    "h323-remote-address"
+    {:name "h323-remote-address", :code "23", :type "string"},
+    "5" {:name "Cisco-Fax-Pages", :code "5", :type "string"},
+    "100" {:name "sip-conf-id", :code "100", :type "string"},
+    "Cisco-IP-Direct"
+    {:name "Cisco-IP-Direct", :code "209", :type "integer"},
+    "Cisco-Policy-Down"
+    {:name "Cisco-Policy-Down", :code "38", :type "string"},
+    "106" {:name "h323-redirect-number", :code "106", :type "string"},
+    "call-id" {:name "call-id", :code "141", :type "string"},
+    "190"
+    {:name "Cisco-Pre-Input-Octets", :code "190", :type "integer"},
+    "112" {:name "gw-rxd-cdn", :code "112", :type "string"},
+    "18" {:name "Cisco-Gateway-Id", :code "18", :type "string"},
+    "250" {:name "Cisco-Account-Info", :code "250", :type "string"},
+    "148" {:name "next-hop-ip", :code "148", :type "string"},
+    "Cisco-Service-Info"
+    {:name "Cisco-Service-Info", :code "251", :type "string"},
+    "12" {:name "Cisco-Fax-Dsn-Flag", :code "12", :type "string"},
+    "208" {:name "Cisco-PW-Lifetime", :code "208", :type "integer"},
+    "h323-disconnect-time"
+    {:name "h323-disconnect-time", :code "29", :type "string"},
+    "13" {:name "Cisco-Fax-Mdn-Address", :code "13", :type "string"},
+    "27" {:name "h323-call-type", :code "27", :type "string"},
+    "Cisco-Pre-Output-Octets"
+    {:name "Cisco-Pre-Output-Octets", :code "191", :type "integer"},
+    "Cisco-Pre-Input-Packets"
+    {:name "Cisco-Pre-Input-Packets", :code "192", :type "integer"},
+    "218" {:name "Cisco-Assign-IP-Pool", :code "218", :type "integer"},
+    "h323-return-code"
+    {:name "h323-return-code", :code "103", :type "string"},
+    "h323-call-origin"
+    {:name "h323-call-origin", :code "26", :type "string"},
+    "Cisco-Disconnect-Cause"
+    {:name "Cisco-Disconnect-Cause", :code "195", :type "integer"},
+    "194" {:name "Cisco-Maximum-Time", :code "194", :type "integer"},
+    "24" {:name "h323-conf-id", :code "24", :type "string"},
+    "35" {:name "h323-incoming-conf-id", :code "35", :type "string"},
+    "gw-final-xlated-cgn"
+    {:name "gw-final-xlated-cgn", :code "117", :type "string"},
+    "h323-prompt-id"
+    {:name "h323-prompt-id", :code "104", :type "string"},
+    "209" {:name "Cisco-IP-Direct", :code "209", :type "integer"},
+    "Cisco-Control-Info"
+    {:name "Cisco-Control-Info", :code "253", :type "string"},
+    "Cisco-Fax-Recipient-Count"
+    {:name "Cisco-Fax-Recipient-Count", :code "9", :type "string"},
+    "6" {:name "Cisco-Fax-Coverpage-Flag", :code "6", :type "string"},
+    "110" {:name "h323-currency", :code "110", :type "string"},
+    "Cisco-Call-Type"
+    {:name "Cisco-Call-Type", :code "19", :type "string"},
+    "Cisco-Fax-Account-Id-Origin"
+    {:name "Cisco-Fax-Account-Id-Origin", :code "3", :type "string"},
+    "38" {:name "Cisco-Policy-Down", :code "38", :type "string"},
+    "h323-redirect-number"
+    {:name "h323-redirect-number", :code "106", :type "string"},
+    "Cisco-Fax-Pages"
+    {:name "Cisco-Fax-Pages", :code "5", :type "string"},
+    "Cisco-Fax-Dsn-Flag"
+    {:name "Cisco-Fax-Dsn-Flag", :code "12", :type "string"},
+    "149" {:name "next-hop-dn", :code "149", :type "string"},
+    "235"
+    {:name "Cisco-Maximum-Channels", :code "235", :type "integer"},
+    "144" {:name "prev-hop-via", :code "144", :type "string"},
+    "Cisco-Policy-Up"
+    {:name "Cisco-Policy-Up", :code "37", :type "string"},
+    "1" {:name "Cisco-AVPair", :code "1", :type "string"},
+    "remote-media-address"
+    {:name "remote-media-address", :code "114", :type "string"},
+    "146" {:name "incoming-req-uri", :code "146", :type "string"},
+    "217"
+    {:name "Cisco-IP-Pool-Definition", :code "217", :type "string"},
+    "sip-conf-id" {:name "sip-conf-id", :code "100", :type "string"},
+    "Cisco-PW-Lifetime"
+    {:name "Cisco-PW-Lifetime", :code "208", :type "integer"},
+    "h323-preferred-lang"
+    {:name "h323-preferred-lang", :code "107", :type "string"},
+    "Cisco-Link-Compression"
+    {:name "Cisco-Link-Compression", :code "233", :type "integer"},
+    "104" {:name "h323-prompt-id", :code "104", :type "string"},
+    "Cisco-Data-Filter"
+    {:name "Cisco-Data-Filter", :code "242", :type "integer"},
+    "Cisco-NAS-Port"
+    {:name "Cisco-NAS-Port", :code "2", :type "string"},
+    "102" {:name "h323-credit-time", :code "102", :type "string"},
+    "Cisco-Fax-Modem-Time"
+    {:name "Cisco-Fax-Modem-Time", :code "7", :type "string"},
+    "37" {:name "Cisco-Policy-Up", :code "37", :type "string"},
+    "142" {:name "session-protocol", :code "142", :type "string"},
+    "gw-rxd-cdn" {:name "gw-rxd-cdn", :code "112", :type "string"},
+    "11" {:name "Cisco-Fax-Dsn-Address", :code "11", :type "string"},
+    "109" {:name "h323-billing-model", :code "109", :type "string"},
+    "252" {:name "Cisco-Command-Code", :code "252", :type "string"},
+    "Cisco-Fax-Msg-Id"
+    {:name "Cisco-Fax-Msg-Id", :code "4", :type "string"},
+    "Cisco-Command-Code"
+    {:name "Cisco-Command-Code", :code "252", :type "string"},
+    "Cisco-Port-Used"
+    {:name "Cisco-Port-Used", :code "20", :type "string"},
+    "114" {:name "remote-media-address", :code "114", :type "string"},
+    "198"
+    {:name "Cisco-PreSession-Time", :code "198", :type "integer"},
+    "Cisco-Num-In-Multilink"
+    {:name "Cisco-Num-In-Multilink", :code "188", :type "integer"},
+    "147" {:name "outgoing-req-uri", :code "147", :type "string"},
+    "151" {:name "dsp-id", :code "151", :type "string"},
+    "Cisco-Fax-Connect-Speed"
+    {:name "Cisco-Fax-Connect-Speed", :code "8", :type "string"},
+    "Cisco-Pre-Input-Octets"
+    {:name "Cisco-Pre-Input-Octets", :code "190", :type "integer"},
+    "233"
+    {:name "Cisco-Link-Compression", :code "233", :type "integer"},
+    "Cisco-Multilink-ID"
+    {:name "Cisco-Multilink-ID", :code "187", :type "integer"},
+    "session-protocol"
+    {:name "session-protocol", :code "142", :type "string"},
+    "255" {:name "Cisco-Xmit-Rate", :code "255", :type "integer"},
+    "prev-hop-via" {:name "prev-hop-via", :code "144", :type "string"},
+    "gw-rxd-cgn" {:name "gw-rxd-cgn", :code "116", :type "string"},
+    "2" {:name "Cisco-NAS-Port", :code "2", :type "string"},
+    "143" {:name "method", :code "143", :type "string"},
+    "h323-incoming-conf-id"
+    {:name "h323-incoming-conf-id", :code "35", :type "string"},
+    "next-hop-dn" {:name "next-hop-dn", :code "149", :type "string"},
+    "release-source"
+    {:name "release-source", :code "115", :type "string"},
+    "Cisco-Email-Server-Ack-Flag"
+    {:name "Cisco-Email-Server-Ack-Flag", :code "17", :type "string"},
+    "next-hop-ip" {:name "next-hop-ip", :code "148", :type "string"},
+    "16"
+    {:name "Cisco-Email-Server-Address", :code "16", :type "string"},
+    "Cisco-Fax-Mdn-Flag"
+    {:name "Cisco-Fax-Mdn-Flag", :code "14", :type "string"},
+    "103" {:name "h323-return-code", :code "103", :type "string"},
+    "subscriber" {:name "subscriber", :code "111", :type "string"},
+    "10"
+    {:name "Cisco-Fax-Process-Abort-Flag", :code "10", :type "string"},
+    "Cisco-Maximum-Channels"
+    {:name "Cisco-Maximum-Channels", :code "235", :type "integer"},
+    "h323-billing-model"
+    {:name "h323-billing-model", :code "109", :type "string"},
+    "242" {:name "Cisco-Data-Filter", :code "242", :type "integer"},
+    "187" {:name "Cisco-Multilink-ID", :code "187", :type "integer"},
+    "31" {:name "h323-voice-quality", :code "31", :type "string"},
+    "Cisco-Subscriber-Password"
+    {:name "Cisco-Subscriber-Password", :code "249", :type "string"},
+    "Cisco-IP-Pool-Definition"
+    {:name "Cisco-IP-Pool-Definition", :code "217", :type "string"},
+    "23" {:name "h323-remote-address", :code "23", :type "string"},
+    "Cisco-PreSession-Time"
+    {:name "Cisco-PreSession-Time", :code "198", :type "integer"},
+    "Cisco-Abort-Cause"
+    {:name "Cisco-Abort-Cause", :code "21", :type "string"},
+    "243" {:name "Cisco-Call-Filter", :code "243", :type "integer"},
+    "29" {:name "h323-disconnect-time", :code "29", :type "string"},
+    "150" {:name "sip-hdr", :code "150", :type "string"},
+    "117" {:name "gw-final-xlated-cgn", :code "117", :type "string"}},
+   :values
+   {"Cisco-Disconnect-Cause"
+    {"180" "Local-Hangup",
+     "9" "No-Modem-Available",
+     "Exit-Rlogin" "31",
+     "3" "Call-Disconnect",
+     "51" "Resources-Full",
+     "50" "Tables-Full",
+     "TCP-Network-Unreachable" "64",
+     "No-Detected-Result-Codes" "12",
+     "185" "Remote-Hangup",
+     "600" "VPN-User-Disconnect",
+     "49" "PPP-Maximum-Channels",
+     "22" "Exit-Telnet-Session",
+     "604" "VPN-Admin-Disconnect",
+     "26" "Raw-TCP-Disabled",
+     "4" "CLID-Authentication-Failure",
+     "195" "Call-Duration",
+     "28" "EXEC-Program-Destroyed",
+     "TCP-Connection-Refused" "61",
+     "TCP-Port-Unreachable" "67",
+     "Call-Duration" "195",
+     "60" "Reset-TCP",
+     "Failed-PPP-PAP-Auth-Fail" "42",
+     "101" "Session-Failed-Security",
+     "PPP-Remote-Terminate" "45",
+     "61" "TCP-Connection-Refused",
+     "Resources-Full" "51",
+     "607" "VPN-Session-Limit",
+     "No-Reason" "0",
+     "Exit-Raw-TCP" "24",
+     "Session-Timeout" "100",
+     "Bad-Hostname" "53",
+     "Failed-PPP-LCP-Negotiation" "41",
+     "30" "End-Virtual-Connection",
+     "21" "Idle-Timeout",
+     "603" "VPN-Bad-Control-Packet",
+     "Foreign-Host-Close-TCP" "63",
+     "Invalid-IP-Address" "52",
+     "33" "Insufficient-Resources",
+     "20" "User-Ends-Session",
+     "67" "TCP-Port-Unreachable",
+     "VPN-Carrier-Loss" "601",
+     "47" "NCP-Closed-PPP",
+     "Failed-PPP-CHAP-Auth" "43",
+     "VPN-No-Resources" "602",
+     "Tables-Full" "50",
+     "605" "VPN-Tunnel-Shut",
+     "VPN-Local-Disconnect" "606",
+     "25" "Password-Fail",
+     "Unknown" "2",
+     "Local-Admin-Disconnect" "151",
+     "Failed-PPP-Remote-Auth" "44",
+     "PPP-Closed-Event" "46",
+     "42" "Failed-PPP-PAP-Auth-Fail",
+     "66" "TCP-Network-Admin-Unreachable",
+     "VPN-Admin-Disconnect" "604",
+     "SNMP-Disconnect" "152",
+     "152" "SNMP-Disconnect",
+     "CLID-Authentication-Failure" "4",
+     "T1-Quiesced" "190",
+     "44" "Failed-PPP-Remote-Auth",
+     "100" "Session-Timeout",
+     "48" "MP-Error-PPP",
+     "No-Remote-IP-Addr" "23",
+     "53" "Bad-Hostname",
+     "PPP-Authentication-Timeout" "170",
+     "190" "T1-Quiesced",
+     "12" "No-Detected-Result-Codes",
+     "601" "VPN-Carrier-Loss",
+     "27" "Control-C-Detected",
+     "No-Carrier" "10",
+     "Reset-TCP" "60",
+     "62" "Timeout-TCP",
+     "24" "Exit-Raw-TCP",
+     "Remote-Hangup" "185",
+     "TCP-Host-Unreachable" "65",
+     "No-Disconnect" "1",
+     "MP-Error-PPP" "48",
+     "VPN-Session-Limit" "607",
+     "PPP-Maximum-Channels" "49",
+     "606" "VPN-Local-Disconnect",
+     "Insufficient-Resources" "33",
+     "Bad-Port" "54",
+     "Call-Disconnect" "3",
+     "End-Virtual-Connection" "30",
+     "Local-Hangup" "180",
+     "Close-Virtual-Connection" "29",
+     "120" "Invalid-Protocol",
+     "Idle-Timeout" "21",
+     "VPN-Bad-Control-Packet" "603",
+     "RADIUS-Disconnect" "150",
+     "1" "No-Disconnect",
+     "Invalid-Protocol" "120",
+     "63" "Foreign-Host-Close-TCP",
+     "0" "No-Reason",
+     "43" "Failed-PPP-CHAP-Auth",
+     "602" "VPN-No-Resources",
+     "EXEC-Program-Destroyed" "28",
+     "102" "Session-End-Callback",
+     "Session-End-Callback" "102",
+     "46" "PPP-Closed-Event",
+     "11" "Lost-Carrier",
+     "TCP-Network-Admin-Unreachable" "66",
+     "45" "PPP-Remote-Terminate",
+     "Timeout-TCP" "62",
+     "Raw-TCP-Disabled" "26",
+     "32" "Invalid-Rlogin-Option",
+     "Invalid-Rlogin-Option" "32",
+     "151" "Local-Admin-Disconnect",
+     "2" "Unknown",
+     "Lost-Carrier" "11",
+     "V110-Retries" "160",
+     "No-Modem-Available" "9",
+     "170" "PPP-Authentication-Timeout",
+     "VPN-Call-Redirect" "608",
+     "54" "Bad-Port",
+     "41" "Failed-PPP-LCP-Negotiation",
+     "10" "No-Carrier",
+     "VPN-Tunnel-Shut" "605",
+     "65" "TCP-Host-Unreachable",
+     "40" "Timeout-PPP-LCP",
+     "Timeout-PPP-LCP" "40",
+     "31" "Exit-Rlogin",
+     "Exit-Telnet-Session" "22",
+     "64" "TCP-Network-Unreachable",
+     "Password-Fail" "25",
+     "VPN-User-Disconnect" "600",
+     "608" "VPN-Call-Redirect",
+     "Control-C-Detected" "27",
+     "User-Ends-Session" "20",
+     "23" "No-Remote-IP-Addr",
+     "NCP-Closed-PPP" "47",
+     "52" "Invalid-IP-Address",
+     "160" "V110-Retries",
+     "29" "Close-Virtual-Connection",
+     "150" "RADIUS-Disconnect",
+     "Session-Failed-Security" "101"}}},
+  "Juniper"
+  {:attributes
+   {"Juniper-Secondary-Wins"
+    {:name "Juniper-Secondary-Wins", :code "34", :type "ipaddr"},
+    "Juniper-CTP-Group"
+    {:name "Juniper-CTP-Group", :code "21", :type "integer"},
+    "9"
+    {:name "Juniper-Configuration-Change", :code "9", :type "string"},
+    "3" {:name "Juniper-Deny-Commands", :code "3", :type "string"},
+    "34" {:name "Juniper-Secondary-Wins", :code "34", :type "ipaddr"},
+    "Juniper-Local-User-Name"
+    {:name "Juniper-Local-User-Name", :code "1", :type "string"},
+    "49" {:name "Juniper-VoIP-Vlan", :code "49", :type "string"},
+    "22"
+    {:name "Juniper-CTPView-APP-Group", :code "22", :type "integer"},
+    "Juniper-Allow-Commands"
+    {:name "Juniper-Allow-Commands", :code "2", :type "string"},
+    "4"
+    {:name "Juniper-Allow-Configuration", :code "4", :type "string"},
+    "8"
+    {:name "Juniper-Interactive-Command", :code "8", :type "string"},
+    "Juniper-cell-overhead"
+    {:name "Juniper-cell-overhead", :code "41", :type "integer"},
+    "Juniper-Keep-Alive"
+    {:name "Juniper-Keep-Alive", :code "37", :type "integer"},
+    "Juniper-CTPView-OS-Group"
+    {:name "Juniper-CTPView-OS-Group", :code "23", :type "integer"},
+    "Juniper-Ip-Pool-Name"
+    {:name "Juniper-Ip-Pool-Name", :code "36", :type "string"},
+    "21" {:name "Juniper-CTP-Group", :code "21", :type "integer"},
+    "Juniper-Switching-Filter"
+    {:name "Juniper-Switching-Filter", :code "48", :type "string"},
+    "33" {:name "Juniper-Secondary-Dns", :code "33", :type "ipaddr"},
+    "Juniper-tx-connect-speed"
+    {:name "Juniper-tx-connect-speed", :code "42", :type "integer"},
+    "Juniper-Primary-Wins"
+    {:name "Juniper-Primary-Wins", :code "32", :type "ipaddr"},
+    "47" {:name "Juniper-Local-Interface", :code "47", :type "string"},
+    "Juniper-CoS-Parameter"
+    {:name "Juniper-CoS-Parameter", :code "39", :type "string"},
+    "Juniper-Junosspace-Profile"
+    {:name "Juniper-Junosspace-Profile", :code "11", :type "string"},
+    "Juniper-Primary-Dns"
+    {:name "Juniper-Primary-Dns", :code "31", :type "ipaddr"},
+    "Juniper-Local-Interface"
+    {:name "Juniper-Local-Interface", :code "47", :type "string"},
+    "42"
+    {:name "Juniper-tx-connect-speed", :code "42", :type "integer"},
+    "Juniper-Allow-Configuration"
+    {:name "Juniper-Allow-Configuration", :code "4", :type "string"},
+    "Juniper-Deny-Configuration"
+    {:name "Juniper-Deny-Configuration", :code "5", :type "string"},
+    "44"
+    {:name "Juniper-Firewall-filter-name", :code "44", :type "string"},
+    "5"
+    {:name "Juniper-Deny-Configuration", :code "5", :type "string"},
+    "Juniper-CoS-Traffic-Control-Profile"
+    {:name "Juniper-CoS-Traffic-Control-Profile",
+     :code "38",
+     :type "string"},
+    "48"
+    {:name "Juniper-Switching-Filter", :code "48", :type "string"},
+    "36" {:name "Juniper-Ip-Pool-Name", :code "36", :type "string"},
+    "Juniper-VoIP-Vlan"
+    {:name "Juniper-VoIP-Vlan", :code "49", :type "string"},
+    "Juniper-User-Permissions"
+    {:name "Juniper-User-Permissions", :code "10", :type "string"},
+    "35" {:name "Juniper-Interface-id", :code "35", :type "string"},
+    "Juniper-Deny-Commands"
+    {:name "Juniper-Deny-Commands", :code "3", :type "string"},
+    "Juniper-CTPView-APP-Group"
+    {:name "Juniper-CTPView-APP-Group", :code "22", :type "integer"},
+    "Juniper-Secondary-Dns"
+    {:name "Juniper-Secondary-Dns", :code "33", :type "ipaddr"},
+    "Juniper-Interface-id"
+    {:name "Juniper-Interface-id", :code "35", :type "string"},
+    "Juniper-Configuration-Change"
+    {:name "Juniper-Configuration-Change", :code "9", :type "string"},
+    "38"
+    {:name "Juniper-CoS-Traffic-Control-Profile",
+     :code "38",
+     :type "string"},
+    "Juniper-Policer-Parameter"
+    {:name "Juniper-Policer-Parameter", :code "45", :type "string"},
+    "Juniper-Interactive-Command"
+    {:name "Juniper-Interactive-Command", :code "8", :type "string"},
+    "39" {:name "Juniper-CoS-Parameter", :code "39", :type "string"},
+    "1" {:name "Juniper-Local-User-Name", :code "1", :type "string"},
+    "43"
+    {:name "Juniper-rx-connect-speed", :code "43", :type "integer"},
+    "37" {:name "Juniper-Keep-Alive", :code "37", :type "integer"},
+    "46"
+    {:name "Juniper-Local-Group-Name", :code "46", :type "string"},
+    "11"
+    {:name "Juniper-Junosspace-Profile", :code "11", :type "string"},
+    "45"
+    {:name "Juniper-Policer-Parameter", :code "45", :type "string"},
+    "32" {:name "Juniper-Primary-Wins", :code "32", :type "ipaddr"},
+    "Juniper-encapsulation-overhead"
+    {:name "Juniper-encapsulation-overhead",
+     :code "40",
+     :type "integer"},
+    "2" {:name "Juniper-Allow-Commands", :code "2", :type "string"},
+    "41" {:name "Juniper-cell-overhead", :code "41", :type "integer"},
+    "10"
+    {:name "Juniper-User-Permissions", :code "10", :type "string"},
+    "Juniper-rx-connect-speed"
+    {:name "Juniper-rx-connect-speed", :code "43", :type "integer"},
+    "40"
+    {:name "Juniper-encapsulation-overhead",
+     :code "40",
+     :type "integer"},
+    "31" {:name "Juniper-Primary-Dns", :code "31", :type "ipaddr"},
+    "Juniper-Local-Group-Name"
+    {:name "Juniper-Local-Group-Name", :code "46", :type "string"},
+    "23"
+    {:name "Juniper-CTPView-OS-Group", :code "23", :type "integer"},
+    "Juniper-Firewall-filter-name"
+    {:name "Juniper-Firewall-filter-name",
+     :code "44",
+     :type "string"}},
+   :values
+   {"Juniper-CTPView-APP-Group"
+    {"Net_View" "1",
+     "1" "Net_View",
+     "Net_Admin" "2",
+     "2" "Net_Admin",
+     "Global_Admin" "3",
+     "3" "Global_Admin"},
+    "Juniper-CTP-Group"
+    {"Read_Only" "1",
+     "1" "Read_Only",
+     "Admin" "2",
+     "2" "Admin",
+     "Privileged_Admin" "3",
+     "3" "Privileged_Admin",
+     "Auditor" "4",
+     "4" "Auditor"},
+    "Juniper-CTPView-OS-Group"
+    {"Web_Manager" "1",
+     "1" "Web_Manager",
+     "System_Admin" "2",
+     "2" "System_Admin",
+     "Auditor" "3",
+     "3" "Auditor"}}},
+  "Ruckus"
+  {:attributes
+   {"108" {:name "Ruckus-Start-Time", :code "108", :type "octets"},
+    "9" {:name "Ruckus-VLAN-ID", :code "9", :type "integer"},
+    "Ruckus-SGSN-Number"
+    {:name "Ruckus-SGSN-Number", :code "124", :type "octets"},
+    "Ruckus-Utp-Id"
+    {:name "Ruckus-Utp-Id", :code "129", :type "string"},
+    "3" {:name "Ruckus-SSID", :code "3", :type "string"},
+    "Ruckus-Eth-Profile-Id"
+    {:name "Ruckus-Eth-Profile-Id", :code "133", :type "integer"},
+    "Ruckus-Wlan-Id"
+    {:name "Ruckus-Wlan-Id", :code "4", :type "integer"},
+    "Ruckus-Area-Code"
+    {:name "Ruckus-Area-Code", :code "130", :type "octets"},
+    "141" {:name "Ruckus-Vlan-Pool", :code "141", :type "string"},
+    "139" {:name "Ruckus-Client-Os-Type", :code "139", :type "string"},
+    "Ruckus-Charging-Charac"
+    {:name "Ruckus-Charging-Charac", :code "118", :type "octets"},
+    "4" {:name "Ruckus-Wlan-Id", :code "4", :type "integer"},
+    "Ruckus-SCG-DBlade-IP"
+    {:name "Ruckus-SCG-DBlade-IP", :code "8", :type "integer"},
+    "8" {:name "Ruckus-SCG-DBlade-IP", :code "8", :type "integer"},
+    "118"
+    {:name "Ruckus-Charging-Charac", :code "118", :type "octets"},
+    "105" {:name "Ruckus-QoS", :code "105", :type "octets"},
+    "14" {:name "Ruckus-BSSID", :code "14", :type "octets"},
+    "Ruckus-Start-Time"
+    {:name "Ruckus-Start-Time", :code "108", :type "octets"},
+    "Ruckus-Sta-RSSI"
+    {:name "Ruckus-Sta-RSSI", :code "2", :type "integer"},
+    "Ruckus-Client-Host-Name"
+    {:name "Ruckus-Client-Host-Name", :code "138", :type "string"},
+    "Ruckus-SSID" {:name "Ruckus-SSID", :code "3", :type "string"},
+    "135" {:name "Ruckus-Wlan-Name", :code "135", :type "string"},
+    "123" {:name "Ruckus-CDR-TYPE", :code "123", :type "integer"},
+    "101" {:name "Ruckus-Triplets", :code "101", :type "octets"},
+    "Ruckus-WSG-User"
+    {:name "Ruckus-WSG-User", :code "10", :type "string"},
+    "Ruckus-AAA-IP"
+    {:name "Ruckus-AAA-IP", :code "122", :type "ipaddr"},
+    "116"
+    {:name "Ruckus-Client-Local-IP", :code "116", :type "ipaddr"},
+    "Ruckus-Zone-Id"
+    {:name "Ruckus-Zone-Id", :code "127", :type "string"},
+    "Ruckus-Policy-Name"
+    {:name "Ruckus-Policy-Name", :code "115", :type "string"},
+    "113" {:name "Ruckus-Gn-User-Name", :code "113", :type "string"},
+    "Ruckus-Brand-Code"
+    {:name "Ruckus-Brand-Code", :code "114", :type "string"},
+    "Ruckus-User-Groups"
+    {:name "Ruckus-User-Groups", :code "1", :type "string"},
+    "107"
+    {:name "Ruckus-APN-Resolution-Req", :code "107", :type "integer"},
+    "Ruckus-Accept-Enhancement-Reason"
+    {:name "Ruckus-Accept-Enhancement-Reason",
+     :code "12",
+     :type "integer"},
+    "115" {:name "Ruckus-Policy-Name", :code "115", :type "string"},
+    "111" {:name "Ruckus-APN-OI", :code "111", :type "string"},
+    "Ruckus-Selection-Mode"
+    {:name "Ruckus-Selection-Mode", :code "106", :type "integer"},
+    "Ruckus-SGSN-IP"
+    {:name "Ruckus-SGSN-IP", :code "117", :type "ipaddr"},
+    "119" {:name "Ruckus-PDP-Type", :code "119", :type "octets"},
+    "7" {:name "Ruckus-SCG-CBlade-IP", :code "7", :type "integer"},
+    "128" {:name "Ruckus-Auth-Server-Id", :code "128", :type "string"},
+    "Ruckus-VLAN-ID"
+    {:name "Ruckus-VLAN-ID", :code "9", :type "integer"},
+    "Ruckus-SCG-CBlade-IP"
+    {:name "Ruckus-SCG-CBlade-IP", :code "7", :type "integer"},
+    "5" {:name "Ruckus-Location", :code "5", :type "string"},
+    "Ruckus-Session-Type"
+    {:name "Ruckus-Session-Type", :code "125", :type "integer"},
+    "106"
+    {:name "Ruckus-Selection-Mode", :code "106", :type "integer"},
+    "112" {:name "Ruckus-Auth-Type", :code "112", :type "integer"},
+    "Ruckus-BSSID" {:name "Ruckus-BSSID", :code "14", :type "octets"},
+    "12"
+    {:name "Ruckus-Accept-Enhancement-Reason",
+     :code "12",
+     :type "integer"},
+    "Ruckus-Client-Os-Class"
+    {:name "Ruckus-Client-Os-Class", :code "140", :type "string"},
+    "137"
+    {:name "Ruckus-Read-Preference", :code "137", :type "octets"},
+    "13" {:name "Ruckus-Sta-Inner-Id", :code "13", :type "string"},
+    "140"
+    {:name "Ruckus-Client-Os-Class", :code "140", :type "string"},
+    "Ruckus-APN-NI"
+    {:name "Ruckus-APN-NI", :code "104", :type "string"},
+    "121"
+    {:name "Ruckus-ChCh-Selection-Mode", :code "121", :type "octets"},
+    "Ruckus-Wispr-Redirect-Policy"
+    {:name "Ruckus-Wispr-Redirect-Policy",
+     :code "132",
+     :type "string"},
+    "6" {:name "Ruckus-Grace-Period", :code "6", :type "integer"},
+    "110" {:name "Ruckus-Status", :code "110", :type "integer"},
+    "Ruckus-Grace-Period"
+    {:name "Ruckus-Grace-Period", :code "6", :type "integer"},
+    "Ruckus-Accounting-Status"
+    {:name "Ruckus-Accounting-Status", :code "126", :type "integer"},
+    "Ruckus-QoS" {:name "Ruckus-QoS", :code "105", :type "octets"},
+    "130" {:name "Ruckus-Area-Code", :code "130", :type "octets"},
+    "Ruckus-Client-Os-Type"
+    {:name "Ruckus-Client-Os-Type", :code "139", :type "string"},
+    "Ruckus-APN-OI"
+    {:name "Ruckus-APN-OI", :code "111", :type "string"},
+    "122" {:name "Ruckus-AAA-IP", :code "122", :type "ipaddr"},
+    "Ruckus-ChCh-Selection-Mode"
+    {:name "Ruckus-ChCh-Selection-Mode", :code "121", :type "octets"},
+    "120"
+    {:name "Ruckus-Dynamic-Address-Flag", :code "120", :type "octets"},
+    "Ruckus-Auth-Type"
+    {:name "Ruckus-Auth-Type", :code "112", :type "integer"},
+    "Ruckus-Triplets"
+    {:name "Ruckus-Triplets", :code "101", :type "octets"},
+    "134" {:name "Ruckus-Zone-Name", :code "134", :type "string"},
+    "1" {:name "Ruckus-User-Groups", :code "1", :type "string"},
+    "125" {:name "Ruckus-Session-Type", :code "125", :type "integer"},
+    "104" {:name "Ruckus-APN-NI", :code "104", :type "string"},
+    "102" {:name "Ruckus-IMSI", :code "102", :type "octets"},
+    "Ruckus-NAS-Type"
+    {:name "Ruckus-NAS-Type", :code "109", :type "integer"},
+    "Ruckus-Cell-Identifier"
+    {:name "Ruckus-Cell-Identifier", :code "131", :type "octets"},
+    "127" {:name "Ruckus-Zone-Id", :code "127", :type "string"},
+    "Ruckus-Gn-User-Name"
+    {:name "Ruckus-Gn-User-Name", :code "113", :type "string"},
+    "11" {:name "Ruckus-Sta-UUID", :code "11", :type "string"},
+    "109" {:name "Ruckus-NAS-Type", :code "109", :type "integer"},
+    "124" {:name "Ruckus-SGSN-Number", :code "124", :type "octets"},
+    "138"
+    {:name "Ruckus-Client-Host-Name", :code "138", :type "string"},
+    "Ruckus-Wlan-Name"
+    {:name "Ruckus-Wlan-Name", :code "135", :type "string"},
+    "114" {:name "Ruckus-Brand-Code", :code "114", :type "string"},
+    "Ruckus-Client-Local-IP"
+    {:name "Ruckus-Client-Local-IP", :code "116", :type "ipaddr"},
+    "133"
+    {:name "Ruckus-Eth-Profile-Id", :code "133", :type "integer"},
+    "Ruckus-APN-Resolution-Req"
+    {:name "Ruckus-APN-Resolution-Req", :code "107", :type "integer"},
+    "Ruckus-Sta-Expiration"
+    {:name "Ruckus-Sta-Expiration", :code "10", :type "integer"},
+    "Ruckus-PDP-Type"
+    {:name "Ruckus-PDP-Type", :code "119", :type "octets"},
+    "126"
+    {:name "Ruckus-Accounting-Status", :code "126", :type "integer"},
+    "Ruckus-Auth-Server-Id"
+    {:name "Ruckus-Auth-Server-Id", :code "128", :type "string"},
+    "2" {:name "Ruckus-Sta-RSSI", :code "2", :type "integer"},
+    "Ruckus-CDR-TYPE"
+    {:name "Ruckus-CDR-TYPE", :code "123", :type "integer"},
+    "Ruckus-IMSI" {:name "Ruckus-IMSI", :code "102", :type "octets"},
+    "Ruckus-Vlan-Pool"
+    {:name "Ruckus-Vlan-Pool", :code "141", :type "string"},
+    "Ruckus-Read-Preference"
+    {:name "Ruckus-Read-Preference", :code "137", :type "octets"},
+    "131"
+    {:name "Ruckus-Cell-Identifier", :code "131", :type "octets"},
+    "103" {:name "Ruckus-MSISDN", :code "103", :type "octets"},
+    "Ruckus-Sta-Inner-Id"
+    {:name "Ruckus-Sta-Inner-Id", :code "13", :type "string"},
+    "10" {:name "Ruckus-WSG-User", :code "10", :type "string"},
+    "Ruckus-Sta-UUID"
+    {:name "Ruckus-Sta-UUID", :code "11", :type "string"},
+    "Ruckus-Zone-Name"
+    {:name "Ruckus-Zone-Name", :code "134", :type "string"},
+    "Ruckus-Dynamic-Address-Flag"
+    {:name "Ruckus-Dynamic-Address-Flag", :code "120", :type "octets"},
+    "129" {:name "Ruckus-Utp-Id", :code "129", :type "string"},
+    "Ruckus-MSISDN"
+    {:name "Ruckus-MSISDN", :code "103", :type "octets"},
+    "Ruckus-Status"
+    {:name "Ruckus-Status", :code "110", :type "integer"},
+    "117" {:name "Ruckus-SGSN-IP", :code "117", :type "ipaddr"},
+    "Ruckus-Location"
+    {:name "Ruckus-Location", :code "5", :type "string"},
+    "132"
+    {:name "Ruckus-Wispr-Redirect-Policy",
+     :code "132",
+     :type "string"}},
+   :values
+   {"Ruckus-Selection-Mode"
+    {"Subscribed" "0",
+     "0" "Subscribed",
+     "SentByMS" "1",
+     "1" "SentByMS",
+     "ChosenBySGSN" "2",
+     "2" "ChosenBySGSN"},
+    "Ruckus-APN-Resolution-Req"
+    {"NotRequired" "0",
+     "0" "NotRequired",
+     "Required" "1",
+     "1" "Required"},
+    "Ruckus-Status"
+    {"Success" "0", "0" "Success", "Failure" "1", "1" "Failure"},
+    "Ruckus-Auth-Type"
+    {"9" "Voucher",
+     "3" "SoftSIM",
+     "RadiusSIM" "4",
+     "4" "RadiusSIM",
+     "8" "ProxyRadius",
+     "PPP-SIM" "1",
+     "DummyIMSI" "2",
+     "ProxyRadius" "8",
+     "Prepaid" "6",
+     "7" "LocalRadius",
+     "5" "Postpaid",
+     "Postpaid" "5",
+     "SoftSIM" "3",
+     "6" "Prepaid",
+     "Voucher" "9",
+     "1" "PPP-SIM",
+     "LocalRadius" "7",
+     "2" "DummyIMSI",
+     "EAP-SIM" "10",
+     "10" "EAP-SIM"},
+    "Ruckus-Session-Type"
+    {"3" "Local-Breakout",
+     "4" "Local-Breakout-AP",
+     "8" "PMIP",
+     "Local-Breakout" "3",
+     "7" "QinQL3",
+     "Local-Breakout-AP" "4",
+     "5" "L3GRE",
+     "TTG" "2",
+     "6" "L2GRE",
+     "PMIP" "8",
+     "L2GRE" "6",
+     "L3GRE" "5",
+     "QinQL3" "7",
+     "2" "TTG"},
+    "Ruckus-NAS-Type"
+    {"SCG" "1", "1" "SCG", "Others" "2", "2" "Others"},
+    "Ruckus-Accounting-Status"
+    {"Accounting-On" "1",
+     "1" "Accounting-On",
+     "Accounting-Off" "0",
+     "0" "Accounting-Off"}}},
+  "Meraki"
+  {:attributes
+   {"Meraki-Device-Name"
+    {:name "Meraki-Device-Name", :code "1", :type "string"},
+    "1" {:name "Meraki-Device-Name", :code "1", :type "string"}}},
+  "WiFi-Alliance"
+  {:attributes
+   {"3"
+    {:name "HS20-Mobile-Device-Version", :code "3", :type "octets"},
+    "4"
+    {:name "HS20-Deauthentication-Request", :code "4", :type "octets"},
+    "HS20-Session-Information-URL"
+    {:name "HS20-Session-Information-URL", :code "5", :type "octets"},
+    "HS20-Deauthentication-Request"
+    {:name "HS20-Deauthentication-Request", :code "4", :type "octets"},
+    "HS20-Subscription-Remediation-Needed"
+    {:name "HS20-Subscription-Remediation-Needed",
+     :code "1",
+     :type "octets"},
+    "5"
+    {:name "HS20-Session-Information-URL", :code "5", :type "octets"},
+    "1"
+    {:name "HS20-Subscription-Remediation-Needed",
+     :code "1",
+     :type "octets"},
+    "HS20-Mobile-Device-Version"
+    {:name "HS20-Mobile-Device-Version", :code "3", :type "octets"},
+    "HS20-AP-Version"
+    {:name "HS20-AP-Version", :code "2", :type "byte"},
+    "2" {:name "HS20-AP-Version", :code "2", :type "byte"}}},
+  "PaloAlto"
+  {:attributes
+   {"3"
+    {:name "PaloAlto-Panorama-Admin-Role", :code "3", :type "string"},
+    "PaloAlto-Admin-Role"
+    {:name "PaloAlto-Admin-Role", :code "1", :type "string"},
+    "4"
+    {:name "PaloAlto-Panorama-Admin-Access-Domain",
+     :code "4",
+     :type "string"},
+    "PaloAlto-Panorama-Admin-Role"
+    {:name "PaloAlto-Panorama-Admin-Role", :code "3", :type "string"},
+    "PaloAlto-User-Group"
+    {:name "PaloAlto-User-Group", :code "5", :type "string"},
+    "5" {:name "PaloAlto-User-Group", :code "5", :type "string"},
+    "PaloAlto-Admin-Access-Domain"
+    {:name "PaloAlto-Admin-Access-Domain", :code "2", :type "string"},
+    "1" {:name "PaloAlto-Admin-Role", :code "1", :type "string"},
+    "2"
+    {:name "PaloAlto-Admin-Access-Domain", :code "2", :type "string"},
+    "PaloAlto-Panorama-Admin-Access-Domain"
+    {:name "PaloAlto-Panorama-Admin-Access-Domain",
+     :code "4",
+     :type "string"}}},
+  "Nomadix"
+  {:attributes
+   {"9" {:name "Nomadix-EndofSession", :code "9", :type "integer"},
+    "3" {:name "Nomadix-URL-Redirection", :code "3", :type "string"},
+    "Nomadix-Group-Policy-Id"
+    {:name "Nomadix-Group-Policy-Id", :code "19", :type "integer"},
+    "4" {:name "Nomadix-IP-Upsell", :code "4", :type "integer"},
+    "8" {:name "Nomadix-MaxBytesDown", :code "8", :type "integer"},
+    "14" {:name "Nomadix-Qos-Policy", :code "14", :type "string"},
+    "Nomadix-MaxBytesDown"
+    {:name "Nomadix-MaxBytesDown", :code "8", :type "integer"},
+    "Nomadix-Centralized-Mgmt"
+    {:name "Nomadix-Centralized-Mgmt", :code "18", :type "string"},
+    "21"
+    {:name "Nomadix-Group-Bw-Max-Down", :code "21", :type "integer"},
+    "Nomadix-Expiration"
+    {:name "Nomadix-Expiration", :code "5", :type "string"},
+    "Nomadix-EndofSession"
+    {:name "Nomadix-EndofSession", :code "9", :type "integer"},
+    "20"
+    {:name "Nomadix-Group-Bw-Max-Up", :code "20", :type "integer"},
+    "Nomadix-Config-URL"
+    {:name "Nomadix-Config-URL", :code "12", :type "string"},
+    "19"
+    {:name "Nomadix-Group-Policy-Id", :code "19", :type "integer"},
+    "Nomadix-Group-Bw-Max-Up"
+    {:name "Nomadix-Group-Bw-Max-Up", :code "20", :type "integer"},
+    "17" {:name "Nomadix-SMTP-Redirect", :code "17", :type "integer"},
+    "Nomadix-Goodbye-URL"
+    {:name "Nomadix-Goodbye-URL", :code "13", :type "string"},
+    "Nomadix-Net-VLAN"
+    {:name "Nomadix-Net-VLAN", :code "11", :type "integer"},
+    "7" {:name "Nomadix-MaxBytesUp", :code "7", :type "integer"},
+    "5" {:name "Nomadix-Expiration", :code "5", :type "string"},
+    "18"
+    {:name "Nomadix-Centralized-Mgmt", :code "18", :type "string"},
+    "Nomadix-SMTP-Redirect"
+    {:name "Nomadix-SMTP-Redirect", :code "17", :type "integer"},
+    "12" {:name "Nomadix-Config-URL", :code "12", :type "string"},
+    "13" {:name "Nomadix-Goodbye-URL", :code "13", :type "string"},
+    "6" {:name "Nomadix-Subnet", :code "6", :type "string"},
+    "Nomadix-Bw-Down"
+    {:name "Nomadix-Bw-Down", :code "2", :type "integer"},
+    "1" {:name "Nomadix-Bw-Up", :code "1", :type "integer"},
+    "Nomadix-Logoff-URL"
+    {:name "Nomadix-Logoff-URL", :code "10", :type "string"},
+    "11" {:name "Nomadix-Net-VLAN", :code "11", :type "integer"},
+    "Nomadix-URL-Redirection"
+    {:name "Nomadix-URL-Redirection", :code "3", :type "string"},
+    "Nomadix-Qos-Policy"
+    {:name "Nomadix-Qos-Policy", :code "14", :type "string"},
+    "Nomadix-IP-Upsell"
+    {:name "Nomadix-IP-Upsell", :code "4", :type "integer"},
+    "2" {:name "Nomadix-Bw-Down", :code "2", :type "integer"},
+    "10" {:name "Nomadix-Logoff-URL", :code "10", :type "string"},
+    "Nomadix-Subnet"
+    {:name "Nomadix-Subnet", :code "6", :type "string"},
+    "Nomadix-MaxBytesUp"
+    {:name "Nomadix-MaxBytesUp", :code "7", :type "integer"},
+    "Nomadix-Bw-Up"
+    {:name "Nomadix-Bw-Up", :code "1", :type "integer"},
+    "Nomadix-Group-Bw-Max-Down"
+    {:name "Nomadix-Group-Bw-Max-Down", :code "21", :type "integer"}},
+   :values
+   {"Nomadix-IP-Upsell"
+    {"PrivatePool" "0",
+     "0" "PrivatePool",
+     "PublicPool" "1",
+     "1" "PublicPool"}}},
+  "Mikrotik"
+  {:attributes
+   {"Mikrotik-Wireless-Maxsignal"
+    {:name "Mikrotik-Wireless-Maxsignal", :code "29", :type "string"},
+    "9" {:name "Mikrotik-Realm", :code "9", :type "string"},
+    "3" {:name "Mikrotik-Group", :code "3", :type "string"},
+    "Mikrotik-Xmit-Limit"
+    {:name "Mikrotik-Xmit-Limit", :code "2", :type "integer"},
+    "Mikrotik-Wireless-PSK"
+    {:name "Mikrotik-Wireless-PSK", :code "16", :type "string"},
+    "Mikrotik-Total-Limit"
+    {:name "Mikrotik-Total-Limit", :code "17", :type "integer"},
+    "22"
+    {:name "Mikrotik-Delegated-IPv6-Pool", :code "22", :type "string"},
+    "Mikrotik-Advertise-URL"
+    {:name "Mikrotik-Advertise-URL", :code "12", :type "string"},
+    "26"
+    {:name "Mikrotik-Wireless-VLANID", :code "26", :type "integer"},
+    "4"
+    {:name "Mikrotik-Wireless-Forward", :code "4", :type "integer"},
+    "8" {:name "Mikrotik-Rate-Limit", :code "8", :type "string"},
+    "28"
+    {:name "Mikrotik-Wireless-Minsignal", :code "28", :type "string"},
+    "14"
+    {:name "Mikrotik-Recv-Limit-Gigawords",
+     :code "14",
+     :type "integer"},
+    "Mikrotik-Realm"
+    {:name "Mikrotik-Realm", :code "9", :type "string"},
+    "21"
+    {:name "Mikrotik-Wireless-Comment", :code "21", :type "string"},
+    "Mikortik-DHCP-Option-ParamSTR2"
+    {:name "Mikortik-DHCP-Option-ParamSTR2",
+     :code "25",
+     :type "string"},
+    "20" {:name "Mikrotik-Wireless-MPKey", :code "20", :type "string"},
+    "Mikrotik-Wireless-Minsignal"
+    {:name "Mikrotik-Wireless-Minsignal", :code "28", :type "string"},
+    "19" {:name "Mikrotik-Address-List", :code "19", :type "string"},
+    "17" {:name "Mikrotik-Total-Limit", :code "17", :type "integer"},
+    "Mikrotik-Xmit-Limit-Gigawords"
+    {:name "Mikrotik-Xmit-Limit-Gigawords",
+     :code "15",
+     :type "integer"},
+    "25"
+    {:name "Mikortik-DHCP-Option-ParamSTR2",
+     :code "25",
+     :type "string"},
+    "Mikrotik-Recv-Limit-Gigawords"
+    {:name "Mikrotik-Recv-Limit-Gigawords",
+     :code "14",
+     :type "integer"},
+    "15"
+    {:name "Mikrotik-Xmit-Limit-Gigawords",
+     :code "15",
+     :type "integer"},
+    "7" {:name "Mikrotik-Wireless-Enc-Key", :code "7", :type "string"},
+    "5"
+    {:name "Mikrotik-Wireless-Skip-Dot1x", :code "5", :type "integer"},
+    "Mikrotik-Delegated-IPv6-Pool"
+    {:name "Mikrotik-Delegated-IPv6-Pool", :code "22", :type "string"},
+    "18"
+    {:name "Mikrotik-Total-Limit-Gigawords",
+     :code "18",
+     :type "integer"},
+    "Mikrotik-Advertise-Interval"
+    {:name "Mikrotik-Advertise-Interval", :code "13", :type "integer"},
+    "Mikrotik-Wireless-Skip-Dot1x"
+    {:name "Mikrotik-Wireless-Skip-Dot1x", :code "5", :type "integer"},
+    "12" {:name "Mikrotik-Advertise-URL", :code "12", :type "string"},
+    "13"
+    {:name "Mikrotik-Advertise-Interval", :code "13", :type "integer"},
+    "27"
+    {:name "Mikrotik-Wireless-VLANID-Type",
+     :code "27",
+     :type "integer"},
+    "Mikrotik-Wireless-Forward"
+    {:name "Mikrotik-Wireless-Forward", :code "4", :type "integer"},
+    "24"
+    {:name "Mikrotik-DHCP-Option-Param-STR1",
+     :code "24",
+     :type "string"},
+    "Mikrotik-Host-IP"
+    {:name "Mikrotik-Host-IP", :code "10", :type "ipaddr"},
+    "6"
+    {:name "Mikrotik-Wireless-Enc-Algo", :code "6", :type "integer"},
+    "Mikrotik-Recv-Limit"
+    {:name "Mikrotik-Recv-Limit", :code "1", :type "integer"},
+    "Mikrotik-Wireless-MPKey"
+    {:name "Mikrotik-Wireless-MPKey", :code "20", :type "string"},
+    "Mikrotik-Address-List"
+    {:name "Mikrotik-Address-List", :code "19", :type "string"},
+    "1" {:name "Mikrotik-Recv-Limit", :code "1", :type "integer"},
+    "Mikrotik-Wireless-Comment"
+    {:name "Mikrotik-Wireless-Comment", :code "21", :type "string"},
+    "Mikrotik-Rate-Limit"
+    {:name "Mikrotik-Rate-Limit", :code "8", :type "string"},
+    "Mikrotik-DHCP-Option-Param-STR1"
+    {:name "Mikrotik-DHCP-Option-Param-STR1",
+     :code "24",
+     :type "string"},
+    "Mikrotik-Wireless-Enc-Key"
+    {:name "Mikrotik-Wireless-Enc-Key", :code "7", :type "string"},
+    "11" {:name "Mikrotik-Mark-Id", :code "11", :type "string"},
+    "Mikrotik-Group"
+    {:name "Mikrotik-Group", :code "3", :type "string"},
+    "Mikrotik-DHCP-Option-Set"
+    {:name "Mikrotik-DHCP-Option-Set", :code "23", :type "string"},
+    "Mikrotik-Wireless-VLANID-Type"
+    {:name "Mikrotik-Wireless-VLANID-Type",
+     :code "27",
+     :type "integer"},
+    "2" {:name "Mikrotik-Xmit-Limit", :code "2", :type "integer"},
+    "Mikrotik-Mark-Id"
+    {:name "Mikrotik-Mark-Id", :code "11", :type "string"},
+    "Mikrotik-Wireless-Enc-Algo"
+    {:name "Mikrotik-Wireless-Enc-Algo", :code "6", :type "integer"},
+    "16" {:name "Mikrotik-Wireless-PSK", :code "16", :type "string"},
+    "10" {:name "Mikrotik-Host-IP", :code "10", :type "ipaddr"},
+    "Mikrotik-Total-Limit-Gigawords"
+    {:name "Mikrotik-Total-Limit-Gigawords",
+     :code "18",
+     :type "integer"},
+    "Mikrotik-Wireless-VLANID"
+    {:name "Mikrotik-Wireless-VLANID", :code "26", :type "integer"},
+    "23"
+    {:name "Mikrotik-DHCP-Option-Set", :code "23", :type "string"},
+    "29"
+    {:name "Mikrotik-Wireless-Maxsignal", :code "29", :type "string"}},
+   :values
+   {"Mikrotik-Wireless-Enc-Algo"
+    {"3" "AES-CCM",
+     "4" "TKIP",
+     "No-encryption" "0",
+     "104-bit-WEP" "2",
+     "AES-CCM" "3",
+     "1" "40-bit-WEP",
+     "0" "No-encryption",
+     "40-bit-WEP" "1",
+     "2" "104-bit-WEP",
+     "TKIP" "4"},
+    "Mikrotik-Wireless-VLANID-Type"
+    {"802.1q" "0", "0" "802.1q", "802.1ad" "1", "1" "802.1ad"}}},
+  "Cisco-ASA"
+  {:attributes
+   {"58"
+    {:name "ASA-IPsec-Client-Firewall-Filter-Optional",
+     :code "58",
+     :type "integer"},
+    "ASA-WebVPN-File-Server-Entry-Enable"
+    {:name "ASA-WebVPN-File-Server-Entry-Enable",
+     :code "95",
+     :type "integer"},
+    "ASA-WebVPN-Download_Max-Size"
+    {:name "ASA-WebVPN-Download_Max-Size",
+     :code "157",
+     :type "integer"},
+    "88"
+    {:name "ASA-Perfect-Forward-Secrecy-Enable",
+     :code "88",
+     :type "integer"},
+    "219" {:name "ASA-IPv6-VPN-Filter", :code "219", :type "string"},
+    "ASA-Smart-Tunnel"
+    {:name "ASA-Smart-Tunnel", :code "136", :type "string"},
+    "108"
+    {:name "ASA-WebVPN-SVC-Client-DPD-Frequency",
+     :code "108",
+     :type "integer"},
+    "9" {:name "ASA-SEP-Card-Assignment", :code "9", :type "integer"},
+    "93"
+    {:name "ASA-WebVPN-URL-Entry-Enable", :code "93", :type "integer"},
+    "83"
+    {:name "ASA-IE-Proxy-Bypass-Local", :code "83", :type "integer"},
+    "ASA-WebVPN-Post-Max-Size"
+    {:name "ASA-WebVPN-Post-Max-Size", :code "159", :type "integer"},
+    "ASA-IPsec-Backup-Servers"
+    {:name "ASA-IPsec-Backup-Servers", :code "59", :type "integer"},
+    "ASA-Authorization-Required"
+    {:name "ASA-Authorization-Required", :code "66", :type "integer"},
+    "ASA-WebVPN-URL-Entry-Enable"
+    {:name "ASA-WebVPN-URL-Entry-Enable", :code "93", :type "integer"},
+    "ASA-DHCP-Network-Scope"
+    {:name "ASA-DHCP-Network-Scope", :code "61", :type "ipaddr"},
+    "158"
+    {:name "ASA-WebVPN-Upload-Max-Size", :code "158", :type "integer"},
+    "ASA-IPv6-VPN-Filter"
+    {:name "ASA-IPv6-VPN-Filter", :code "219", :type "string"},
+    "ASA-Use-Client-Address"
+    {:name "ASA-Use-Client-Address", :code "17", :type "integer"},
+    "ASA-MS-Client-Subnet-Mask"
+    {:name "ASA-MS-Client-Subnet-Mask", :code "63", :type "ipaddr"},
+    "51"
+    {:name "ASA-Cisco-IP-Phone-Bypass", :code "51", :type "integer"},
+    "50"
+    {:name "ASA-Authenticated-User-Idle-Timeout",
+     :code "50",
+     :type "integer"},
+    "ASA-WebVPN-SSL-VPN-Client-Enable"
+    {:name "ASA-WebVPN-SSL-VPN-Client-Enable",
+     :code "103",
+     :type "integer"},
+    "34" {:name "ASA-IPsec-Over-UDP", :code "34", :type "integer"},
+    "ASA-WebVPN-UNIX-Group-ID"
+    {:name "ASA-WebVPN-UNIX-Group-ID", :code "222", :type "integer"},
+    "69" {:name "ASA-WebVPN-HTML-Filter", :code "69", :type "integer"},
+    "141" {:name "ASA-NAC-Settings", :code "141", :type "string"},
+    "227"
+    {:name "ASA-WebVPN-Smart-Tunnel-Tunnel-Policy",
+     :code "227",
+     :type "string"},
+    "139"
+    {:name "ASA-WebVPN-Smart-Tunnel-Auto-Sign-On",
+     :code "139",
+     :type "string"},
+    "ASA-Client-Type-Version-Limiting"
+    {:name "ASA-Client-Type-Version-Limiting",
+     :code "77",
+     :type "string"},
+    "157"
+    {:name "ASA-WebVPN-Download_Max-Size",
+     :code "157",
+     :type "integer"},
+    "49"
+    {:name "ASA-Required-Individual-User-Auth",
+     :code "49",
+     :type "integer"},
+    "87"
+    {:name "ASA-Access-List-Outbound", :code "87", :type "string"},
+    "ASA-WebVPN-SVC-DTLS-MTU"
+    {:name "ASA-WebVPN-SVC-DTLS-MTU", :code "125", :type "integer"},
+    "ASA-IPsec-Client-Firewall-Filter-Name"
+    {:name "ASA-IPsec-Client-Firewall-Filter-Name",
+     :code "57",
+     :type "string"},
+    "ASA-WebVPN-Upload-Max-Size"
+    {:name "ASA-WebVPN-Upload-Max-Size", :code "158", :type "integer"},
+    "8" {:name "ASA-Secondary-WINS", :code "8", :type "ipaddr"},
+    "ASA-IPsec-Over-UDP"
+    {:name "ASA-IPsec-Over-UDP", :code "34", :type "integer"},
+    "105"
+    {:name "ASA-WebVPN-SSL-VPN-Client-Keep-Installation",
+     :code "105",
+     :type "integer"},
+    "28"
+    {:name "ASA-IPsec-Default-Domain", :code "28", :type "string"},
+    "ASA-WebVPN-SVC-Client-DPD-Frequency"
+    {:name "ASA-WebVPN-SVC-Client-DPD-Frequency",
+     :code "108",
+     :type "integer"},
+    "224"
+    {:name "ASA-WebVPN-Macro-Substitution-Value2",
+     :code "224",
+     :type "string"},
+    "ASA-WebVPN-Storage-Objects"
+    {:name "ASA-WebVPN-Storage-Objects", :code "161", :type "string"},
+    "ASA-SVC-Ask" {:name "ASA-SVC-Ask", :code "131", :type "integer"},
+    "60"
+    {:name "ASA-IPsec-Backup-Server-List", :code "60", :type "string"},
+    "ASA-SVC-MTU" {:name "ASA-SVC-MTU", :code "125", :type "integer"},
+    "ASA-Primary-DNS"
+    {:name "ASA-Primary-DNS", :code "5", :type "ipaddr"},
+    "ASA-WebVPN-Storage-Key"
+    {:name "ASA-WebVPN-Storage-Key", :code "162", :type "string"},
+    "ASA-WebVPN-SVC-Rekey-Method"
+    {:name "ASA-WebVPN-SVC-Rekey-Method",
+     :code "111",
+     :type "integer"},
+    "ASA-WebVPN-Smart-Tunnel-Auto-Start"
+    {:name "ASA-WebVPN-Smart-Tunnel-Auto-Start",
+     :code "138",
+     :type "integer"},
+    "135" {:name "ASA-Strip-Realm", :code "135", :type "integer"},
+    "123"
+    {:name "ASA-WebVPN-SVC-DTLS-Enable", :code "123", :type "integer"},
+    "ASA-IE-Proxy-Bypass-Local"
+    {:name "ASA-IE-Proxy-Bypass-Local", :code "83", :type "integer"},
+    "82"
+    {:name "ASA-IE-Proxy-Exception-List", :code "82", :type "string"},
+    "101"
+    {:name "ASA-WebVPN-Citrix-Metaframe-Enable",
+     :code "101",
+     :type "integer"},
+    "116"
+    {:name "ASA-WebVPN-Deny-Message", :code "116", :type "string"},
+    "59"
+    {:name "ASA-IPsec-Backup-Servers", :code "59", :type "integer"},
+    "89" {:name "ASA-NAC-Enable", :code "89", :type "integer"},
+    "61" {:name "ASA-DHCP-Network-Scope", :code "61", :type "ipaddr"},
+    "ASA-WebVPN-Group-based-HTTP/HTTPS-Proxy-Exception-List"
+    {:name "ASA-WebVPN-Group-based-HTTP/HTTPS-Proxy-Exception-List",
+     :code "78",
+     :type "string"},
+    "ASA-WebVPN-Smart-Tunnel-Tunnel-Policy"
+    {:name "ASA-WebVPN-Smart-Tunnel-Tunnel-Policy",
+     :code "227",
+     :type "string"},
+    "57"
+    {:name "ASA-IPsec-Client-Firewall-Filter-Name",
+     :code "57",
+     :type "string"},
+    "ASA-Secondary-WINS"
+    {:name "ASA-Secondary-WINS", :code "8", :type "ipaddr"},
+    "ASA-IE-Proxy-Server"
+    {:name "ASA-IE-Proxy-Server", :code "80", :type "string"},
+    "ASA-Smart-Tunnel-Auto"
+    {:name "ASA-Smart-Tunnel-Auto", :code "138", :type "integer"},
+    "ASA-WebVPN-HTML-Filter"
+    {:name "ASA-WebVPN-HTML-Filter", :code "69", :type "integer"},
+    "68"
+    {:name "ASA-IKE-KeepAlive-Confidence-Interval",
+     :code "68",
+     :type "integer"},
+    "30" {:name "ASA-IPsec-Tunnel-Type", :code "30", :type "integer"},
+    "21" {:name "ASA-L2TP-Encryption", :code "21", :type "integer"},
+    "ASA-NAC-Status-Query-Timer"
+    {:name "ASA-NAC-Status-Query-Timer", :code "90", :type "integer"},
+    "96"
+    {:name "ASA-WebVPN-File-Server-Browsing-Enable",
+     :code "96",
+     :type "integer"},
+    "ASA-IPsec-Required-Client-Firewall-Capability"
+    {:name "ASA-IPsec-Required-Client-Firewall-Capability",
+     :code "56",
+     :type "integer"},
+    "159"
+    {:name "ASA-WebVPN-Post-Max-Size", :code "159", :type "integer"},
+    "221"
+    {:name "ASA-WebVPN-UNIX-User-ID", :code "221", :type "integer"},
+    "ASA-PPTP-MPPC-Compression"
+    {:name "ASA-PPTP-MPPC-Compression", :code "37", :type "integer"},
+    "ASA-IPsec-Client-Firewall-Filter-Optional"
+    {:name "ASA-IPsec-Client-Firewall-Filter-Optional",
+     :code "58",
+     :type "integer"},
+    "80" {:name "ASA-IE-Proxy-Server", :code "80", :type "string"},
+    "162"
+    {:name "ASA-WebVPN-Storage-Key", :code "162", :type "string"},
+    "ASA-WebVPN-SSO-Server-Name"
+    {:name "ASA-WebVPN-SSO-Server-Name", :code "114", :type "string"},
+    "ASA-Required-Client-Firewall-Description"
+    {:name "ASA-Required-Client-Firewall-Description",
+     :code "47",
+     :type "string"},
+    "20" {:name "ASA-PPTP-Encryption", :code "20", :type "integer"},
+    "67"
+    {:name "ASA-Authorization-DN-Field", :code "67", :type "string"},
+    "113"
+    {:name "ASA-WebVPN-Customization", :code "113", :type "string"},
+    "81"
+    {:name "ASA-IE-Proxy-Server-Policy", :code "81", :type "integer"},
+    "ASA-IPsec-Split-DNS-Names"
+    {:name "ASA-IPsec-Split-DNS-Names", :code "29", :type "string"},
+    "47"
+    {:name "ASA-Required-Client-Firewall-Description",
+     :code "47",
+     :type "string"},
+    "98"
+    {:name "ASA-WebVPN-Port-Forwarding-Exchange-Proxy-Enable",
+     :code "98",
+     :type "integer"},
+    "ASA-SEP-Card-Assignment"
+    {:name "ASA-SEP-Card-Assignment", :code "9", :type "integer"},
+    "107"
+    {:name "ASA-WebVPN-SVC-Keepalive-Frequency",
+     :code "107",
+     :type "integer"},
+    "ASA-TunnelGroupName"
+    {:name "ASA-TunnelGroupName", :code "146", :type "string"},
+    "ASA-NAC-Enable"
+    {:name "ASA-NAC-Enable", :code "89", :type "integer"},
+    "ASA-L2TP-Encryption"
+    {:name "ASA-L2TP-Encryption", :code "21", :type "integer"},
+    "ASA-NAC-Default-ACL"
+    {:name "ASA-NAC-Default-ACL", :code "92", :type "string"},
+    "ASA-WebVPN-Smart-Tunnel-Auto-Sign-On"
+    {:name "ASA-WebVPN-Smart-Tunnel-Auto-Sign-On",
+     :code "139",
+     :type "string"},
+    "ASA-SVC-DPD-Interval-Gateway"
+    {:name "ASA-SVC-DPD-Interval-Gateway",
+     :code "109",
+     :type "integer"},
+    "ASA-Require-HW-Client-Auth"
+    {:name "ASA-Require-HW-Client-Auth", :code "48", :type "integer"},
+    "ASA-NAC-Settings"
+    {:name "ASA-NAC-Settings", :code "141", :type "string"},
+    "ASA-IE-Proxy-PAC-URL"
+    {:name "ASA-IE-Proxy-PAC-URL", :code "133", :type "string"},
+    "17" {:name "ASA-Use-Client-Address", :code "17", :type "integer"},
+    "228"
+    {:name "ASA-WebVPN-Home-Page-Use-Smart-Tunnel",
+     :code "228",
+     :type "integer"},
+    "25" {:name "ASA-Group-Policy", :code "25", :type "string"},
+    "ASA-IPsec-Mode-Config"
+    {:name "ASA-IPsec-Mode-Config", :code "31", :type "integer"},
+    "73" {:name "ASA-WebVPNACL", :code "73", :type "string"},
+    "ASA-IE-Proxy-Server-Policy"
+    {:name "ASA-IE-Proxy-Server-Policy", :code "81", :type "integer"},
+    "78"
+    {:name "ASA-WebVPN-Group-based-HTTP/HTTPS-Proxy-Exception-List",
+     :code "78",
+     :type "string"},
+    "225"
+    {:name "ASA-WebVPNSmart-Card-Removal-Disconnect",
+     :code "225",
+     :type "integer"},
+    "ASA-IKE-KeepAlive-Confidence-Interval"
+    {:name "ASA-IKE-KeepAlive-Confidence-Interval",
+     :code "68",
+     :type "integer"},
+    "111"
+    {:name "ASA-WebVPN-SVC-Rekey-Method",
+     :code "111",
+     :type "integer"},
+    "ASA-SVC-DTLS"
+    {:name "ASA-SVC-DTLS", :code "123", :type "integer"},
+    "ASA-VLAN" {:name "ASA-VLAN", :code "140", :type "integer"},
+    "15" {:name "ASA-Banner1", :code "15", :type "string"},
+    "42"
+    {:name "ASA-IPsec-Auth-On-Rekey", :code "42", :type "integer"},
+    "ASA-WebVPN-Port-Forwarding-List"
+    {:name "ASA-WebVPN-Port-Forwarding-List",
+     :code "72",
+     :type "string"},
+    "ASA-SVC-Ask-Timeout"
+    {:name "ASA-SVC-Ask-Timeout", :code "132", :type "integer"},
+    "7" {:name "ASA-Primary-WINS", :code "7", :type "ipaddr"},
+    "145" {:name "ASA-Member-Of", :code "145", :type "string"},
+    "ASA-Perfect-Forward-Secrecy-Enable"
+    {:name "ASA-Perfect-Forward-Secrecy-Enable",
+     :code "88",
+     :type "integer"},
+    "ASA-IPsec-Over-UDP-Port"
+    {:name "ASA-IPsec-Over-UDP-Port", :code "35", :type "integer"},
+    "ASA-IPsec-IP-Compression"
+    {:name "ASA-IPsec-IP-Compression", :code "39", :type "integer"},
+    "128" {:name "ASA-SVC-Profiles", :code "128", :type "string"},
+    "ASA-SVC-Rekey-Time"
+    {:name "ASA-SVC-Rekey-Time", :code "110", :type "integer"},
+    "ASA-IPsec-Allow-Passwd-Store"
+    {:name "ASA-IPsec-Allow-Passwd-Store",
+     :code "16",
+     :type "integer"},
+    "ASA-Address-Pools"
+    {:name "ASA-Address-Pools", :code "217", :type "string"},
+    "66"
+    {:name "ASA-Authorization-Required", :code "66", :type "integer"},
+    "ASA-Group-Policy"
+    {:name "ASA-Group-Policy", :code "25", :type "string"},
+    "ASA-Intercept-DHCP-Configure-Msg"
+    {:name "ASA-Intercept-DHCP-Configure-Msg",
+     :code "62",
+     :type "integer"},
+    "ASA-WebVPN-File-Access-Enable"
+    {:name "ASA-WebVPN-File-Access-Enable",
+     :code "94",
+     :type "integer"},
+    "152" {:name "ASA-SessionSubtype", :code "152", :type "integer"},
+    "5" {:name "ASA-Primary-DNS", :code "5", :type "ipaddr"},
+    "48"
+    {:name "ASA-Require-HW-Client-Auth", :code "48", :type "integer"},
+    "ASA-WebVPN-Macro-Substitution-Value1"
+    {:name "ASA-WebVPN-Macro-Substitution-Value1",
+     :code "223",
+     :type "string"},
+    "ASA-SVC-Profiles"
+    {:name "ASA-SVC-Profiles", :code "128", :type "string"},
+    "90"
+    {:name "ASA-NAC-Status-Query-Timer", :code "90", :type "integer"},
+    "ASA-L2TP-MPPC-Compression"
+    {:name "ASA-L2TP-MPPC-Compression", :code "38", :type "integer"},
+    "112"
+    {:name "ASA-WebVPN-SVC-Compression", :code "112", :type "integer"},
+    "36" {:name "ASA-Banner2", :code "36", :type "string"},
+    "222"
+    {:name "ASA-WebVPN-UNIX-Group-ID", :code "222", :type "integer"},
+    "ASA-WebVPN-HTTP-Compression"
+    {:name "ASA-WebVPN-HTTP-Compression",
+     :code "120",
+     :type "integer"},
+    "ASA-Access-List-Outbound"
+    {:name "ASA-Access-List-Outbound", :code "87", :type "string"},
+    "148"
+    {:name "ASA-WebVPN-Idle-Timeout-Alert-Interval",
+     :code "148",
+     :type "integer"},
+    "ASA-IPsec-Default-Domain"
+    {:name "ASA-IPsec-Default-Domain", :code "28", :type "string"},
+    "ASA-IKE-Keep-Alives"
+    {:name "ASA-IKE-Keep-Alives", :code "41", :type "integer"},
+    "ASA-WebVPN-Session-Timeout-Alert-Interval"
+    {:name "ASA-WebVPN-Session-Timeout-Alert-Interval",
+     :code "149",
+     :type "integer"},
+    "ASA-Cisco-LEAP-Bypass"
+    {:name "ASA-Cisco-LEAP-Bypass", :code "75", :type "integer"},
+    "12"
+    {:name "ASA-IPsec-Sec-Association", :code "12", :type "string"},
+    "ASA-WebVPN-Keepalive-Ignore"
+    {:name "ASA-WebVPN-Keepalive-Ignore",
+     :code "121",
+     :type "integer"},
+    "137"
+    {:name "ASA-WebVPN-ActiveX-Relay", :code "137", :type "integer"},
+    "ASA-WebVPN-Apply-ACL"
+    {:name "ASA-WebVPN-Apply-ACL", :code "102", :type "integer"},
+    "13"
+    {:name "ASA-IPsec-Authentication", :code "13", :type "integer"},
+    "ASA-WebVPN-Port-Forwarding-HTTP-Proxy"
+    {:name "ASA-WebVPN-Port-Forwarding-HTTP-Proxy",
+     :code "99",
+     :type "integer"},
+    "ASA-WebVPN-Deny-Message"
+    {:name "ASA-WebVPN-Deny-Message", :code "116", :type "string"},
+    "140" {:name "ASA-VLAN", :code "140", :type "integer"},
+    "27"
+    {:name "ASA-IPsec-Split-Tunnel-List", :code "27", :type "string"},
+    "ASA-WebVPN-Content-Filter-Parameters"
+    {:name "ASA-WebVPN-Content-Filter-Parameters",
+     :code "69",
+     :type "integer"},
+    "ASA-Required-Client-Firewall-Vendor-Code"
+    {:name "ASA-Required-Client-Firewall-Vendor-Code",
+     :code "45",
+     :type "integer"},
+    "136"
+    {:name "ASA-WebVPN-Smart-Tunnel", :code "136", :type "string"},
+    "121"
+    {:name "ASA-WebVPN-Keepalive-Ignore",
+     :code "121",
+     :type "integer"},
+    "218"
+    {:name "ASA-IPv6-Address-Pools", :code "218", :type "string"},
+    "62"
+    {:name "ASA-Intercept-DHCP-Configure-Msg",
+     :code "62",
+     :type "integer"},
+    "ASA-Access-List-Inbound"
+    {:name "ASA-Access-List-Inbound", :code "86", :type "string"},
+    "75" {:name "ASA-Cisco-LEAP-Bypass", :code "75", :type "integer"},
+    "ASA-Banner2" {:name "ASA-Banner2", :code "36", :type "string"},
+    "ASA-WebVPN-File-Server-Browsing-Enable"
+    {:name "ASA-WebVPN-File-Server-Browsing-Enable",
+     :code "96",
+     :type "integer"},
+    "ASA-WebVPN-Hidden-Shares"
+    {:name "ASA-WebVPN-Hidden-Shares", :code "126", :type "integer"},
+    "ASA-Required-Client-Firewall-Product-Code"
+    {:name "ASA-Required-Client-Firewall-Product-Code",
+     :code "46",
+     :type "integer"},
+    "76"
+    {:name "ASA-WebVPN-Default-Homepage", :code "76", :type "string"},
+    "35"
+    {:name "ASA-IPsec-Over-UDP-Port", :code "35", :type "integer"},
+    "ASA-Banner1" {:name "ASA-Banner1", :code "15", :type "string"},
+    "ASA-SVC-Modules"
+    {:name "ASA-SVC-Modules", :code "127", :type "string"},
+    "ASA-WebVPN-Home-Page-Use-Smart-Tunnel"
+    {:name "ASA-WebVPN-Home-Page-Use-Smart-Tunnel",
+     :code "228",
+     :type "integer"},
+    "ASA-Simultaneous-Logins"
+    {:name "ASA-Simultaneous-Logins", :code "2", :type "integer"},
+    "ASA-SessionType"
+    {:name "ASA-SessionType", :code "151", :type "integer"},
+    "6" {:name "ASA-Secondary-DNS", :code "6", :type "ipaddr"},
+    "110"
+    {:name "ASA-WebVPN-SVC-Rekey-Time", :code "110", :type "integer"},
+    "ASA-WebVPN-Default-Homepage"
+    {:name "ASA-WebVPN-Default-Homepage", :code "76", :type "string"},
+    "97"
+    {:name "ASA-WebVPN-Port-Forwarding-Enable",
+     :code "97",
+     :type "integer"},
+    "ASA-Privilege-Level"
+    {:name "ASA-Privilege-Level", :code "220", :type "integer"},
+    "ASA-WebVPN-Macro-Substitution-Value2"
+    {:name "ASA-WebVPN-Macro-Substitution-Value2",
+     :code "224",
+     :type "string"},
+    "ASA-IPv6-Address-Pools"
+    {:name "ASA-IPv6-Address-Pools", :code "218", :type "string"},
+    "ASA-WebVPN-Smart-Tunnel"
+    {:name "ASA-WebVPN-Smart-Tunnel", :code "136", :type "string"},
+    "94"
+    {:name "ASA-WebVPN-File-Access-Enable",
+     :code "94",
+     :type "integer"},
+    "ASA-IPsec-IKE-Peer-ID-Check"
+    {:name "ASA-IPsec-IKE-Peer-ID-Check", :code "40", :type "integer"},
+    "ASA-Authorization-Type"
+    {:name "ASA-Authorization-Type", :code "65", :type "integer"},
+    "99"
+    {:name "ASA-WebVPN-Port-Forwarding-HTTP-Proxy",
+     :code "99",
+     :type "integer"},
+    "38"
+    {:name "ASA-L2TP-MPPC-Compression", :code "38", :type "integer"},
+    "223"
+    {:name "ASA-WebVPN-Macro-Substitution-Value1",
+     :code "223",
+     :type "string"},
+    "ASA-Authorization-DN-Field"
+    {:name "ASA-Authorization-DN-Field", :code "67", :type "string"},
+    "ASA-IPsec-Tunnel-Type"
+    {:name "ASA-IPsec-Tunnel-Type", :code "30", :type "integer"},
+    "ASA-WebVPN-Idle-Timeout-Alert-Interval"
+    {:name "ASA-WebVPN-Idle-Timeout-Alert-Interval",
+     :code "148",
+     :type "integer"},
+    "122"
+    {:name "ASA-Extended-Authentication-On-Rekey",
+     :code "122",
+     :type "integer"},
+    "149"
+    {:name "ASA-WebVPN-Session-Timeout-Alert-Interval",
+     :code "149",
+     :type "integer"},
+    "120"
+    {:name "ASA-WebVPN-HTTP-Compression",
+     :code "120",
+     :type "integer"},
+    "ASA-WebVPN-HTTP-Proxy-IP-Address"
+    {:name "ASA-WebVPN-HTTP-Proxy-IP-Address",
+     :code "74",
+     :type "string"},
+    "ASA-WebVPN-Access-List"
+    {:name "ASA-WebVPN-Access-List", :code "73", :type "string"},
+    "ASA-WebVPN-URL-List"
+    {:name "ASA-WebVPN-URL-List", :code "71", :type "string"},
+    "ASA-IPsec-Sec-Association"
+    {:name "ASA-IPsec-Sec-Association", :code "12", :type "string"},
+    "ASA-WebVPN-Auto-HTTP-Signon"
+    {:name "ASA-WebVPN-Auto-HTTP-Signon", :code "124", :type "string"},
+    "ASA-Authenticated-User-Idle-Timeout"
+    {:name "ASA-Authenticated-User-Idle-Timeout",
+     :code "50",
+     :type "integer"},
+    "77"
+    {:name "ASA-Client-Type-Version-Limiting",
+     :code "77",
+     :type "string"},
+    "39"
+    {:name "ASA-IPsec-IP-Compression", :code "39", :type "integer"},
+    "146" {:name "ASA-TunnelGroupName", :code "146", :type "string"},
+    "217" {:name "ASA-Address-Pools", :code "217", :type "string"},
+    "63"
+    {:name "ASA-MS-Client-Subnet-Mask", :code "63", :type "ipaddr"},
+    "84"
+    {:name "ASA-IKE-Keepalive-Retry-Interval",
+     :code "84",
+     :type "integer"},
+    "ASA-WebVPN-SSL-VPN-Client-Keep-Installation"
+    {:name "ASA-WebVPN-SSL-VPN-Client-Keep-Installation",
+     :code "105",
+     :type "integer"},
+    "125"
+    {:name "ASA-WebVPN-SVC-DTLS-MTU", :code "125", :type "integer"},
+    "104"
+    {:name "ASA-WebVPN-SSL-VPN-Client-Required",
+     :code "104",
+     :type "integer"},
+    "ASA-WebVPN-ActiveX-Relay"
+    {:name "ASA-WebVPN-ActiveX-Relay", :code "137", :type "integer"},
+    "ASA-IPsec-Authentication"
+    {:name "ASA-IPsec-Authentication", :code "13", :type "integer"},
+    "ASA-SVC-Keepalive"
+    {:name "ASA-SVC-Keepalive", :code "107", :type "integer"},
+    "95"
+    {:name "ASA-WebVPN-File-Server-Entry-Enable",
+     :code "95",
+     :type "integer"},
+    "102" {:name "ASA-WebVPN-Apply-ACL", :code "102", :type "integer"},
+    "ASA-Strip-Realm"
+    {:name "ASA-Strip-Realm", :code "135", :type "integer"},
+    "ASA-WebVPN-SVC-Rekey-Time"
+    {:name "ASA-WebVPN-SVC-Rekey-Time", :code "110", :type "integer"},
+    "74"
+    {:name "ASA-WebVPN-HTTP-Proxy-IP-Address",
+     :code "74",
+     :type "string"},
+    "37"
+    {:name "ASA-PPTP-MPPC-Compression", :code "37", :type "integer"},
+    "46"
+    {:name "ASA-Required-Client-Firewall-Product-Code",
+     :code "46",
+     :type "integer"},
+    "127" {:name "ASA-SVC-Modules", :code "127", :type "string"},
+    "11"
+    {:name "ASA-Tunneling-Protocols", :code "11", :type "integer"},
+    "109"
+    {:name "ASA-WebVPN-SVC-Gateway-DPD-Frequency",
+     :code "109",
+     :type "integer"},
+    "124"
+    {:name "ASA-WebVPN-Auto-HTTP-Signon", :code "124", :type "string"},
+    "ASA-NAC-Revalidation-Timer"
+    {:name "ASA-NAC-Revalidation-Timer", :code "91", :type "integer"},
+    "ASA-Primary-WINS"
+    {:name "ASA-Primary-WINS", :code "7", :type "ipaddr"},
+    "138"
+    {:name "ASA-WebVPN-Smart-Tunnel-Auto-Start",
+     :code "138",
+     :type "integer"},
+    "ASA-IKE-Keepalive-Retry-Interval"
+    {:name "ASA-IKE-Keepalive-Retry-Interval",
+     :code "84",
+     :type "integer"},
+    "ASA-Extended-Authentication-On-Rekey"
+    {:name "ASA-Extended-Authentication-On-Rekey",
+     :code "122",
+     :type "integer"},
+    "ASA-WebVPN-User-Storage"
+    {:name "ASA-WebVPN-User-Storage", :code "160", :type "string"},
+    "ASA-Member-Of"
+    {:name "ASA-Member-Of", :code "145", :type "string"},
+    "45"
+    {:name "ASA-Required-Client-Firewall-Vendor-Code",
+     :code "45",
+     :type "integer"},
+    "ASA-WebVPN-SVC-Keepalive-Frequency"
+    {:name "ASA-WebVPN-SVC-Keepalive-Frequency",
+     :code "107",
+     :type "integer"},
+    "114"
+    {:name "ASA-WebVPN-SSO-Server-Name", :code "114", :type "string"},
+    "ASA-WebVPN-VDI"
+    {:name "ASA-WebVPN-VDI", :code "163", :type "string"},
+    "ASA-WebVPN-Port-Forwarding-Name"
+    {:name "ASA-WebVPN-Port-Forwarding-Name",
+     :code "79",
+     :type "string"},
+    "ASA-Allow-Network-Extension-Mode"
+    {:name "ASA-Allow-Network-Extension-Mode",
+     :code "64",
+     :type "integer"},
+    "56"
+    {:name "ASA-IPsec-Required-Client-Firewall-Capability",
+     :code "56",
+     :type "integer"},
+    "220" {:name "ASA-Privilege-Level", :code "220", :type "integer"},
+    "ASA-WebVPN-Customization"
+    {:name "ASA-WebVPN-Customization", :code "113", :type "string"},
+    "ASA-ClientType"
+    {:name "ASA-ClientType", :code "150", :type "integer"},
+    "ASA-WebVPN-SVC-Gateway-DPD-Frequency"
+    {:name "ASA-WebVPN-SVC-Gateway-DPD-Frequency",
+     :code "109",
+     :type "integer"},
+    "ASA-WebVPN-SSL-VPN-Client-Required"
+    {:name "ASA-WebVPN-SSL-VPN-Client-Required",
+     :code "104",
+     :type "integer"},
+    "133" {:name "ASA-IE-Proxy-PAC-URL", :code "133", :type "string"},
+    "ASA-WebVPN-Citrix-Metaframe-Enable"
+    {:name "ASA-WebVPN-Citrix-Metaframe-Enable",
+     :code "101",
+     :type "integer"},
+    "151" {:name "ASA-SessionType", :code "151", :type "integer"},
+    "ASA-Smart-Tunnel-Auto-Signon-Enable"
+    {:name "ASA-Smart-Tunnel-Auto-Signon-Enable",
+     :code "139",
+     :type "string"},
+    "ASA-Cisco-IP-Phone-Bypass"
+    {:name "ASA-Cisco-IP-Phone-Bypass", :code "51", :type "integer"},
+    "55"
+    {:name "ASA-IPsec-Split-Tunneling-Policy",
+     :code "55",
+     :type "integer"},
+    "85" {:name "ASA-Tunnel-Group-Lock", :code "85", :type "string"},
+    "126"
+    {:name "ASA-WebVPN-Hidden-Shares", :code "126", :type "integer"},
+    "ASA-IPsec-Auth-On-Rekey"
+    {:name "ASA-IPsec-Auth-On-Rekey", :code "42", :type "integer"},
+    "2" {:name "ASA-Simultaneous-Logins", :code "2", :type "integer"},
+    "ASA-PPTP-Encryption"
+    {:name "ASA-PPTP-Encryption", :code "20", :type "integer"},
+    "ASA-Required-Individual-User-Auth"
+    {:name "ASA-Required-Individual-User-Auth",
+     :code "49",
+     :type "integer"},
+    "72"
+    {:name "ASA-WebVPN-Port-Forwarding-List",
+     :code "72",
+     :type "string"},
+    "ASA-WebVPN-SVC-Compression"
+    {:name "ASA-WebVPN-SVC-Compression", :code "112", :type "integer"},
+    "ASA-WebVPN-UNIX-User-ID"
+    {:name "ASA-WebVPN-UNIX-User-ID", :code "221", :type "integer"},
+    "16"
+    {:name "ASA-IPsec-Allow-Passwd-Store",
+     :code "16",
+     :type "integer"},
+    "ASA-WebVPNACL"
+    {:name "ASA-WebVPNACL", :code "73", :type "string"},
+    "ASA-IPsec-Split-Tunnel-List"
+    {:name "ASA-IPsec-Split-Tunnel-List", :code "27", :type "string"},
+    "131" {:name "ASA-SVC-Ask", :code "131", :type "integer"},
+    "103"
+    {:name "ASA-WebVPN-SSL-VPN-Client-Enable",
+     :code "103",
+     :type "integer"},
+    "41" {:name "ASA-IKE-Keep-Alives", :code "41", :type "integer"},
+    "ASA-IPsec-Backup-Server-List"
+    {:name "ASA-IPsec-Backup-Server-List", :code "60", :type "string"},
+    "91"
+    {:name "ASA-NAC-Revalidation-Timer", :code "91", :type "integer"},
+    "ASA-WebVPN-Port-Forwarding-Enable"
+    {:name "ASA-WebVPN-Port-Forwarding-Enable",
+     :code "97",
+     :type "integer"},
+    "65" {:name "ASA-Authorization-Type", :code "65", :type "integer"},
+    "ASA-Tunneling-Protocols"
+    {:name "ASA-Tunneling-Protocols", :code "11", :type "integer"},
+    "40"
+    {:name "ASA-IPsec-IKE-Peer-ID-Check", :code "40", :type "integer"},
+    "161"
+    {:name "ASA-WebVPN-Storage-Objects", :code "161", :type "string"},
+    "ASA-IE-Proxy-Exception-List"
+    {:name "ASA-IE-Proxy-Exception-List", :code "82", :type "string"},
+    "ASA-WebVPN-SVC-DTLS-Enable"
+    {:name "ASA-WebVPN-SVC-DTLS-Enable", :code "123", :type "integer"},
+    "31" {:name "ASA-IPsec-Mode-Config", :code "31", :type "integer"},
+    "71" {:name "ASA-WebVPN-URL-List", :code "71", :type "string"},
+    "ASA-Tunnel-Group-Lock"
+    {:name "ASA-Tunnel-Group-Lock", :code "85", :type "string"},
+    "ASA-SVC-DPD-Interval-Client"
+    {:name "ASA-SVC-DPD-Interval-Client",
+     :code "108",
+     :type "integer"},
+    "163" {:name "ASA-WebVPN-VDI", :code "163", :type "string"},
+    "ASA-Secondary-DNS"
+    {:name "ASA-Secondary-DNS", :code "6", :type "ipaddr"},
+    "ASA-WebVPNSmart-Card-Removal-Disconnect"
+    {:name "ASA-WebVPNSmart-Card-Removal-Disconnect",
+     :code "225",
+     :type "integer"},
+    "86" {:name "ASA-Access-List-Inbound", :code "86", :type "string"},
+    "64"
+    {:name "ASA-Allow-Network-Extension-Mode",
+     :code "64",
+     :type "integer"},
+    "ASA-WebVPN-Port-Forwarding-Exchange-Proxy-Enable"
+    {:name "ASA-WebVPN-Port-Forwarding-Exchange-Proxy-Enable",
+     :code "98",
+     :type "integer"},
+    "92" {:name "ASA-NAC-Default-ACL", :code "92", :type "string"},
+    "ASA-SessionSubtype"
+    {:name "ASA-SessionSubtype", :code "152", :type "integer"},
+    "ASA-IPsec-Split-Tunneling-Policy"
+    {:name "ASA-IPsec-Split-Tunneling-Policy",
+     :code "55",
+     :type "integer"},
+    "79"
+    {:name "ASA-WebVPN-Port-Forwarding-Name",
+     :code "79",
+     :type "string"},
+    "160"
+    {:name "ASA-WebVPN-User-Storage", :code "160", :type "string"},
+    "29"
+    {:name "ASA-IPsec-Split-DNS-Names", :code "29", :type "string"},
+    "150" {:name "ASA-ClientType", :code "150", :type "integer"},
+    "132" {:name "ASA-SVC-Ask-Timeout", :code "132", :type "integer"}},
+   :values
+   {"ASA-WebVPN-File-Server-Entry-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-IPsec-Backup-Servers"
+    {"Use-Client-Configured-List" "1",
+     "1" "Use-Client-Configured-List",
+     "Disable-and-clear-client-list" "2",
+     "2" "Disable-and-clear-client-list",
+     "Use-Backup-Server-List" "3",
+     "3" "Use-Backup-Server-List"},
+    "ASA-Authorization-Required"
+    {"No" "0", "0" "No", "Yes" "1", "1" "Yes"},
+    "ASA-WebVPN-URL-Entry-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-Use-Client-Address"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-SSL-VPN-Client-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-IPsec-Over-UDP"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-SVC-Ask"
+    {"Disabled" "0",
+     "0" "Disabled",
+     "Enabled" "1",
+     "1" "Enabled",
+     "Enable-Default-Service" "3",
+     "3" "Enable-Default-Service",
+     "Enable-Default-Clientless" "5",
+     "5" "Enable-Default-Clientless"},
+    "ASA-WebVPN-SVC-Rekey-Method"
+    {"Off" "0",
+     "0" "Off",
+     "SSL" "1",
+     "1" "SSL",
+     "New-Tunnel" "2",
+     "2" "New-Tunnel"},
+    "ASA-WebVPN-Smart-Tunnel-Auto-Start"
+    {"Disabled" "0",
+     "0" "Disabled",
+     "Enabled" "1",
+     "1" "Enabled",
+     "AutoStart" "2",
+     "2" "AutoStart"},
+    "ASA-IE-Proxy-Bypass-Local"
+    {"None" "0", "0" "None", "Local" "1", "1" "Local"},
+    "ASA-Smart-Tunnel-Auto"
+    {"Disabled" "0",
+     "0" "Disabled",
+     "Enabled" "1",
+     "1" "Enabled",
+     "AutoStart" "2",
+     "2" "AutoStart"},
+    "ASA-IPsec-Required-Client-Firewall-Capability"
+    {"None" "0",
+     "0" "None",
+     "Policy-Remotely-Defined" "1",
+     "1" "Policy-Remotely-Defined",
+     "Policy-Pushed" "2",
+     "2" "Policy-Pushed",
+     "Policy-from-Server" "4",
+     "4" "Policy-from-Server"},
+    "ASA-PPTP-MPPC-Compression"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-IPsec-Client-Firewall-Filter-Optional"
+    {"Required" "0", "0" "Required", "Optional" "1", "1" "Optional"},
+    "ASA-NAC-Enable" {"No" "0", "0" "No", "Yes" "1", "1" "Yes"},
+    "ASA-Require-HW-Client-Auth"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-IPsec-Mode-Config"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-IE-Proxy-Server-Policy"
+    {"No-Modify" "1",
+     "1" "No-Modify",
+     "No-Proxy" "2",
+     "2" "No-Proxy",
+     "Auto-detect" "3",
+     "3" "Auto-detect",
+     "Use-Concentrator-Setting" "4",
+     "4" "Use-Concentrator-Setting"},
+    "ASA-SVC-DTLS" {"FALSE" "0", "0" "FALSE", "TRUE" "1", "1" "TRUE"},
+    "ASA-Perfect-Forward-Secrecy-Enable"
+    {"No" "0", "0" "No", "Yes" "1", "1" "Yes"},
+    "ASA-IPsec-IP-Compression"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-IPsec-Allow-Passwd-Store"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-Intercept-DHCP-Configure-Msg"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-File-Access-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-L2TP-MPPC-Compression"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-HTTP-Compression"
+    {"Off" "0",
+     "0" "Off",
+     "Deflate-Compression" "1",
+     "1" "Deflate-Compression"},
+    "ASA-IKE-Keep-Alives"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-Cisco-LEAP-Bypass"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-Apply-ACL"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-Port-Forwarding-HTTP-Proxy"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-Required-Client-Firewall-Vendor-Code"
+    {"3" "NetworkICE",
+     "Cisco-IPSA" "5",
+     "Cisco-CIC" "1",
+     "4" "Sygate",
+     "Sygate" "4",
+     "5" "Cisco-IPSA",
+     "Zone-Labs" "2",
+     "1" "Cisco-CIC",
+     "NetworkICE" "3",
+     "2" "Zone-Labs"},
+    "ASA-WebVPN-File-Server-Browsing-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-Hidden-Shares"
+    {"None" "0", "0" "None", "Visible" "1", "1" "Visible"},
+    "ASA-SessionType"
+    {"IKEv2-LAN-to-LAN" "7",
+     "3" "Clientless-SSL-VPN",
+     "4" "Clientless-Email-Proxy",
+     "8" "VPN-Load-Balancing",
+     "VPN-Load-Balancing" "8",
+     "IKEv1-LAN-to-LAN" "6",
+     "AnyConnect-Client-SSL-VPN" "1",
+     "None" "0",
+     "7" "IKEv2-LAN-to-LAN",
+     "5" "Cisco-VPN-Client/IKEv1",
+     "6" "IKEv1-LAN-to-LAN",
+     "AnyConnect-Client-IPSec-VPN/IKEv2" "2",
+     "1" "AnyConnect-Client-SSL-VPN",
+     "0" "None",
+     "Clientless-Email-Proxy" "4",
+     "2" "AnyConnect-Client-IPSec-VPN/IKEv2",
+     "Clientless-SSL-VPN" "3",
+     "Cisco-VPN-Client/IKEv1" "5"},
+    "ASA-IPsec-IKE-Peer-ID-Check"
+    {"Required" "1",
+     "1" "Required",
+     "If-Supported-By-Peer-Certificate" "2",
+     "2" "If-Supported-By-Peer-Certificate",
+     "Do-Not-Check" "3",
+     "3" "Do-Not-Check"},
+    "ASA-Authorization-Type"
+    {"None" "0",
+     "0" "None",
+     "Radius" "1",
+     "1" "Radius",
+     "LDAP" "2",
+     "2" "LDAP"},
+    "ASA-IPsec-Tunnel-Type"
+    {"LAN-to-LAN" "1",
+     "1" "LAN-to-LAN",
+     "Remote-Access" "2",
+     "2" "Remote-Access"},
+    "ASA-WebVPN-SSL-VPN-Client-Keep-Installation"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-IPsec-Authentication"
+    {"NT-Domain" "3",
+     "3" "NT-Domain",
+     "4" "SDI",
+     "Kerberos/Active-Directory" "7",
+     "LDAP-Authorization-only" "2",
+     "None" "0",
+     "7" "Kerberos/Active-Directory",
+     "5" "Internal",
+     "6" "RADIUS-with-Expiry",
+     "SDI" "4",
+     "1" "RADIUS",
+     "0" "None",
+     "RADIUS-with-Expiry" "6",
+     "Internal" "5",
+     "2" "LDAP-Authorization-only",
+     "RADIUS" "1"},
+    "ASA-Strip-Realm"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-Extended-Authentication-On-Rekey"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-Allow-Network-Extension-Mode"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-ClientType"
+    {"AnyConnect-Client-IPSec-VPN-IKEv2" "6",
+     "3" "Clientless-SSL-VPN",
+     "4" "Cut-Through-Proxy",
+     "AnyConnect-Client-SSL-VPN" "2",
+     "L2TP/IPsec-SSL-VPN" "5",
+     "5" "L2TP/IPsec-SSL-VPN",
+     "Cisco-VPN-Client-IKEv1" "1",
+     "Cut-Through-Proxy" "4",
+     "6" "AnyConnect-Client-IPSec-VPN-IKEv2",
+     "1" "Cisco-VPN-Client-IKEv1",
+     "2" "AnyConnect-Client-SSL-VPN",
+     "Clientless-SSL-VPN" "3"},
+    "ASA-WebVPN-SSL-VPN-Client-Required"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-Citrix-Metaframe-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-Cisco-IP-Phone-Bypass"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-IPsec-Auth-On-Rekey"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-Required-Individual-User-Auth"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-SVC-Compression"
+    {"Off" "0",
+     "0" "Off",
+     "Deflate-Compression" "1",
+     "1" "Deflate-Compression"},
+    "ASA-WebVPN-Port-Forwarding-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-SVC-DTLS-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPNSmart-Card-Removal-Disconnect"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-WebVPN-Port-Forwarding-Exchange-Proxy-Enable"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "ASA-SessionSubtype"
+    {"None" "0",
+     "0" "None",
+     "Clientless" "1",
+     "1" "Clientless",
+     "Client" "2",
+     "2" "Client",
+     "Client-Only" "3",
+     "3" "Client-Only"},
+    "ASA-IPsec-Split-Tunneling-Policy"
+    {"No-Split-Tunneling" "0",
+     "0" "No-Split-Tunneling",
+     "Split-Tunneling" "1",
+     "1" "Split-Tunneling",
+     "Local-LAN-Permitted" "2",
+     "2" "Local-LAN-Permitted"}}},
+  "Microsoft"
+  {:attributes
+   {"MS-Secondary-DNS-Server"
+    {:name "MS-Secondary-DNS-Server", :code "29", :type "ipaddr"},
+    "58" {:name "MS-HCAP-User-Groups", :code "58", :type "string"},
+    "9" {:name "MS-RAS-Vendor", :code "9", :type "integer"},
+    "3" {:name "MS-CHAP-CPW-1", :code "3", :type "octets[70]"},
+    "51" {:name "MS-IPv6-Filter", :code "51", :type "octets"},
+    "50" {:name "MS-Machine-Name", :code "50", :type "string"},
+    "MS-IPv6-Remediation-Servers"
+    {:name "MS-IPv6-Remediation-Servers", :code "53", :type "octets"},
+    "MS-MPPE-Encryption-Types"
+    {:name "MS-MPPE-Encryption-Types", :code "8", :type "integer"},
+    "34" {:name "MS-RAS-Client-Name", :code "34", :type "string"},
+    "MS-HCAP-Location-Group-Name"
+    {:name "MS-HCAP-Location-Group-Name", :code "59", :type "string"},
+    "MS-BAP-Usage" {:name "MS-BAP-Usage", :code "13", :type "integer"},
+    "MS-Filter" {:name "MS-Filter", :code "22", :type "octets"},
+    "MS-CHAP2-Success"
+    {:name "MS-CHAP2-Success", :code "26", :type "octets"},
+    "49"
+    {:name "MS-AFW-Protection-Level", :code "49", :type "integer"},
+    "22" {:name "MS-Filter", :code "22", :type "octets"},
+    "26" {:name "MS-CHAP2-Success", :code "26", :type "octets"},
+    "4" {:name "MS-CHAP-CPW-2", :code "4", :type "octets[84]"},
+    "MS-MPPE-Send-Key"
+    {:name "MS-MPPE-Send-Key", :code "16", :type "octets"},
+    "8" {:name "MS-MPPE-Encryption-Types", :code "8", :type "integer"},
+    "28" {:name "MS-Primary-DNS-Server", :code "28", :type "ipaddr"},
+    "60" {:name "MS-HCAP-User-Name", :code "60", :type "string"},
+    "14"
+    {:name "MS-Link-Utilization-Threshold",
+     :code "14",
+     :type "integer"},
+    "MS-TSG-Device-Redirection"
+    {:name "MS-TSG-Device-Redirection", :code "63", :type "integer"},
+    "59"
+    {:name "MS-HCAP-Location-Group-Name", :code "59", :type "string"},
+    "61" {:name "MS-User-IPv4-Address", :code "61", :type "ipaddr"},
+    "MS-Secondary-NBNS-Server"
+    {:name "MS-Secondary-NBNS-Server", :code "31", :type "ipaddr"},
+    "57"
+    {:name "MS-Extended-Quarantine-State",
+     :code "57",
+     :type "integer"},
+    "MS-CHAP-Error" {:name "MS-CHAP-Error", :code "2", :type "string"},
+    "MS-Network-Access-Server-Type"
+    {:name "MS-Network-Access-Server-Type",
+     :code "47",
+     :type "integer"},
+    "MS-Quarantine-Session-Timeout"
+    {:name "MS-Quarantine-Session-Timeout",
+     :code "37",
+     :type "integer"},
+    "30" {:name "MS-Primary-NBNS-Server", :code "30", :type "ipaddr"},
+    "21"
+    {:name "MS-ARAP-PW-Change-Reason", :code "21", :type "integer"},
+    "MS-Primary-NBNS-Server"
+    {:name "MS-Primary-NBNS-Server", :code "30", :type "ipaddr"},
+    "MS-RAS-Client-Name"
+    {:name "MS-RAS-Client-Name", :code "34", :type "string"},
+    "MS-IPv4-Remediation-Servers"
+    {:name "MS-IPv4-Remediation-Servers", :code "52", :type "octets"},
+    "MS-MPPE-Recv-Key"
+    {:name "MS-MPPE-Recv-Key", :code "17", :type "octets"},
+    "20" {:name "MS-New-ARAP-Password", :code "20", :type "octets"},
+    "47"
+    {:name "MS-Network-Access-Server-Type",
+     :code "47",
+     :type "integer"},
+    "MS-Link-Drop-Time-Limit"
+    {:name "MS-Link-Drop-Time-Limit", :code "15", :type "integer"},
+    "MS-Quarantine-User-Class"
+    {:name "MS-Quarantine-User-Class", :code "44", :type "string"},
+    "MS-AFW-Protection-Level"
+    {:name "MS-AFW-Protection-Level", :code "49", :type "integer"},
+    "19" {:name "MS-Old-ARAP-Password", :code "19", :type "octets"},
+    "17" {:name "MS-MPPE-Recv-Key", :code "17", :type "octets"},
+    "MS-CHAP-Response"
+    {:name "MS-CHAP-Response", :code "1", :type "octets[50]"},
+    "25" {:name "MS-CHAP2-Response", :code "25", :type "octets[50]"},
+    "MS-User-IPv6-Address"
+    {:name "MS-User-IPv6-Address", :code "62", :type "ipv6addr"},
+    "MS-IPv6-Filter"
+    {:name "MS-IPv6-Filter", :code "51", :type "octets"},
+    "15"
+    {:name "MS-Link-Drop-Time-Limit", :code "15", :type "integer"},
+    "42" {:name "MS-Service-Class", :code "42", :type "string"},
+    "7"
+    {:name "MS-MPPE-Encryption-Policy", :code "7", :type "integer"},
+    "MS-CHAP-Domain"
+    {:name "MS-CHAP-Domain", :code "10", :type "string"},
+    "MS-Quarantine-IPFilter"
+    {:name "MS-Quarantine-IPFilter", :code "36", :type "octets"},
+    "44"
+    {:name "MS-Quarantine-User-Class", :code "44", :type "string"},
+    "MS-RNAP-Not-Quarantine-Capable"
+    {:name "MS-RNAP-Not-Quarantine-Capable",
+     :code "54",
+     :type "integer"},
+    "5" {:name "MS-CHAP-LM-Enc-PW", :code "5", :type "octets"},
+    "MS-Quarantine-SOH"
+    {:name "MS-Quarantine-SOH", :code "55", :type "octets"},
+    "48" {:name "MS-AFW-Zone", :code "48", :type "integer"},
+    "MS-CHAP-CPW-1"
+    {:name "MS-CHAP-CPW-1", :code "3", :type "octets[70]"},
+    "53"
+    {:name "MS-IPv6-Remediation-Servers", :code "53", :type "octets"},
+    "MS-Acct-Auth-Type"
+    {:name "MS-Acct-Auth-Type", :code "23", :type "integer"},
+    "MS-Old-ARAP-Password"
+    {:name "MS-Old-ARAP-Password", :code "19", :type "octets"},
+    "MS-Machine-Name"
+    {:name "MS-Machine-Name", :code "50", :type "string"},
+    "18" {:name "MS-RAS-Version", :code "18", :type "string"},
+    "36" {:name "MS-Quarantine-IPFilter", :code "36", :type "octets"},
+    "MS-MPPE-Encryption-Type"
+    {:name "MS-MPPE-Encryption-Type", :code "8", :type "integer"},
+    "12" {:name "MS-CHAP-MPPE-Keys", :code "12", :type "octets[24]"},
+    "13" {:name "MS-BAP-Usage", :code "13", :type "integer"},
+    "27" {:name "MS-CHAP2-CPW", :code "27", :type "octets[68]"},
+    "MS-User-IPv4-Address"
+    {:name "MS-User-IPv4-Address", :code "61", :type "ipaddr"},
+    "MS-CHAP-CPW-2"
+    {:name "MS-CHAP-CPW-2", :code "4", :type "octets[84]"},
+    "62" {:name "MS-User-IPv6-Address", :code "62", :type "ipv6addr"},
+    "24" {:name "MS-Acct-EAP-Type", :code "24", :type "integer"},
+    "35" {:name "MS-RAS-Client-Version", :code "35", :type "string"},
+    "MS-AFW-Zone" {:name "MS-AFW-Zone", :code "48", :type "integer"},
+    "MS-Service-Class"
+    {:name "MS-Service-Class", :code "42", :type "string"},
+    "MS-CHAP-NT-Enc-PW"
+    {:name "MS-CHAP-NT-Enc-PW", :code "6", :type "octets"},
+    "MS-MPPE-Encryption-Policy"
+    {:name "MS-MPPE-Encryption-Policy", :code "7", :type "integer"},
+    "MS-RAS-Version"
+    {:name "MS-RAS-Version", :code "18", :type "string"},
+    "MS-CHAP-LM-Enc-PW"
+    {:name "MS-CHAP-LM-Enc-PW", :code "5", :type "octets"},
+    "6" {:name "MS-CHAP-NT-Enc-PW", :code "6", :type "octets"},
+    "MS-Extended-Quarantine-State"
+    {:name "MS-Extended-Quarantine-State",
+     :code "57",
+     :type "integer"},
+    "MS-Quarantine-State"
+    {:name "MS-Quarantine-State", :code "45", :type "integer"},
+    "MS-HCAP-User-Name"
+    {:name "MS-HCAP-User-Name", :code "60", :type "string"},
+    "MS-ARAP-PW-Change-Reason"
+    {:name "MS-ARAP-PW-Change-Reason", :code "21", :type "integer"},
+    "MS-Primary-DNS-Server"
+    {:name "MS-Primary-DNS-Server", :code "28", :type "ipaddr"},
+    "MS-CHAP-MPPE-Keys"
+    {:name "MS-CHAP-MPPE-Keys", :code "12", :type "octets[24]"},
+    "MS-RAS-Correlation"
+    {:name "MS-RAS-Correlation", :code "56", :type "octets"},
+    "1" {:name "MS-CHAP-Response", :code "1", :type "octets[50]"},
+    "63"
+    {:name "MS-TSG-Device-Redirection", :code "63", :type "integer"},
+    "37"
+    {:name "MS-Quarantine-Session-Timeout",
+     :code "37",
+     :type "integer"},
+    "46"
+    {:name "MS-Quarantine-Grace-Time", :code "46", :type "integer"},
+    "11" {:name "MS-CHAP-Challenge", :code "11", :type "octets"},
+    "MS-Identity-Type"
+    {:name "MS-Identity-Type", :code "41", :type "integer"},
+    "MS-RAS-Vendor"
+    {:name "MS-RAS-Vendor", :code "9", :type "integer"},
+    "MS-New-ARAP-Password"
+    {:name "MS-New-ARAP-Password", :code "20", :type "octets"},
+    "45" {:name "MS-Quarantine-State", :code "45", :type "integer"},
+    "MS-CHAP2-Response"
+    {:name "MS-CHAP2-Response", :code "25", :type "octets[50]"},
+    "56" {:name "MS-RAS-Correlation", :code "56", :type "octets"},
+    "55" {:name "MS-Quarantine-SOH", :code "55", :type "octets"},
+    "2" {:name "MS-CHAP-Error", :code "2", :type "string"},
+    "MS-CHAP2-CPW"
+    {:name "MS-CHAP2-CPW", :code "27", :type "octets[68]"},
+    "MS-RAS-Client-Version"
+    {:name "MS-RAS-Client-Version", :code "35", :type "string"},
+    "MS-Link-Utilization-Threshold"
+    {:name "MS-Link-Utilization-Threshold",
+     :code "14",
+     :type "integer"},
+    "54"
+    {:name "MS-RNAP-Not-Quarantine-Capable",
+     :code "54",
+     :type "integer"},
+    "16" {:name "MS-MPPE-Send-Key", :code "16", :type "octets"},
+    "41" {:name "MS-Identity-Type", :code "41", :type "integer"},
+    "MS-HCAP-User-Groups"
+    {:name "MS-HCAP-User-Groups", :code "58", :type "string"},
+    "10" {:name "MS-CHAP-Domain", :code "10", :type "string"},
+    "40"
+    {:name "MS-User-Security-Identity", :code "40", :type "string"},
+    "MS-User-Security-Identity"
+    {:name "MS-User-Security-Identity", :code "40", :type "string"},
+    "31"
+    {:name "MS-Secondary-NBNS-Server", :code "31", :type "ipaddr"},
+    "23" {:name "MS-Acct-Auth-Type", :code "23", :type "integer"},
+    "MS-Acct-EAP-Type"
+    {:name "MS-Acct-EAP-Type", :code "24", :type "integer"},
+    "MS-Quarantine-Grace-Time"
+    {:name "MS-Quarantine-Grace-Time", :code "46", :type "integer"},
+    "MS-CHAP-Challenge"
+    {:name "MS-CHAP-Challenge", :code "11", :type "octets"},
+    "52"
+    {:name "MS-IPv4-Remediation-Servers", :code "52", :type "octets"},
+    "29"
+    {:name "MS-Secondary-DNS-Server", :code "29", :type "ipaddr"}},
+   :values
+   {"MS-MPPE-Encryption-Types"
+    {"RC4-40bit-Allowed" "1",
+     "1" "RC4-40bit-Allowed",
+     "RC4-128bit-Allowed" "2",
+     "2" "RC4-128bit-Allowed",
+     "RC4-40or128-bit-Allowed" "6",
+     "6" "RC4-40or128-bit-Allowed"},
+    "MS-BAP-Usage"
+    {"Not-Allowed" "0",
+     "0" "Not-Allowed",
+     "Allowed" "1",
+     "1" "Allowed",
+     "Required" "2",
+     "2" "Required"},
+    "MS-Network-Access-Server-Type"
+    {"3" "DHCP-Server",
+     "4" "Wireless-Access-Point",
+     "Wireless-Access-Point" "4",
+     "5" "HRA",
+     "Terminal-Server-Gateway" "1",
+     "HRA" "5",
+     "6" "HCAP-Server",
+     "Unspecified" "0",
+     "HCAP-Server" "6",
+     "1" "Terminal-Server-Gateway",
+     "0" "Unspecified",
+     "Remote-Access-Server" "2",
+     "2" "Remote-Access-Server",
+     "DHCP-Server" "3"},
+    "MS-AFW-Protection-Level"
+    {"HECP-Response-Sign-Only" "1",
+     "1" "HECP-Response-Sign-Only",
+     "HECP-Response-Sign-And-Encrypt" "2",
+     "2" "HECP-Response-Sign-And-Encrypt"},
+    "MS-RNAP-Not-Quarantine-Capable"
+    {"SoH-Sent" "0",
+     "0" "SoH-Sent",
+     "SoH-Not-Sent" "1",
+     "1" "SoH-Not-Sent"},
+    "MS-Acct-Auth-Type"
+    {"3" "MS-CHAP-1",
+     "4" "MS-CHAP-2",
+     "PAP" "1",
+     "EAP" "5",
+     "CHAP" "2",
+     "MS-CHAP-2" "4",
+     "MS-CHAP-1" "3",
+     "5" "EAP",
+     "1" "PAP",
+     "2" "CHAP"},
+    "MS-AFW-Zone"
+    {"MS-AFW-Zone-Boundary-Policy" "1",
+     "1" "MS-AFW-Zone-Boundary-Policy",
+     "MS-AFW-Zone-Unprotected-Policy" "2",
+     "2" "MS-AFW-Zone-Unprotected-Policy",
+     "MS-AFW-Zone-Protected-Policy" "3",
+     "3" "MS-AFW-Zone-Protected-Policy"},
+    "MS-MPPE-Encryption-Policy"
+    {"Encryption-Allowed" "1",
+     "1" "Encryption-Allowed",
+     "Encryption-Required" "2",
+     "2" "Encryption-Required"},
+    "MS-Extended-Quarantine-State"
+    {"Transition" "1",
+     "1" "Transition",
+     "Infected" "2",
+     "2" "Infected",
+     "Unknown" "3",
+     "3" "Unknown",
+     "No-Data" "4",
+     "4" "No-Data"},
+    "MS-Quarantine-State"
+    {"Full-Access" "0",
+     "0" "Full-Access",
+     "Quarantine" "1",
+     "1" "Quarantine",
+     "Probation" "2",
+     "2" "Probation"},
+    "MS-ARAP-PW-Change-Reason"
+    {"Just-Change-Password" "1",
+     "1" "Just-Change-Password",
+     "Expired-Password" "2",
+     "2" "Expired-Password",
+     "Admin-Requires-Password-Change" "3",
+     "3" "Admin-Requires-Password-Change",
+     "Password-Too-Short" "4",
+     "4" "Password-Too-Short"},
+    "MS-Identity-Type"
+    {"Machine-Health-Check" "1",
+     "1" "Machine-Health-Check",
+     "Ignore-User-Lookup-Failure" "2",
+     "2" "Ignore-User-Lookup-Failure"},
+    "MS-Acct-EAP-Type"
+    {"MD5" "4",
+     "4" "MD5",
+     "OTP" "5",
+     "5" "OTP",
+     "Generic-Token-Card" "6",
+     "6" "Generic-Token-Card",
+     "TLS" "13",
+     "13" "TLS"}}},
+  "Extreme"
+  {:attributes
+   {"Extreme-User-Location"
+    {:name "Extreme-User-Location", :code "208", :type "string"},
+    "201"
+    {:name "Extreme-CLI-Authorization", :code "201", :type "integer"},
+    "Extreme-Netlogin-Extended-Vlan"
+    {:name "Extreme-Netlogin-Extended-Vlan",
+     :code "211",
+     :type "string"},
+    "202" {:name "Extreme-Shell-Command", :code "202", :type "string"},
+    "Extreme-VM-VPP-Name"
+    {:name "Extreme-VM-VPP-Name", :code "214", :type "string"},
+    "213" {:name "Extreme-VM-Name", :code "213", :type "string"},
+    "Extreme-VM-Name"
+    {:name "Extreme-VM-Name", :code "213", :type "string"},
+    "Extreme-Security-Profile"
+    {:name "Extreme-Security-Profile", :code "212", :type "string"},
+    "203" {:name "Extreme-Netlogin-Vlan", :code "203", :type "string"},
+    "Extreme-VM-VLAN-ID"
+    {:name "Extreme-VM-VLAN-ID", :code "216", :type "integer"},
+    "212"
+    {:name "Extreme-Security-Profile", :code "212", :type "string"},
+    "208" {:name "Extreme-User-Location", :code "208", :type "string"},
+    "Extreme-CLI-Authorization"
+    {:name "Extreme-CLI-Authorization", :code "201", :type "integer"},
+    "209"
+    {:name "Extreme-Netlogin-Vlan-Tag", :code "209", :type "integer"},
+    "205"
+    {:name "Extreme-Netlogin-Url-Desc", :code "205", :type "string"},
+    "206"
+    {:name "Extreme-Netlogin-Only", :code "206", :type "integer"},
+    "216" {:name "Extreme-VM-VLAN-ID", :code "216", :type "integer"},
+    "Extreme-Netlogin-Url"
+    {:name "Extreme-Netlogin-Url", :code "204", :type "string"},
+    "Extreme-Netlogin-Only"
+    {:name "Extreme-Netlogin-Only", :code "206", :type "integer"},
+    "217" {:name "Extreme-VM-VR-Name", :code "217", :type "string"},
+    "Extreme-VM-IP-Addr"
+    {:name "Extreme-VM-IP-Addr", :code "215", :type "ipaddr"},
+    "211"
+    {:name "Extreme-Netlogin-Extended-Vlan",
+     :code "211",
+     :type "string"},
+    "Extreme-Netlogin-Vlan-Tag"
+    {:name "Extreme-Netlogin-Vlan-Tag", :code "209", :type "integer"},
+    "Extreme-Netlogin-Vlan"
+    {:name "Extreme-Netlogin-Vlan", :code "203", :type "string"},
+    "204" {:name "Extreme-Netlogin-Url", :code "204", :type "string"},
+    "Extreme-Shell-Command"
+    {:name "Extreme-Shell-Command", :code "202", :type "string"},
+    "214" {:name "Extreme-VM-VPP-Name", :code "214", :type "string"},
+    "Extreme-VM-VR-Name"
+    {:name "Extreme-VM-VR-Name", :code "217", :type "string"},
+    "215" {:name "Extreme-VM-IP-Addr", :code "215", :type "ipaddr"},
+    "Extreme-Netlogin-Url-Desc"
+    {:name "Extreme-Netlogin-Url-Desc", :code "205", :type "string"}},
+   :values
+   {"Extreme-CLI-Authorization"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"},
+    "Extreme-Netlogin-Only"
+    {"Disabled" "0", "0" "Disabled", "Enabled" "1", "1" "Enabled"}}},
+  "Cisco-BBSM"
+  {:attributes
+   {"CBBSM-Bandwidth"
+    {:name "CBBSM-Bandwidth", :code "1", :type "integer"},
+    "1" {:name "CBBSM-Bandwidth", :code "1", :type "integer"}}},
+  "BT"
+  {:attributes
+   {"SID-Auth" {:name "SID-Auth", :code "1", :type "string"},
+    "1" {:name "SID-Auth", :code "1", :type "string"}}},
+  "Aruba"
+  {:attributes
+   {"Aruba-AP-IP-Address"
+    {:name "Aruba-AP-IP-Address", :code "34", :type "ipaddr"},
+    "Aruba-AirGroup-Shared-Group"
+    {:name "Aruba-AirGroup-Shared-Group", :code "35", :type "string"},
+    "Aruba-Mdps-Max-Devices"
+    {:name "Aruba-Mdps-Max-Devices", :code "18", :type "integer"},
+    "Aruba-Mdps-Device-Product"
+    {:name "Aruba-Mdps-Device-Product", :code "20", :type "string"},
+    "9" {:name "Aruba-Named-User-Vlan", :code "9", :type "string"},
+    "Aruba-Framed-IPv6-Address"
+    {:name "Aruba-Framed-IPv6-Address", :code "11", :type "string"},
+    "Aruba-Essid-Name"
+    {:name "Aruba-Essid-Name", :code "5", :type "string"},
+    "3" {:name "Aruba-Priv-Admin-User", :code "3", :type "integer"},
+    "34" {:name "Aruba-AP-IP-Address", :code "34", :type "ipaddr"},
+    "Aruba-Mdps-Device-Iccid"
+    {:name "Aruba-Mdps-Device-Iccid", :code "17", :type "string"},
+    "22"
+    {:name "Aruba-Mdps-Device-Serial", :code "22", :type "string"},
+    "26"
+    {:name "Aruba-AirGroup-Shared-Role", :code "26", :type "string"},
+    "Aruba-AirGroup-User-Name"
+    {:name "Aruba-AirGroup-User-Name", :code "24", :type "string"},
+    "4" {:name "Aruba-Admin-Role", :code "4", :type "string"},
+    "Aruba-User-Vlan"
+    {:name "Aruba-User-Vlan", :code "2", :type "integer"},
+    "8" {:name "Aruba-MMS-User-Template", :code "8", :type "string"},
+    "Aruba-AS-User-Name"
+    {:name "Aruba-AS-User-Name", :code "29", :type "string"},
+    "Aruba-AP-Group"
+    {:name "Aruba-AP-Group", :code "10", :type "string"},
+    "28"
+    {:name "Aruba-Auth-Survivability", :code "28", :type "string"},
+    "Aruba-User-Role"
+    {:name "Aruba-User-Role", :code "1", :type "string"},
+    "14"
+    {:name "Aruba-No-DHCP-Fingerprint", :code "14", :type "integer"},
+    "Aruba-AirGroup-Shared-User"
+    {:name "Aruba-AirGroup-Shared-User", :code "25", :type "string"},
+    "Aruba-Mdps-Provisioning-Settings"
+    {:name "Aruba-Mdps-Provisioning-Settings",
+     :code "32",
+     :type "string"},
+    "Aruba-Auth-Survivability"
+    {:name "Aruba-Auth-Survivability", :code "28", :type "string"},
+    "Aruba-Port-Bounce-Host"
+    {:name "Aruba-Port-Bounce-Host", :code "40", :type "integer"},
+    "Aruba-Admin-Role"
+    {:name "Aruba-Admin-Role", :code "4", :type "string"},
+    "30"
+    {:name "Aruba-AS-Credential-Hash", :code "30", :type "string"},
+    "21"
+    {:name "Aruba-Mdps-Device-Version", :code "21", :type "string"},
+    "Aruba-Port-Identifier"
+    {:name "Aruba-Port-Identifier", :code "7", :type "string"},
+    "Aruba-AirGroup-Shared-Role"
+    {:name "Aruba-AirGroup-Shared-Role", :code "26", :type "string"},
+    "33"
+    {:name "Aruba-Mdps-Device-Profile", :code "33", :type "string"},
+    "20"
+    {:name "Aruba-Mdps-Device-Product", :code "20", :type "string"},
+    "Aruba-Network-SSO-Token"
+    {:name "Aruba-Network-SSO-Token", :code "37", :type "string"},
+    "Aruba-Admin-Path"
+    {:name "Aruba-Admin-Path", :code "42", :type "string"},
+    "19" {:name "Aruba-Mdps-Device-Name", :code "19", :type "string"},
+    "17" {:name "Aruba-Mdps-Device-Iccid", :code "17", :type "string"},
+    "25"
+    {:name "Aruba-AirGroup-Shared-User", :code "25", :type "string"},
+    "Aruba-AirGroup-Device-Type"
+    {:name "Aruba-AirGroup-Device-Type", :code "27", :type "integer"},
+    "Aruba-Mdps-Device-Name"
+    {:name "Aruba-Mdps-Device-Name", :code "19", :type "string"},
+    "15" {:name "Aruba-Mdps-Device-Udid", :code "15", :type "string"},
+    "42" {:name "Aruba-Admin-Path", :code "42", :type "string"},
+    "7" {:name "Aruba-Port-Identifier", :code "7", :type "string"},
+    "5" {:name "Aruba-Essid-Name", :code "5", :type "string"},
+    "Aruba-Mdps-Device-Version"
+    {:name "Aruba-Mdps-Device-Version", :code "21", :type "string"},
+    "18" {:name "Aruba-Mdps-Max-Devices", :code "18", :type "integer"},
+    "36" {:name "Aruba-User-Group", :code "36", :type "string"},
+    "12" {:name "Aruba-Device-Type", :code "12", :type "string"},
+    "Aruba-MMS-User-Template"
+    {:name "Aruba-MMS-User-Template", :code "8", :type "string"},
+    "27"
+    {:name "Aruba-AirGroup-Device-Type", :code "27", :type "integer"},
+    "Aruba-Priv-Admin-User"
+    {:name "Aruba-Priv-Admin-User", :code "3", :type "integer"},
+    "Aruba-Location-Id"
+    {:name "Aruba-Location-Id", :code "6", :type "string"},
+    "24"
+    {:name "Aruba-AirGroup-User-Name", :code "24", :type "string"},
+    "35"
+    {:name "Aruba-AirGroup-Shared-Group", :code "35", :type "string"},
+    "Aruba-User-Group"
+    {:name "Aruba-User-Group", :code "36", :type "string"},
+    "Aruba-Named-User-Vlan"
+    {:name "Aruba-Named-User-Vlan", :code "9", :type "string"},
+    "6" {:name "Aruba-Location-Id", :code "6", :type "string"},
+    "Aruba-AS-Credential-Hash"
+    {:name "Aruba-AS-Credential-Hash", :code "30", :type "string"},
+    "38" {:name "Aruba-AirGroup-Version", :code "38", :type "integer"},
+    "Aruba-No-DHCP-Fingerprint"
+    {:name "Aruba-No-DHCP-Fingerprint", :code "14", :type "integer"},
+    "39" {:name "Aruba-Auth-SurvMethod", :code "39", :type "integer"},
+    "1" {:name "Aruba-User-Role", :code "1", :type "string"},
+    "37" {:name "Aruba-Network-SSO-Token", :code "37", :type "string"},
+    "Aruba-Auth-SurvMethod"
+    {:name "Aruba-Auth-SurvMethod", :code "39", :type "integer"},
+    "11"
+    {:name "Aruba-Framed-IPv6-Address", :code "11", :type "string"},
+    "32"
+    {:name "Aruba-Mdps-Provisioning-Settings",
+     :code "32",
+     :type "string"},
+    "2" {:name "Aruba-User-Vlan", :code "2", :type "integer"},
+    "Aruba-AirGroup-Version"
+    {:name "Aruba-AirGroup-Version", :code "38", :type "integer"},
+    "16" {:name "Aruba-Mdps-Device-Imei", :code "16", :type "string"},
+    "41" {:name "Aruba-Calea-Server-Ip", :code "41", :type "ipaddr"},
+    "Aruba-Mdps-Device-Imei"
+    {:name "Aruba-Mdps-Device-Imei", :code "16", :type "string"},
+    "10" {:name "Aruba-AP-Group", :code "10", :type "string"},
+    "40" {:name "Aruba-Port-Bounce-Host", :code "40", :type "integer"},
+    "Aruba-CPPM-Role"
+    {:name "Aruba-CPPM-Role", :code "23", :type "string"},
+    "Aruba-Mdps-Device-Serial"
+    {:name "Aruba-Mdps-Device-Serial", :code "22", :type "string"},
+    "31"
+    {:name "Aruba-WorkSpace-App-Name", :code "31", :type "string"},
+    "Aruba-WorkSpace-App-Name"
+    {:name "Aruba-WorkSpace-App-Name", :code "31", :type "string"},
+    "Aruba-Mdps-Device-Profile"
+    {:name "Aruba-Mdps-Device-Profile", :code "33", :type "string"},
+    "Aruba-Mdps-Device-Udid"
+    {:name "Aruba-Mdps-Device-Udid", :code "15", :type "string"},
+    "Aruba-Calea-Server-Ip"
+    {:name "Aruba-Calea-Server-Ip", :code "41", :type "ipaddr"},
+    "23" {:name "Aruba-CPPM-Role", :code "23", :type "string"},
+    "Aruba-Device-Type"
+    {:name "Aruba-Device-Type", :code "12", :type "string"},
+    "29" {:name "Aruba-AS-User-Name", :code "29", :type "string"}},
+   :values
+   {"Aruba-AirGroup-Device-Type"
+    {"Personal-Device" "1",
+     "1" "Personal-Device",
+     "Shared-Device" "2",
+     "2" "Shared-Device"},
+    "Aruba-AirGroup-Version"
+    {"AirGroup-v1" "1",
+     "1" "AirGroup-v1",
+     "AirGroup-v2" "2",
+     "2" "AirGroup-v2"}}},
+  "ADSL-Forum"
+  {:attributes
+   {"141"
+    {:name "Maximum-Interleaving-Delay-Downstream",
+     :code "141",
+     :type "integer"},
+    "Access-Loop-Encapsulation"
+    {:name "Access-Loop-Encapsulation", :code "144", :type "octets"},
+    "139"
+    {:name "Maximum-Interleaving-Delay-Upstream",
+     :code "139",
+     :type "integer"},
+    "Minimum-Data-Rate-Downstream"
+    {:name "Minimum-Data-Rate-Downstream",
+     :code "132",
+     :type "integer"},
+    "Maximum-Interleaving-Delay-Downstream"
+    {:name "Maximum-Interleaving-Delay-Downstream",
+     :code "141",
+     :type "integer"},
+    "Minimum-Data-Rate-Upstream-Low-Power"
+    {:name "Minimum-Data-Rate-Upstream-Low-Power",
+     :code "137",
+     :type "integer"},
+    "135"
+    {:name "Maximum-Data-Rate-Upstream", :code "135", :type "integer"},
+    "Attainable-Data-Rate-Downstream"
+    {:name "Attainable-Data-Rate-Downstream",
+     :code "134",
+     :type "integer"},
+    "Actual-Interleaving-Delay-Upstream"
+    {:name "Actual-Interleaving-Delay-Upstream",
+     :code "140",
+     :type "integer"},
+    "Actual-Interleaving-Delay-Downstream"
+    {:name "Actual-Interleaving-Delay-Downstream",
+     :code "142",
+     :type "integer"},
+    "Maximum-Data-Rate-Downstream"
+    {:name "Maximum-Data-Rate-Downstream",
+     :code "136",
+     :type "integer"},
+    "Actual-Data-Rate-Downstream"
+    {:name "Actual-Data-Rate-Downstream",
+     :code "130",
+     :type "integer"},
+    "Maximum-Data-Rate-Upstream"
+    {:name "Maximum-Data-Rate-Upstream", :code "135", :type "integer"},
+    "137"
+    {:name "Minimum-Data-Rate-Upstream-Low-Power",
+     :code "137",
+     :type "integer"},
+    "Attainable-Data-Rate-Upstream"
+    {:name "Attainable-Data-Rate-Upstream",
+     :code "133",
+     :type "integer"},
+    "140"
+    {:name "Actual-Interleaving-Delay-Upstream",
+     :code "140",
+     :type "integer"},
+    "136"
+    {:name "Maximum-Data-Rate-Downstream",
+     :code "136",
+     :type "integer"},
+    "Minimum-Data-Rate-Downstream-Low-Power"
+    {:name "Minimum-Data-Rate-Downstream-Low-Power",
+     :code "138",
+     :type "integer"},
+    "130"
+    {:name "Actual-Data-Rate-Downstream",
+     :code "130",
+     :type "integer"},
+    "ADSL-Agent-Remote-Id"
+    {:name "ADSL-Agent-Remote-Id", :code "2", :type "string"},
+    "Maximum-Interleaving-Delay-Upstream"
+    {:name "Maximum-Interleaving-Delay-Upstream",
+     :code "139",
+     :type "integer"},
+    "144"
+    {:name "Access-Loop-Encapsulation", :code "144", :type "octets"},
+    "134"
+    {:name "Attainable-Data-Rate-Downstream",
+     :code "134",
+     :type "integer"},
+    "1" {:name "ADSL-Agent-Circuit-Id", :code "1", :type "string"},
+    "IWF-Session" {:name "IWF-Session", :code "252", :type "octets"},
+    "142"
+    {:name "Actual-Interleaving-Delay-Downstream",
+     :code "142",
+     :type "integer"},
+    "252" {:name "IWF-Session", :code "252", :type "octets"},
+    "138"
+    {:name "Minimum-Data-Rate-Downstream-Low-Power",
+     :code "138",
+     :type "integer"},
+    "Minimum-Data-Rate-Upstream"
+    {:name "Minimum-Data-Rate-Upstream", :code "131", :type "integer"},
+    "133"
+    {:name "Attainable-Data-Rate-Upstream",
+     :code "133",
+     :type "integer"},
+    "2" {:name "ADSL-Agent-Remote-Id", :code "2", :type "string"},
+    "131"
+    {:name "Minimum-Data-Rate-Upstream", :code "131", :type "integer"},
+    "Actual-Data-Rate-Upstream"
+    {:name "Actual-Data-Rate-Upstream", :code "129", :type "integer"},
+    "129"
+    {:name "Actual-Data-Rate-Upstream", :code "129", :type "integer"},
+    "ADSL-Agent-Circuit-Id"
+    {:name "ADSL-Agent-Circuit-Id", :code "1", :type "string"},
+    "132"
+    {:name "Minimum-Data-Rate-Downstream",
+     :code "132",
+     :type "integer"}}}},
+ :attributes
+ {"Digest-AKA-Auts"
+  {:name "Digest-AKA-Auts", :code "118", :type "string"},
+  "58" {:name "Egress-VLAN-Name", :code "58", :type "string"},
+  "Acct-Authentic"
+  {:name "Acct-Authentic", :code "45", :type "integer"},
+  "88" {:name "Framed-Pool", :code "88", :type "string"},
+  "Tunnel-Server-Endpoint"
+  {:name "Tunnel-Server-Endpoint", :code "67", :type "string"},
+  "Vendor-Specific"
+  {:name "Vendor-Specific", :code "26", :type "octets"},
+  "108" {:name "Digest-Method", :code "108", :type "string"},
+  "9" {:name "Framed-IP-Netmask", :code "9", :type "ipaddr"},
+  "83" {:name "Tunnel-Preference", :code "83", :type "integer"},
+  "SIP-AOR" {:name "SIP-AOR", :code "122", :type "string"},
+  "3" {:name "CHAP-Password", :code "3", :type "octets"},
+  "NAS-Port-Id" {:name "NAS-Port-Id", :code "87", :type "string"},
+  "PKM-SAID" {:name "PKM-SAID", :code "141", :type "short"},
+  "51" {:name "Acct-Link-Count", :code "51", :type "integer"},
+  "50" {:name "Acct-Multi-Session-Id", :code "50", :type "string"},
+  "34" {:name "Login-LAT-Service", :code "34", :type "string"},
+  "69" {:name "Tunnel-Password", :code "69", :type "string"},
+  "Login-LAT-Service"
+  {:name "Login-LAT-Service", :code "34", :type "string"},
+  "Framed-Compression"
+  {:name "Framed-Compression", :code "13", :type "integer"},
+  "Configuration-Token"
+  {:name "Configuration-Token", :code "78", :type "string"},
+  "141" {:name "PKM-SAID", :code "141", :type "short"},
+  "Digest-Entity-Body-Hash"
+  {:name "Digest-Entity-Body-Hash", :code "112", :type "string"},
+  "Prompt" {:name "Prompt", :code "76", :type "integer"},
+  "139" {:name "PKM-Config-Settings", :code "139", :type "octets"},
+  "Framed-IPv6-Route"
+  {:name "Framed-IPv6-Route", :code "99", :type "string"},
+  "49" {:name "Acct-Terminate-Cause", :code "49", :type "integer"},
+  "22" {:name "Framed-Route", :code "22", :type "string"},
+  "87" {:name "NAS-Port-Id", :code "87", :type "string"},
+  "26" {:name "Vendor-Specific", :code "26", :type "octets"},
+  "Digest-Qop" {:name "Digest-Qop", :code "110", :type "string"},
+  "4" {:name "NAS-IP-Address", :code "4", :type "ipaddr"},
+  "Callback-Id" {:name "Callback-Id", :code "20", :type "string"},
+  "Framed-Routing"
+  {:name "Framed-Routing", :code "10", :type "integer"},
+  "8" {:name "Framed-IP-Address", :code "8", :type "ipaddr"},
+  "118" {:name "Digest-AKA-Auts", :code "118", :type "string"},
+  "Reply-Message" {:name "Reply-Message", :code "18", :type "string"},
+  "Login-LAT-Port"
+  {:name "Login-LAT-Port", :code "63", :type "string"},
+  "Digest-Realm" {:name "Digest-Realm", :code "104", :type "string"},
+  "Framed-Interface-Id"
+  {:name "Framed-Interface-Id", :code "96", :type "ifid"},
+  "105" {:name "Digest-Nonce", :code "105", :type "string"},
+  "Tunnel-Type" {:name "Tunnel-Type", :code "64", :type "integer"},
+  "28" {:name "Idle-Timeout", :code "28", :type "integer"},
+  "60" {:name "CHAP-Challenge", :code "60", :type "octets"},
+  "14" {:name "Login-IP-Host", :code "14", :type "ipaddr"},
+  "PKM-SS-Cert" {:name "PKM-SS-Cert", :code "137", :type "octets"},
+  "Login-IPv6-Host"
+  {:name "Login-IPv6-Host", :code "98", :type "ipv6addr"},
+  "Framed-AppleTalk-Zone"
+  {:name "Framed-AppleTalk-Zone", :code "39", :type "string"},
+  "PKM-Config-Settings"
+  {:name "PKM-Config-Settings", :code "139", :type "octets"},
+  "Digest-Algorithm"
+  {:name "Digest-Algorithm", :code "111", :type "string"},
+  "Digest-Nextnonce"
+  {:name "Digest-Nextnonce", :code "107", :type "string"},
+  "Acct-Session-Time"
+  {:name "Acct-Session-Time", :code "46", :type "integer"},
+  "PKM-SA-Descriptor"
+  {:name "PKM-SA-Descriptor", :code "142", :type "octets"},
+  "135" {:name "Management-Policy-Id", :code "135", :type "string"},
+  "Class" {:name "Class", :code "25", :type "octets"},
+  "NAS-IPv6-Address"
+  {:name "NAS-IPv6-Address", :code "95", :type "ipv6addr"},
+  "Framed-AppleTalk-Link"
+  {:name "Framed-AppleTalk-Link", :code "37", :type "integer"},
+  "123"
+  {:name "Delegated-IPv6-Prefix", :code "123", :type "ipv6prefix"},
+  "82" {:name "Tunnel-Assignment-Id", :code "82", :type "string"},
+  "101" {:name "Error-Cause", :code "101", :type "integer"},
+  "116" {:name "Digest-Opaque", :code "116", :type "string"},
+  "59" {:name "User-Priority-Table", :code "59", :type "octets"},
+  "Tunnel-Preference"
+  {:name "Tunnel-Preference", :code "83", :type "integer"},
+  "Framed-IPv6-Pool"
+  {:name "Framed-IPv6-Pool", :code "100", :type "string"},
+  "89" {:name "Chargeable-User-Identity", :code "89", :type "string"},
+  "61" {:name "NAS-Port-Type", :code "61", :type "integer"},
+  "Message-Authenticator"
+  {:name "Message-Authenticator", :code "80", :type "octets"},
+  "57" {:name "Ingress-Filters", :code "57", :type "integer"},
+  "Port-Limit" {:name "Port-Limit", :code "62", :type "integer"},
+  "ARAP-Security" {:name "ARAP-Security", :code "73", :type "integer"},
+  "Digest-Method" {:name "Digest-Method", :code "108", :type "string"},
+  "Session-Timeout"
+  {:name "Session-Timeout", :code "27", :type "integer"},
+  "68" {:name "Acct-Tunnel-Connection", :code "68", :type "string"},
+  "Framed-IP-Address"
+  {:name "Framed-IP-Address", :code "8", :type "ipaddr"},
+  "ARAP-Zone-Access"
+  {:name "ARAP-Zone-Access", :code "72", :type "integer"},
+  "30" {:name "Called-Station-Id", :code "30", :type "string"},
+  "96" {:name "Framed-Interface-Id", :code "96", :type "ifid"},
+  "Requested-Location-Info"
+  {:name "Requested-Location-Info", :code "132", :type "integer"},
+  "Framed-IP-Netmask"
+  {:name "Framed-IP-Netmask", :code "9", :type "ipaddr"},
+  "Termination-Action"
+  {:name "Termination-Action", :code "29", :type "integer"},
+  "NAS-IP-Address" {:name "NAS-IP-Address", :code "4", :type "ipaddr"},
+  "Login-Service" {:name "Login-Service", :code "15", :type "integer"},
+  "Login-IP-Host" {:name "Login-IP-Host", :code "14", :type "ipaddr"},
+  "80" {:name "Message-Authenticator", :code "80", :type "octets"},
+  "Chargeable-User-Identity"
+  {:name "Chargeable-User-Identity", :code "89", :type "string"},
+  "Connect-Info" {:name "Connect-Info", :code "77", :type "string"},
+  "33" {:name "Proxy-State", :code "33", :type "octets"},
+  "Acct-Status-Type"
+  {:name "Acct-Status-Type", :code "40", :type "integer"},
+  "20" {:name "Callback-Id", :code "20", :type "string"},
+  "67" {:name "Tunnel-Server-Endpoint", :code "67", :type "string"},
+  "113" {:name "Digest-CNonce", :code "113", :type "string"},
+  "Service-Type" {:name "Service-Type", :code "6", :type "integer"},
+  "Framed-MTU" {:name "Framed-MTU", :code "12", :type "integer"},
+  "81" {:name "Tunnel-Private-Group-Id", :code "81", :type "string"},
+  "47" {:name "Acct-Input-Packets", :code "47", :type "integer"},
+  "98" {:name "Login-IPv6-Host", :code "98", :type "ipv6addr"},
+  "Framed-IPX-Network"
+  {:name "Framed-IPX-Network", :code "23", :type "ipaddr"},
+  "107" {:name "Digest-Nextnonce", :code "107", :type "string"},
+  "Egress-VLAN-Name"
+  {:name "Egress-VLAN-Name", :code "58", :type "string"},
+  "Password-Retry"
+  {:name "Password-Retry", :code "75", :type "integer"},
+  "NAS-Port-Type" {:name "NAS-Port-Type", :code "61", :type "integer"},
+  "19" {:name "Callback-Number", :code "19", :type "string"},
+  "Filter-Id" {:name "Filter-Id", :code "11", :type "string"},
+  "Framed-AppleTalk-Network"
+  {:name "Framed-AppleTalk-Network", :code "38", :type "integer"},
+  "PKM-Cryptosuite-List"
+  {:name "PKM-Cryptosuite-List", :code "140", :type "octets"},
+  "CHAP-Password" {:name "CHAP-Password", :code "3", :type "octets"},
+  "25" {:name "Class", :code "25", :type "octets"},
+  "NAS-Identifier"
+  {:name "NAS-Identifier", :code "32", :type "string"},
+  "Callback-Number"
+  {:name "Callback-Number", :code "19", :type "string"},
+  "115" {:name "Digest-Username", :code "115", :type "string"},
+  "73" {:name "ARAP-Security", :code "73", :type "integer"},
+  "78" {:name "Configuration-Token", :code "78", :type "string"},
+  "Tunnel-Password"
+  {:name "Tunnel-Password", :code "69", :type "string"},
+  "111" {:name "Digest-Algorithm", :code "111", :type "string"},
+  "Egress-VLANID" {:name "Egress-VLANID", :code "56", :type "integer"},
+  "119" {:name "Digest-Domain", :code "119", :type "string"},
+  "15" {:name "Login-Service", :code "15", :type "integer"},
+  "42" {:name "Acct-Input-Octets", :code "42", :type "integer"},
+  "7" {:name "Framed-Protocol", :code "7", :type "integer"},
+  "ARAP-Features" {:name "ARAP-Features", :code "71", :type "octets"},
+  "128" {:name "Location-Data", :code "128", :type "octets"},
+  "Acct-Output-Packets"
+  {:name "Acct-Output-Packets", :code "48", :type "integer"},
+  "Digest-Username"
+  {:name "Digest-Username", :code "115", :type "string"},
+  "Digest-Auth-Param"
+  {:name "Digest-Auth-Param", :code "117", :type "string"},
+  "Acct-Input-Packets"
+  {:name "Acct-Input-Packets", :code "47", :type "integer"},
+  "Management-Transport-Protection"
+  {:name "Management-Transport-Protection",
+   :code "134",
+   :type "integer"},
+  "66" {:name "Tunnel-Client-Endpoint", :code "66", :type "string"},
+  "Digest-HA1" {:name "Digest-HA1", :code "121", :type "string"},
+  "Tunnel-Assignment-Id"
+  {:name "Tunnel-Assignment-Id", :code "82", :type "string"},
+  "Operator-Name" {:name "Operator-Name", :code "126", :type "string"},
+  "Acct-Tunnel-Connection"
+  {:name "Acct-Tunnel-Connection", :code "68", :type "string"},
+  "44" {:name "Acct-Session-Id", :code "44", :type "string"},
+  "Digest-Stale" {:name "Digest-Stale", :code "120", :type "string"},
+  "5" {:name "NAS-Port", :code "5", :type "integer"},
+  "100" {:name "Framed-IPv6-Pool", :code "100", :type "string"},
+  "Event-Timestamp"
+  {:name "Event-Timestamp", :code "55", :type "date"},
+  "48" {:name "Acct-Output-Packets", :code "48", :type "integer"},
+  "106" {:name "Digest-Response-Auth", :code "106", :type "string"},
+  "Acct-Output-Gigawords"
+  {:name "Acct-Output-Gigawords", :code "53", :type "integer"},
+  "53" {:name "Acct-Output-Gigawords", :code "53", :type "integer"},
+  "90" {:name "Tunnel-Client-Auth-Id", :code "90", :type "string"},
+  "112" {:name "Digest-Entity-Body-Hash", :code "112", :type "string"},
+  "NAS-Port" {:name "NAS-Port", :code "5", :type "integer"},
+  "18" {:name "Reply-Message", :code "18", :type "string"},
+  "36" {:name "Login-LAT-Group", :code "36", :type "octets"},
+  "ARAP-Security-Data"
+  {:name "ARAP-Security-Data", :code "74", :type "string"},
+  "Acct-Link-Count"
+  {:name "Acct-Link-Count", :code "51", :type "integer"},
+  "Acct-Input-Octets"
+  {:name "Acct-Input-Octets", :code "42", :type "integer"},
+  "12" {:name "Framed-MTU", :code "12", :type "integer"},
+  "Framed-Protocol"
+  {:name "Framed-Protocol", :code "7", :type "integer"},
+  "137" {:name "PKM-SS-Cert", :code "137", :type "octets"},
+  "13" {:name "Framed-Compression", :code "13", :type "integer"},
+  "140" {:name "PKM-Cryptosuite-List", :code "140", :type "octets"},
+  "Login-LAT-Group"
+  {:name "Login-LAT-Group", :code "36", :type "octets"},
+  "27" {:name "Session-Timeout", :code "27", :type "integer"},
+  "136"
+  {:name "Management-Privilege-Level", :code "136", :type "integer"},
+  "Framed-IPv6-Prefix"
+  {:name "Framed-IPv6-Prefix", :code "97", :type "ipv6prefix"},
+  "Called-Station-Id"
+  {:name "Called-Station-Id", :code "30", :type "string"},
+  "121" {:name "Digest-HA1", :code "121", :type "string"},
+  "Framed-Route" {:name "Framed-Route", :code "22", :type "string"},
+  "PKM-CA-Cert" {:name "PKM-CA-Cert", :code "138", :type "octets"},
+  "62" {:name "Port-Limit", :code "62", :type "integer"},
+  "Digest-URI" {:name "Digest-URI", :code "109", :type "string"},
+  "75" {:name "Password-Retry", :code "75", :type "integer"},
+  "24" {:name "State", :code "24", :type "octets"},
+  "76" {:name "Prompt", :code "76", :type "integer"},
+  "35" {:name "Login-LAT-Node", :code "35", :type "string"},
+  "Login-LAT-Node"
+  {:name "Login-LAT-Node", :code "35", :type "string"},
+  "ARAP-Password" {:name "ARAP-Password", :code "70", :type "octets"},
+  "6" {:name "Service-Type", :code "6", :type "integer"},
+  "110" {:name "Digest-Qop", :code "110", :type "string"},
+  "97" {:name "Framed-IPv6-Prefix", :code "97", :type "ipv6prefix"},
+  "Digest-CNonce" {:name "Digest-CNonce", :code "113", :type "string"},
+  "Tunnel-Server-Auth-Id"
+  {:name "Tunnel-Server-Auth-Id", :code "91", :type "string"},
+  "Acct-Terminate-Cause"
+  {:name "Acct-Terminate-Cause", :code "49", :type "integer"},
+  "User-Name" {:name "User-Name", :code "1", :type "string"},
+  "99" {:name "Framed-IPv6-Route", :code "99", :type "string"},
+  "130"
+  {:name "Extended-Location-Policy-Rules",
+   :code "130",
+   :type "octets"},
+  "38" {:name "Framed-AppleTalk-Network", :code "38", :type "integer"},
+  "User-Password" {:name "User-Password", :code "2", :type "string"},
+  "Calling-Station-Id"
+  {:name "Calling-Station-Id", :code "31", :type "string"},
+  "Digest-Domain" {:name "Digest-Domain", :code "119", :type "string"},
+  "Digest-Nonce" {:name "Digest-Nonce", :code "105", :type "string"},
+  "122" {:name "SIP-AOR", :code "122", :type "string"},
+  "Framed-Management"
+  {:name "Framed-Management", :code "133", :type "integer"},
+  "120" {:name "Digest-Stale", :code "120", :type "string"},
+  "Idle-Timeout" {:name "Idle-Timeout", :code "28", :type "integer"},
+  "70" {:name "ARAP-Password", :code "70", :type "octets"},
+  "134"
+  {:name "Management-Transport-Protection",
+   :code "134",
+   :type "integer"},
+  "Digest-Response-Auth"
+  {:name "Digest-Response-Auth", :code "106", :type "string"},
+  "77" {:name "Connect-Info", :code "77", :type "string"},
+  "39" {:name "Framed-AppleTalk-Zone", :code "39", :type "string"},
+  "1" {:name "User-Name", :code "1", :type "string"},
+  "63" {:name "Login-LAT-Port", :code "63", :type "string"},
+  "84" {:name "ARAP-Challenge-Response", :code "84", :type "octets"},
+  "Location-Data" {:name "Location-Data", :code "128", :type "octets"},
+  "Tunnel-Client-Auth-Id"
+  {:name "Tunnel-Client-Auth-Id", :code "90", :type "string"},
+  "43" {:name "Acct-Output-Octets", :code "43", :type "integer"},
+  "Tunnel-Medium-Type"
+  {:name "Tunnel-Medium-Type", :code "65", :type "integer"},
+  "PKM-Auth-Key" {:name "PKM-Auth-Key", :code "143", :type "octets"},
+  "Error-Cause" {:name "Error-Cause", :code "101", :type "integer"},
+  "104" {:name "Digest-Realm", :code "104", :type "string"},
+  "Location-Capable"
+  {:name "Location-Capable", :code "131", :type "integer"},
+  "User-Priority-Table"
+  {:name "User-Priority-Table", :code "59", :type "octets"},
+  "95" {:name "NAS-IPv6-Address", :code "95", :type "ipv6addr"},
+  "102" {:name "EAP-Key-Name", :code "102", :type "string"},
+  "74" {:name "ARAP-Security-Data", :code "74", :type "string"},
+  "37" {:name "Framed-AppleTalk-Link", :code "37", :type "integer"},
+  "142" {:name "PKM-SA-Descriptor", :code "142", :type "octets"},
+  "46" {:name "Acct-Session-Time", :code "46", :type "integer"},
+  "NAS-Filter-Rule"
+  {:name "NAS-Filter-Rule", :code "92", :type "string"},
+  "Acct-Input-Gigawords"
+  {:name "Acct-Input-Gigawords", :code "52", :type "integer"},
+  "Proxy-State" {:name "Proxy-State", :code "33", :type "octets"},
+  "127" {:name "Location-Information", :code "127", :type "octets"},
+  "11" {:name "Filter-Id", :code "11", :type "string"},
+  "109" {:name "Digest-URI", :code "109", :type "string"},
+  "Acct-Tunnel-Packets-Lost"
+  {:name "Acct-Tunnel-Packets-Lost", :code "86", :type "integer"},
+  "State" {:name "State", :code "24", :type "octets"},
+  "138" {:name "PKM-CA-Cert", :code "138", :type "octets"},
+  "Acct-Session-Id"
+  {:name "Acct-Session-Id", :code "44", :type "string"},
+  "45" {:name "Acct-Authentic", :code "45", :type "integer"},
+  "EAP-Key-Name" {:name "EAP-Key-Name", :code "102", :type "string"},
+  "Digest-Response"
+  {:name "Digest-Response", :code "103", :type "string"},
+  "114" {:name "Digest-Nonce-Count", :code "114", :type "string"},
+  "Login-TCP-Port"
+  {:name "Login-TCP-Port", :code "16", :type "integer"},
+  "56" {:name "Egress-VLANID", :code "56", :type "integer"},
+  "32" {:name "NAS-Identifier", :code "32", :type "string"},
+  "Acct-Multi-Session-Id"
+  {:name "Acct-Multi-Session-Id", :code "50", :type "string"},
+  "133" {:name "Framed-Management", :code "133", :type "integer"},
+  "Acct-Interim-Interval"
+  {:name "Acct-Interim-Interval", :code "85", :type "integer"},
+  "55" {:name "Event-Timestamp", :code "55", :type "date"},
+  "85" {:name "Acct-Interim-Interval", :code "85", :type "integer"},
+  "Extended-Location-Policy-Rules"
+  {:name "Extended-Location-Policy-Rules",
+   :code "130",
+   :type "octets"},
+  "126" {:name "Operator-Name", :code "126", :type "string"},
+  "2" {:name "User-Password", :code "2", :type "string"},
+  "143" {:name "PKM-Auth-Key", :code "143", :type "octets"},
+  "72" {:name "ARAP-Zone-Access", :code "72", :type "integer"},
+  "CHAP-Challenge"
+  {:name "CHAP-Challenge", :code "60", :type "octets"},
+  "Basic-Location-Policy-Rules"
+  {:name "Basic-Location-Policy-Rules", :code "129", :type "octets"},
+  "Digest-Nonce-Count"
+  {:name "Digest-Nonce-Count", :code "114", :type "string"},
+  "16" {:name "Login-TCP-Port", :code "16", :type "integer"},
+  "131" {:name "Location-Capable", :code "131", :type "integer"},
+  "103" {:name "Digest-Response", :code "103", :type "string"},
+  "41" {:name "Acct-Delay-Time", :code "41", :type "integer"},
+  "Management-Privilege-Level"
+  {:name "Management-Privilege-Level", :code "136", :type "integer"},
+  "91" {:name "Tunnel-Server-Auth-Id", :code "91", :type "string"},
+  "10" {:name "Framed-Routing", :code "10", :type "integer"},
+  "65" {:name "Tunnel-Medium-Type", :code "65", :type "integer"},
+  "Delegated-IPv6-Prefix"
+  {:name "Delegated-IPv6-Prefix", :code "123", :type "ipv6prefix"},
+  "40" {:name "Acct-Status-Type", :code "40", :type "integer"},
+  "129"
+  {:name "Basic-Location-Policy-Rules", :code "129", :type "octets"},
+  "Ingress-Filters"
+  {:name "Ingress-Filters", :code "57", :type "integer"},
+  "Digest-Opaque" {:name "Digest-Opaque", :code "116", :type "string"},
+  "31" {:name "Calling-Station-Id", :code "31", :type "string"},
+  "71" {:name "ARAP-Features", :code "71", :type "octets"},
+  "Acct-Output-Octets"
+  {:name "Acct-Output-Octets", :code "43", :type "integer"},
+  "86" {:name "Acct-Tunnel-Packets-Lost", :code "86", :type "integer"},
+  "64" {:name "Tunnel-Type", :code "64", :type "integer"},
+  "EAP-Message" {:name "EAP-Message", :code "79", :type "octets"},
+  "92" {:name "NAS-Filter-Rule", :code "92", :type "string"},
+  "Location-Information"
+  {:name "Location-Information", :code "127", :type "octets"},
+  "Tunnel-Client-Endpoint"
+  {:name "Tunnel-Client-Endpoint", :code "66", :type "string"},
+  "Management-Policy-Id"
+  {:name "Management-Policy-Id", :code "135", :type "string"},
+  "23" {:name "Framed-IPX-Network", :code "23", :type "ipaddr"},
+  "ARAP-Challenge-Response"
+  {:name "ARAP-Challenge-Response", :code "84", :type "octets"},
+  "52" {:name "Acct-Input-Gigawords", :code "52", :type "integer"},
+  "Acct-Delay-Time"
+  {:name "Acct-Delay-Time", :code "41", :type "integer"},
+  "79" {:name "EAP-Message", :code "79", :type "octets"},
+  "29" {:name "Termination-Action", :code "29", :type "integer"},
+  "Framed-Pool" {:name "Framed-Pool", :code "88", :type "string"},
+  "117" {:name "Digest-Auth-Param", :code "117", :type "string"},
+  "132"
+  {:name "Requested-Location-Info", :code "132", :type "integer"},
+  "Tunnel-Private-Group-Id"
+  {:name "Tunnel-Private-Group-Id", :code "81", :type "string"}},
+ :values
+ {"Acct-Authentic"
+  {"RADIUS" "1",
+   "1" "RADIUS",
+   "Local" "2",
+   "2" "Local",
+   "Remote" "3",
+   "3" "Remote",
+   "Diameter" "4",
+   "4" "Diameter"},
+  "Framed-Compression"
+  {"None" "0",
+   "0" "None",
+   "Van-Jacobson-TCP-IP" "1",
+   "1" "Van-Jacobson-TCP-IP",
+   "IPX-Header-Compression" "2",
+   "2" "IPX-Header-Compression",
+   "Stac-LZS" "3",
+   "3" "Stac-LZS"},
+  "Prompt" {"No-Echo" "0", "0" "No-Echo", "Echo" "1", "1" "Echo"},
+  "Framed-Routing"
+  {"None" "0",
+   "0" "None",
+   "Broadcast" "1",
+   "1" "Broadcast",
+   "Listen" "2",
+   "2" "Listen",
+   "Broadcast-Listen" "3",
+   "3" "Broadcast-Listen"},
+  "Tunnel-Type"
+  {"MIN-IP" "8",
+   "9" "ESP",
+   "3" "L2TP",
+   "4" "ATMP",
+   "8" "MIN-IP",
+   "AH" "6",
+   "L2TP" "3",
+   "DVS" "11",
+   "IP" "7",
+   "7" "IP",
+   "L2F" "2",
+   "5" "VTP",
+   "12" "IP-in-IP",
+   "13" "VLAN",
+   "6" "AH",
+   "GRE" "10",
+   "IP-in-IP" "12",
+   "1" "PPTP",
+   "ESP" "9",
+   "11" "DVS",
+   "VTP" "5",
+   "ATMP" "4",
+   "PPTP" "1",
+   "2" "L2F",
+   "10" "GRE",
+   "VLAN" "13"},
+  "ARAP-Zone-Access"
+  {"Default-Zone" "1",
+   "1" "Default-Zone",
+   "Zone-Filter-Inclusive" "2",
+   "2" "Zone-Filter-Inclusive",
+   "Zone-Filter-Exclusive" "4",
+   "4" "Zone-Filter-Exclusive"},
+  "Requested-Location-Info"
+  {"Users-Location" "4",
+   "4" "Users-Location",
+   "8" "NAS-Location",
+   "Civix-Location" "1",
+   "None" "32",
+   "Future-Requests" "16",
+   "1" "Civix-Location",
+   "NAS-Location" "8",
+   "Geo-Location" "2",
+   "32" "None",
+   "2" "Geo-Location",
+   "16" "Future-Requests"},
+  "Termination-Action"
+  {"Default" "0",
+   "0" "Default",
+   "RADIUS-Request" "1",
+   "1" "RADIUS-Request"},
+  "Login-Service"
+  {"3" "PortMaster",
+   "Rlogin" "1",
+   "4" "LAT",
+   "8" "TCP-Clear-Quiet",
+   "X25-PAD" "5",
+   "Telnet" "0",
+   "PortMaster" "3",
+   "LAT" "4",
+   "5" "X25-PAD",
+   "6" "X25-T3POS",
+   "TCP-Clear" "2",
+   "1" "Rlogin",
+   "0" "Telnet",
+   "X25-T3POS" "6",
+   "2" "TCP-Clear",
+   "TCP-Clear-Quiet" "8"},
+  "Acct-Status-Type"
+  {"Accounting-Off" "8",
+   "9" "Tunnel-Start",
+   "3" "Interim-Update",
+   "Failed" "15",
+   "8" "Accounting-Off",
+   "Tunnel-Stop" "10",
+   "14" "Tunnel-Link-Reject",
+   "Tunnel-Link-Stop" "13",
+   "Start" "1",
+   "Tunnel-Link-Reject" "14",
+   "Interim-Update" "3",
+   "Accounting-On" "7",
+   "15" "Failed",
+   "7" "Accounting-On",
+   "12" "Tunnel-Link-Start",
+   "13" "Tunnel-Link-Stop",
+   "Tunnel-Link-Start" "12",
+   "1" "Start",
+   "11" "Tunnel-Reject",
+   "Tunnel-Start" "9",
+   "2" "Stop",
+   "10" "Tunnel-Stop",
+   "Stop" "2",
+   "Tunnel-Reject" "11"},
+  "Service-Type"
+  {"9" "Callback-NAS-Prompt",
+   "Call-Check" "10",
+   "3" "Callback-Login-User",
+   "Login-User" "1",
+   "Administrative-User" "6",
+   "Authenticate-Only" "8",
+   "4" "Callback-Framed-User",
+   "8" "Authenticate-Only",
+   "Outbound-User" "5",
+   "Callback-Administrative" "11",
+   "17" "Authorize-Only",
+   "Framed-User" "2",
+   "7" "NAS-Prompt-User",
+   "NAS-Prompt-User" "7",
+   "5" "Outbound-User",
+   "18" "Framed-Management",
+   "6" "Administrative-User",
+   "Framed-Management" "18",
+   "1" "Login-User",
+   "Callback-Login-User" "3",
+   "11" "Callback-Administrative",
+   "Authorize-Only" "17",
+   "Callback-Framed-User" "4",
+   "2" "Framed-User",
+   "Callback-NAS-Prompt" "9",
+   "10" "Call-Check"},
+  "NAS-Port-Type"
+  {"PPPoEoE" "32",
+   "9" "X.75",
+   "FDDI" "21",
+   "PPPoA" "30",
+   "3" "ISDN-V120",
+   "PPPoEoA" "31",
+   "34" "PPPoEoQinQ",
+   "X.25" "8",
+   "ISDN-V120" "3",
+   "PPPoEoVLAN" "33",
+   "4" "ISDN-V110",
+   "8" "X.25",
+   "IDSL" "14",
+   "14" "IDSL",
+   "30" "PPPoA",
+   "21" "FDDI",
+   "33" "PPPoEoVLAN",
+   "Cable" "17",
+   "X.75" "9",
+   "20" "Token-Ring",
+   "Token-Ring" "20",
+   "19" "Wireless-802.11",
+   "17" "Cable",
+   "15" "Ethernet",
+   "7" "HDLC-Clear-Channel",
+   "Wireless-Other" "18",
+   "5" "Virtual",
+   "18" "Wireless-Other",
+   "SDSL" "11",
+   "12" "ADSL-CAP",
+   "13" "ADSL-DMT",
+   "PIAFS" "6",
+   "ADSL-CAP" "12",
+   "xDSL" "16",
+   "6" "PIAFS",
+   "Ethernet" "15",
+   "Async" "0",
+   "G.3-Fax" "10",
+   "ISDN-V110" "4",
+   "Sync" "1",
+   "1" "Sync",
+   "0" "Async",
+   "Wireless-802.11" "19",
+   "11" "SDSL",
+   "PPPoEoQinQ" "34",
+   "ISDN" "2",
+   "32" "PPPoEoE",
+   "Virtual" "5",
+   "2" "ISDN",
+   "16" "xDSL",
+   "HDLC-Clear-Channel" "7",
+   "10" "G.3-Fax",
+   "ADSL-DMT" "13",
+   "31" "PPPoEoA"},
+  "Management-Transport-Protection"
+  {"No-Protection" "1",
+   "1" "No-Protection",
+   "Integrity-Protection" "2",
+   "2" "Integrity-Protection",
+   "Integrity-Confidentiality-Protection" "3",
+   "3" "Integrity-Confidentiality-Protection"},
+  "Framed-Protocol"
+  {"3" "ARAP",
+   "4" "Gandalf-SLML",
+   "Xylogics-IPX-SLIP" "5",
+   "Gandalf-SLML" "4",
+   "5" "Xylogics-IPX-SLIP",
+   "PPP" "1",
+   "6" "X.75-Synchronous",
+   "1" "PPP",
+   "X.75-Synchronous" "6",
+   "2" "SLIP",
+   "SLIP" "2",
+   "ARAP" "3"},
+  "Acct-Terminate-Cause"
+  {"NAS-Reboot" "11",
+   "9" "NAS-Error",
+   "3" "Lost-Service",
+   "Port-Error" "8",
+   "22" "Port-Disabled",
+   "4" "Idle-Timeout",
+   "8" "Port-Error",
+   "14" "Port-Suspended",
+   "Port-Suspended" "14",
+   "Session-Timeout" "5",
+   "21" "Port-Reinit",
+   "NAS-Request" "10",
+   "20" "Reauthentication-Failure",
+   "NAS-Error" "9",
+   "19" "Supplicant-Restart",
+   "User-Request" "1",
+   "17" "User-Error",
+   "Port-Reinit" "21",
+   "15" "Service-Unavailable",
+   "7" "Admin-Reboot",
+   "Port-Unneeded" "12",
+   "Lost-Service" "3",
+   "Callback" "16",
+   "5" "Session-Timeout",
+   "Host-Request" "18",
+   "18" "Host-Request",
+   "12" "Port-Unneeded",
+   "Admin-Reset" "6",
+   "13" "Port-Preempted",
+   "6" "Admin-Reset",
+   "Port-Disabled" "22",
+   "Port-Preempted" "13",
+   "Service-Unavailable" "15",
+   "Reauthentication-Failure" "20",
+   "Idle-Timeout" "4",
+   "1" "User-Request",
+   "User-Error" "17",
+   "11" "NAS-Reboot",
+   "Admin-Reboot" "7",
+   "2" "Lost-Carrier",
+   "Lost-Carrier" "2",
+   "16" "Callback",
+   "10" "NAS-Request",
+   "Supplicant-Restart" "19"},
+  "Framed-Management"
+  {"3" "Netconf",
+   "RCP" "7",
+   "4" "FTP",
+   "8" "SCP",
+   "SNMP" "1",
+   "TFTP" "5",
+   "7" "RCP",
+   "FTP" "4",
+   "Web-Based" "2",
+   "5" "TFTP",
+   "Netconf" "3",
+   "SFTP" "6",
+   "6" "SFTP",
+   "1" "SNMP",
+   "2" "Web-Based",
+   "SCP" "8"},
+  "Tunnel-Medium-Type"
+  {"IPv6" "2",
+   "9" "F.69",
+   "3" "NSAP",
+   "4" "HDLC",
+   "IPv4" "1",
+   "8" "E.164",
+   "IEEE-802" "6",
+   "14" "Banyan-Vines",
+   "NSAP" "3",
+   "E.164-NSAP" "15",
+   "DecNet-IV" "13",
+   "E.163" "7",
+   "IP" "1",
+   "15" "E.164-NSAP",
+   "7" "E.163",
+   "5" "BBN-1822",
+   "E.164" "8",
+   "12" "Appletalk",
+   "13" "DecNet-IV",
+   "HDLC" "4",
+   "Appletalk" "12",
+   "X.121" "10",
+   "6" "IEEE-802",
+   "F.69" "9",
+   "Banyan-Vines" "14",
+   "1" "IPv4",
+   "11" "IPX",
+   "BBN-1822" "5",
+   "2" "IPv6",
+   "IPX" "11",
+   "10" "X.121"},
+  "Error-Cause"
+  {"Missing-Attribute" "402",
+   "402" "Missing-Attribute",
+   "201" "Residual-Context-Removed",
+   "Proxy-Processing-Error" "505",
+   "508" "Multiple-Session-Selection-Unsupported",
+   "Unsupported-Attribute" "401",
+   "202" "Invalid-EAP-Packet",
+   "404" "Invalid-Request",
+   "504" "Session-Context-Not-Removable",
+   "Resources-Unavailable" "506",
+   "Residual-Context-Removed" "201",
+   "405" "Unsupported-Service",
+   "401" "Unsupported-Attribute",
+   "503" "Session-Context-Not-Found",
+   "Multiple-Session-Selection-Unsupported" "508",
+   "Proxy-Request-Not-Routable" "502",
+   "Invalid-Attribute-Value" "407",
+   "Request-Initiated" "507",
+   "Unsupported-Service" "405",
+   "Invalid-EAP-Packet" "202",
+   "Administratively-Prohibited" "501",
+   "Session-Context-Not-Removable" "504",
+   "507" "Request-Initiated",
+   "Unsupported-Extension" "406",
+   "502" "Proxy-Request-Not-Routable",
+   "505" "Proxy-Processing-Error",
+   "403" "NAS-Identification-Mismatch",
+   "406" "Unsupported-Extension",
+   "Invalid-Request" "404",
+   "506" "Resources-Unavailable",
+   "Session-Context-Not-Found" "503",
+   "407" "Invalid-Attribute-Value",
+   "NAS-Identification-Mismatch" "403",
+   "501" "Administratively-Prohibited"},
+  "Location-Capable"
+  {"Civix-Location" "1",
+   "1" "Civix-Location",
+   "Geo-Location" "2",
+   "2" "Geo-Location",
+   "Users-Location" "4",
+   "4" "Users-Location",
+   "NAS-Location" "8",
+   "8" "NAS-Location"},
+  "Login-TCP-Port"
+  {"Telnet" "23",
+   "23" "Telnet",
+   "Rlogin" "513",
+   "513" "Rlogin",
+   "Rsh" "514",
+   "514" "Rsh"},
+  "Ingress-Filters"
+  {"Enabled" "1", "1" "Enabled", "Disabled" "2", "2" "Disabled"}}}

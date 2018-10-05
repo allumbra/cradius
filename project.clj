@@ -8,9 +8,6 @@
                   [udp-wrapper "0.1.1"]
                   [byte-streams "0.2.4"]
                   [byte-transforms "0.1.4"]
-                  ^{:voom {:repo "https://github.com/allumbra/octet"}}
-                  [funcool/octet "1.1.1"]
+                  [org.clojars.allumbra/octet "1.1.1.120180904.173913-1"]
                   [org.clojure/core.async "0.4.474"]]
-                  ; [clojurewerkz/buffy "1.1.0"]]
-                  ; [gloss "0.2.6"]]
   :main cradius.core)

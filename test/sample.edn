@@ -1,0 +1,386 @@
+{:vsa
+ {"Aruba"
+  {:attributes
+   {"Aruba-AP-IP-Address"
+    {:name "Aruba-AP-IP-Address", :code "34", :type "ipaddr"},
+    "Aruba-AirGroup-Shared-Group"
+    {:name "Aruba-AirGroup-Shared-Group", :code "35", :type "string"},
+    "Aruba-Mdps-Max-Devices"
+    {:name "Aruba-Mdps-Max-Devices", :code "18", :type "integer"},
+    "Aruba-Mdps-Device-Product"
+    {:name "Aruba-Mdps-Device-Product", :code "20", :type "string"},
+    "9" {:name "Aruba-Named-User-Vlan", :code "9", :type "string"},
+    "Aruba-Framed-IPv6-Address"
+    {:name "Aruba-Framed-IPv6-Address", :code "11", :type "string"},
+    "Aruba-Essid-Name"
+    {:name "Aruba-Essid-Name", :code "5", :type "string"},
+    "3" {:name "Aruba-Priv-Admin-User", :code "3", :type "integer"},
+    "34" {:name "Aruba-AP-IP-Address", :code "34", :type "ipaddr"},
+    "Aruba-Mdps-Device-Iccid"
+    {:name "Aruba-Mdps-Device-Iccid", :code "17", :type "string"},
+    "22"
+    {:name "Aruba-Mdps-Device-Serial", :code "22", :type "string"},
+    "26"
+    {:name "Aruba-AirGroup-Shared-Role", :code "26", :type "string"},
+    "Aruba-AirGroup-User-Name"
+    {:name "Aruba-AirGroup-User-Name", :code "24", :type "string"},
+    "4" {:name "Aruba-Admin-Role", :code "4", :type "string"},
+    "Aruba-User-Vlan"
+    {:name "Aruba-User-Vlan", :code "2", :type "integer"},
+    "8" {:name "Aruba-MMS-User-Template", :code "8", :type "string"},
+    "Aruba-AS-User-Name"
+    {:name "Aruba-AS-User-Name", :code "29", :type "string"},
+    "Aruba-AP-Group"
+    {:name "Aruba-AP-Group", :code "10", :type "string"},
+    "28"
+    {:name "Aruba-Auth-Survivability", :code "28", :type "string"},
+    "Aruba-User-Role"
+    {:name "Aruba-User-Role", :code "1", :type "string"},
+    "14"
+    {:name "Aruba-No-DHCP-Fingerprint", :code "14", :type "integer"},
+    "Aruba-AirGroup-Shared-User"
+    {:name "Aruba-AirGroup-Shared-User", :code "25", :type "string"},
+    "Aruba-Mdps-Provisioning-Settings"
+    {:name "Aruba-Mdps-Provisioning-Settings",
+     :code "32",
+     :type "string"},
+    "Aruba-Auth-Survivability"
+    {:name "Aruba-Auth-Survivability", :code "28", :type "string"},
+    "Aruba-Port-Bounce-Host"
+    {:name "Aruba-Port-Bounce-Host", :code "40", :type "integer"},
+    "Aruba-Admin-Role"
+    {:name "Aruba-Admin-Role", :code "4", :type "string"},
+    "30"
+    {:name "Aruba-AS-Credential-Hash", :code "30", :type "string"},
+    "21"
+    {:name "Aruba-Mdps-Device-Version", :code "21", :type "string"},
+    "Aruba-Port-Identifier"
+    {:name "Aruba-Port-Identifier", :code "7", :type "string"},
+    "Aruba-AirGroup-Shared-Role"
+    {:name "Aruba-AirGroup-Shared-Role", :code "26", :type "string"},
+    "33"
+    {:name "Aruba-Mdps-Device-Profile", :code "33", :type "string"},
+    "20"
+    {:name "Aruba-Mdps-Device-Product", :code "20", :type "string"},
+    "Aruba-Network-SSO-Token"
+    {:name "Aruba-Network-SSO-Token", :code "37", :type "string"},
+    "Aruba-Admin-Path"
+    {:name "Aruba-Admin-Path", :code "42", :type "string"},
+    "19" {:name "Aruba-Mdps-Device-Name", :code "19", :type "string"},
+    "17" {:name "Aruba-Mdps-Device-Iccid", :code "17", :type "string"},
+    "25"
+    {:name "Aruba-AirGroup-Shared-User", :code "25", :type "string"},
+    "Aruba-AirGroup-Device-Type"
+    {:name "Aruba-AirGroup-Device-Type", :code "27", :type "integer"},
+    "Aruba-Mdps-Device-Name"
+    {:name "Aruba-Mdps-Device-Name", :code "19", :type "string"},
+    "15" {:name "Aruba-Mdps-Device-Udid", :code "15", :type "string"},
+    "42" {:name "Aruba-Admin-Path", :code "42", :type "string"},
+    "7" {:name "Aruba-Port-Identifier", :code "7", :type "string"},
+    "5" {:name "Aruba-Essid-Name", :code "5", :type "string"},
+    "Aruba-Mdps-Device-Version"
+    {:name "Aruba-Mdps-Device-Version", :code "21", :type "string"},
+    "18" {:name "Aruba-Mdps-Max-Devices", :code "18", :type "integer"},
+    "36" {:name "Aruba-User-Group", :code "36", :type "string"},
+    "12" {:name "Aruba-Device-Type", :code "12", :type "string"},
+    "Aruba-MMS-User-Template"
+    {:name "Aruba-MMS-User-Template", :code "8", :type "string"},
+    "27"
+    {:name "Aruba-AirGroup-Device-Type", :code "27", :type "integer"},
+    "Aruba-Priv-Admin-User"
+    {:name "Aruba-Priv-Admin-User", :code "3", :type "integer"},
+    "Aruba-Location-Id"
+    {:name "Aruba-Location-Id", :code "6", :type "string"},
+    "24"
+    {:name "Aruba-AirGroup-User-Name", :code "24", :type "string"},
+    "35"
+    {:name "Aruba-AirGroup-Shared-Group", :code "35", :type "string"},
+    "Aruba-User-Group"
+    {:name "Aruba-User-Group", :code "36", :type "string"},
+    "Aruba-Named-User-Vlan"
+    {:name "Aruba-Named-User-Vlan", :code "9", :type "string"},
+    "6" {:name "Aruba-Location-Id", :code "6", :type "string"},
+    "Aruba-AS-Credential-Hash"
+    {:name "Aruba-AS-Credential-Hash", :code "30", :type "string"},
+    "38" {:name "Aruba-AirGroup-Version", :code "38", :type "integer"},
+    "Aruba-No-DHCP-Fingerprint"
+    {:name "Aruba-No-DHCP-Fingerprint", :code "14", :type "integer"},
+    "39" {:name "Aruba-Auth-SurvMethod", :code "39", :type "integer"},
+    "1" {:name "Aruba-User-Role", :code "1", :type "string"},
+    "37" {:name "Aruba-Network-SSO-Token", :code "37", :type "string"},
+    "Aruba-Auth-SurvMethod"
+    {:name "Aruba-Auth-SurvMethod", :code "39", :type "integer"},
+    "11"
+    {:name "Aruba-Framed-IPv6-Address", :code "11", :type "string"},
+    "32"
+    {:name "Aruba-Mdps-Provisioning-Settings",
+     :code "32",
+     :type "string"},
+    "2" {:name "Aruba-User-Vlan", :code "2", :type "integer"},
+    "Aruba-AirGroup-Version"
+    {:name "Aruba-AirGroup-Version", :code "38", :type "integer"},
+    "16" {:name "Aruba-Mdps-Device-Imei", :code "16", :type "string"},
+    "41" {:name "Aruba-Calea-Server-Ip", :code "41", :type "ipaddr"},
+    "Aruba-Mdps-Device-Imei"
+    {:name "Aruba-Mdps-Device-Imei", :code "16", :type "string"},
+    "10" {:name "Aruba-AP-Group", :code "10", :type "string"},
+    "40" {:name "Aruba-Port-Bounce-Host", :code "40", :type "integer"},
+    "Aruba-CPPM-Role"
+    {:name "Aruba-CPPM-Role", :code "23", :type "string"},
+    "Aruba-Mdps-Device-Serial"
+    {:name "Aruba-Mdps-Device-Serial", :code "22", :type "string"},
+    "31"
+    {:name "Aruba-WorkSpace-App-Name", :code "31", :type "string"},
+    "Aruba-WorkSpace-App-Name"
+    {:name "Aruba-WorkSpace-App-Name", :code "31", :type "string"},
+    "Aruba-Mdps-Device-Profile"
+    {:name "Aruba-Mdps-Device-Profile", :code "33", :type "string"},
+    "Aruba-Mdps-Device-Udid"
+    {:name "Aruba-Mdps-Device-Udid", :code "15", :type "string"},
+    "Aruba-Calea-Server-Ip"
+    {:name "Aruba-Calea-Server-Ip", :code "41", :type "ipaddr"},
+    "23" {:name "Aruba-CPPM-Role", :code "23", :type "string"},
+    "Aruba-Device-Type"
+    {:name "Aruba-Device-Type", :code "12", :type "string"},
+    "29" {:name "Aruba-AS-User-Name", :code "29", :type "string"}},
+   :values
+   {"Aruba-AirGroup-Device-Type"
+    {"Personal-Device" "1",
+     "1" "Personal-Device",
+     "Shared-Device" "2",
+     "2" "Shared-Device"},
+    "Aruba-AirGroup-Version"
+    {"AirGroup-v1" "1",
+     "1" "AirGroup-v1",
+     "AirGroup-v2" "2",
+     "2" "AirGroup-v2"}}}},
+ :attributes
+ {"Vendor-Specific"
+  {:name "Vendor-Specific", :code "26", :type "octets"},
+  "9" {:name "Framed-IP-Netmask", :code "9", :type "ipaddr"},
+  "3" {:name "CHAP-Password", :code "3", :type "octets"},
+  "34" {:name "Login-LAT-Service", :code "34", :type "string"},
+  "Login-LAT-Service"
+  {:name "Login-LAT-Service", :code "34", :type "string"},
+  "Framed-Compression"
+  {:name "Framed-Compression", :code "13", :type "integer"},
+  "22" {:name "Framed-Route", :code "22", :type "string"},
+  "26" {:name "Vendor-Specific", :code "26", :type "octets"},
+  "4" {:name "NAS-IP-Address", :code "4", :type "ipaddr"},
+  "Callback-Id" {:name "Callback-Id", :code "20", :type "string"},
+  "Framed-Routing"
+  {:name "Framed-Routing", :code "10", :type "integer"},
+  "8" {:name "Framed-IP-Address", :code "8", :type "ipaddr"},
+  "Reply-Message" {:name "Reply-Message", :code "18", :type "string"},
+  "Login-LAT-Port"
+  {:name "Login-LAT-Port", :code "63", :type "string"},
+  "28" {:name "Idle-Timeout", :code "28", :type "integer"},
+  "60" {:name "CHAP-Challenge", :code "60", :type "octets"},
+  "14" {:name "Login-IP-Host", :code "14", :type "ipaddr"},
+  "Framed-AppleTalk-Zone"
+  {:name "Framed-AppleTalk-Zone", :code "39", :type "string"},
+  "Class" {:name "Class", :code "25", :type "octets"},
+  "Framed-AppleTalk-Link"
+  {:name "Framed-AppleTalk-Link", :code "37", :type "integer"},
+  "61" {:name "NAS-Port-Type", :code "61", :type "integer"},
+  "Port-Limit" {:name "Port-Limit", :code "62", :type "integer"},
+  "Session-Timeout"
+  {:name "Session-Timeout", :code "27", :type "integer"},
+  "Framed-IP-Address"
+  {:name "Framed-IP-Address", :code "8", :type "ipaddr"},
+  "30" {:name "Called-Station-Id", :code "30", :type "string"},
+  "Framed-IP-Netmask"
+  {:name "Framed-IP-Netmask", :code "9", :type "ipaddr"},
+  "Termination-Action"
+  {:name "Termination-Action", :code "29", :type "integer"},
+  "NAS-IP-Address" {:name "NAS-IP-Address", :code "4", :type "ipaddr"},
+  "Login-Service" {:name "Login-Service", :code "15", :type "integer"},
+  "Login-IP-Host" {:name "Login-IP-Host", :code "14", :type "ipaddr"},
+  "33" {:name "Proxy-State", :code "33", :type "octets"},
+  "20" {:name "Callback-Id", :code "20", :type "string"},
+  "Service-Type" {:name "Service-Type", :code "6", :type "integer"},
+  "Framed-MTU" {:name "Framed-MTU", :code "12", :type "integer"},
+  "Framed-IPX-Network"
+  {:name "Framed-IPX-Network", :code "23", :type "ipaddr"},
+  "NAS-Port-Type" {:name "NAS-Port-Type", :code "61", :type "integer"},
+  "19" {:name "Callback-Number", :code "19", :type "string"},
+  "Filter-Id" {:name "Filter-Id", :code "11", :type "string"},
+  "Framed-AppleTalk-Network"
+  {:name "Framed-AppleTalk-Network", :code "38", :type "integer"},
+  "CHAP-Password" {:name "CHAP-Password", :code "3", :type "octets"},
+  "25" {:name "Class", :code "25", :type "octets"},
+  "NAS-Identifier"
+  {:name "NAS-Identifier", :code "32", :type "string"},
+  "Callback-Number"
+  {:name "Callback-Number", :code "19", :type "string"},
+  "15" {:name "Login-Service", :code "15", :type "integer"},
+  "7" {:name "Framed-Protocol", :code "7", :type "integer"},
+  "5" {:name "NAS-Port", :code "5", :type "integer"},
+  "NAS-Port" {:name "NAS-Port", :code "5", :type "integer"},
+  "18" {:name "Reply-Message", :code "18", :type "string"},
+  "36" {:name "Login-LAT-Group", :code "36", :type "octets"},
+  "12" {:name "Framed-MTU", :code "12", :type "integer"},
+  "Framed-Protocol"
+  {:name "Framed-Protocol", :code "7", :type "integer"},
+  "13" {:name "Framed-Compression", :code "13", :type "integer"},
+  "Login-LAT-Group"
+  {:name "Login-LAT-Group", :code "36", :type "octets"},
+  "27" {:name "Session-Timeout", :code "27", :type "integer"},
+  "Called-Station-Id"
+  {:name "Called-Station-Id", :code "30", :type "string"},
+  "Framed-Route" {:name "Framed-Route", :code "22", :type "string"},
+  "62" {:name "Port-Limit", :code "62", :type "integer"},
+  "24" {:name "State", :code "24", :type "octets"},
+  "35" {:name "Login-LAT-Node", :code "35", :type "string"},
+  "Login-LAT-Node"
+  {:name "Login-LAT-Node", :code "35", :type "string"},
+  "6" {:name "Service-Type", :code "6", :type "integer"},
+  "User-Name" {:name "User-Name", :code "1", :type "string"},
+  "38" {:name "Framed-AppleTalk-Network", :code "38", :type "integer"},
+  "User-Password" {:name "User-Password", :code "2", :type "string"},
+  "Calling-Station-Id"
+  {:name "Calling-Station-Id", :code "31", :type "string"},
+  "Idle-Timeout" {:name "Idle-Timeout", :code "28", :type "integer"},
+  "39" {:name "Framed-AppleTalk-Zone", :code "39", :type "string"},
+  "1" {:name "User-Name", :code "1", :type "string"},
+  "63" {:name "Login-LAT-Port", :code "63", :type "string"},
+  "37" {:name "Framed-AppleTalk-Link", :code "37", :type "integer"},
+  "Proxy-State" {:name "Proxy-State", :code "33", :type "octets"},
+  "11" {:name "Filter-Id", :code "11", :type "string"},
+  "State" {:name "State", :code "24", :type "octets"},
+  "Login-TCP-Port"
+  {:name "Login-TCP-Port", :code "16", :type "integer"},
+  "32" {:name "NAS-Identifier", :code "32", :type "string"},
+  "2" {:name "User-Password", :code "2", :type "string"},
+  "CHAP-Challenge"
+  {:name "CHAP-Challenge", :code "60", :type "octets"},
+  "16" {:name "Login-TCP-Port", :code "16", :type "integer"},
+  "10" {:name "Framed-Routing", :code "10", :type "integer"},
+  "31" {:name "Calling-Station-Id", :code "31", :type "string"},
+  "23" {:name "Framed-IPX-Network", :code "23", :type "ipaddr"},
+  "29" {:name "Termination-Action", :code "29", :type "integer"}},
+ :values
+ {"Service-Type"
+  {"9" "Callback-NAS-Prompt",
+   "Call-Check" "10",
+   "3" "Callback-Login-User",
+   "Login-User" "1",
+   "Administrative-User" "6",
+   "Authenticate-Only" "8",
+   "4" "Callback-Framed-User",
+   "8" "Authenticate-Only",
+   "Outbound-User" "5",
+   "Callback-Administrative" "11",
+   "Framed-User" "2",
+   "7" "NAS-Prompt-User",
+   "NAS-Prompt-User" "7",
+   "5" "Outbound-User",
+   "6" "Administrative-User",
+   "1" "Login-User",
+   "Callback-Login-User" "3",
+   "11" "Callback-Administrative",
+   "Callback-Framed-User" "4",
+   "2" "Framed-User",
+   "Callback-NAS-Prompt" "9",
+   "10" "Call-Check"},
+  "Framed-Protocol"
+  {"3" "ARAP",
+   "4" "Gandalf-SLML",
+   "Xylogics-IPX-SLIP" "5",
+   "Gandalf-SLML" "4",
+   "5" "Xylogics-IPX-SLIP",
+   "PPP" "1",
+   "6" "X.75-Synchronous",
+   "1" "PPP",
+   "X.75-Synchronous" "6",
+   "2" "SLIP",
+   "SLIP" "2",
+   "ARAP" "3"},
+  "Framed-Routing"
+  {"None" "0",
+   "0" "None",
+   "Broadcast" "1",
+   "1" "Broadcast",
+   "Listen" "2",
+   "2" "Listen",
+   "Broadcast-Listen" "3",
+   "3" "Broadcast-Listen"},
+  "Framed-Compression"
+  {"None" "0",
+   "0" "None",
+   "Van-Jacobson-TCP-IP" "1",
+   "1" "Van-Jacobson-TCP-IP",
+   "IPX-Header-Compression" "2",
+   "2" "IPX-Header-Compression",
+   "Stac-LZS" "3",
+   "3" "Stac-LZS"},
+  "Login-Service"
+  {"3" "PortMaster",
+   "Rlogin" "1",
+   "4" "LAT",
+   "8" "TCP-Clear-Quiet",
+   "X25-PAD" "5",
+   "Telnet" "0",
+   "PortMaster" "3",
+   "LAT" "4",
+   "5" "X25-PAD",
+   "6" "X25-T3POS",
+   "TCP-Clear" "2",
+   "1" "Rlogin",
+   "0" "Telnet",
+   "X25-T3POS" "6",
+   "2" "TCP-Clear",
+   "TCP-Clear-Quiet" "8"},
+  "Login-TCP-Port"
+  {"Telnet" "23",
+   "23" "Telnet",
+   "Rlogin" "513",
+   "513" "Rlogin",
+   "Rsh" "514",
+   "514" "Rsh"},
+  "Termination-Action"
+  {"Default" "0",
+   "0" "Default",
+   "RADIUS-Request" "1",
+   "1" "RADIUS-Request"},
+  "NAS-Port-Type"
+  {"9" "X.75",
+   "3" "ISDN-V120",
+   "X.25" "8",
+   "ISDN-V120" "3",
+   "4" "ISDN-V110",
+   "8" "X.25",
+   "IDSL" "14",
+   "14" "IDSL",
+   "Cable" "17",
+   "X.75" "9",
+   "19" "Wireless-802.11",
+   "17" "Cable",
+   "15" "Ethernet",
+   "7" "HDLC-Clear-Channel",
+   "Wireless-Other" "18",
+   "5" "Virtual",
+   "18" "Wireless-Other",
+   "SDSL" "11",
+   "12" "ADSL-CAP",
+   "13" "ADSL-DMT",
+   "PIAFS" "6",
+   "ADSL-CAP" "12",
+   "xDSL" "16",
+   "6" "PIAFS",
+   "Ethernet" "15",
+   "Async" "0",
+   "G.3-Fax" "10",
+   "ISDN-V110" "4",
+   "Sync" "1",
+   "1" "Sync",
+   "0" "Async",
+   "Wireless-802.11" "19",
+   "11" "SDSL",
+   "ISDN" "2",
+   "Virtual" "5",
+   "2" "ISDN",
+   "16" "xDSL",
+   "HDLC-Clear-Channel" "7",
+   "10" "G.3-Fax",
+   "ADSL-DMT" "13"}}}
