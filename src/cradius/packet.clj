@@ -1,4 +1,3 @@
-;encoder/decoder/verifier for radius packets
 (ns cradius.packet
   (require  
     [clojure.string :as s]
@@ -52,9 +51,7 @@
       (o/write! buff arr (o/repeat (count arr) o/byte))
       buff))
 
-; simply converts a byte array to the appropritate type: int, string etc
 (defn convert-type [value type] ; value is byte array
-    (prn type value)
     (let [buff (buff-from-byte-array value)]
       (case type
         ("string" "text") (o/read buff (o/string (count value)))
@@ -63,32 +60,22 @@
         ("integer" "time") (o/read buff o/int32)
         value))) 
 
-; should result in a map {:Vendor-Specific {:Aruba {:attribute-name value}}} that gets merged
 (defn vsa [attr item]
-    (prn attr)
-    (prn item)
     (let [buff (o/allocate (:length item)) ; npe
           _ (o/write! buff (:value item) (o/repeat (:length item) o/byte)) ; mutates buff :(
           vsa-head (o/read 
                       buff
                       vsa-header)
           val-byte-vec (o/read buff (o/repeat (:vendor-length vsa-head) o/byte) {:offset 6})
-          _ (println "vsa-head" vsa-head val-byte-vec)
-          value (convert-type val-byte-vec (:vendor-type vsa-head))]
-        (prn value)
+          attr-spec (d/attribute (:vendor-id vsa-head) (:vendor-type vsa-head))
+          value (convert-type val-byte-vec (:type attr-spec))]
         {:attributes
-            {}}))
+            {(:name attr-spec) value}}))
           
-    ; read header
-    ; read value
-    ; return map to merge - or assoc-in path and value
-
-;vendor specific is tricky
-; - options:  Vendor-Specific/"Vendor"/Attribute : value - essentially analogous to how it's stored in the packet 
 (defn to-human-readable [packet]
     (let [new-attributes
                         (reduce (fn [result item]
-                                  (let [attr (d/attribute (str (:type item))) 
+                                  (let [attr (d/attribute (:type item)) 
                                         attr-map (if (= 26 (:type item))
                                                     (vsa attr item)
                                                     {:attributes   ; normal attribute
@@ -96,7 +83,6 @@
                                     (u/deep-merge result attr-map))) ; might be slow
                           {} (:attributes packet))
           attrs-and-vsas {}] 
-                
       (assoc packet :attributes new-attributes)))
 
 (defn parse-radius [radius-buffer]
@@ -104,16 +90,11 @@
       (load-radius-packet)
       (to-human-readable)))
 
-; parsing:
-    ; parse vsa
+    ; TODO
     ; user secret
     ; optimize octet specs
 
 ; encoding json -> radius
-
 ; start/stop UDP server
-
-; 
-
 ; turn into includable lib
 

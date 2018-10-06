@@ -4,54 +4,58 @@
             [clojure.java.io :as io]
             [cradius.util :as u]))
 
-(defn process-value [result [collection name code]]
-    (-> result
-        (assoc-in [:values collection name] code)
-        (assoc-in [:values collection code] name))) ; reverse lookup
-
-(defn process-attribute [result [name code type]]
-  (let [value {:name name :code code :type type}]
-    (-> result
-      (assoc-in [:attributes name] value)
-      (assoc-in [:attributes code] value)))) ; reverse lookup
-
-(defn process-vendor-attribute [result [vendor-id name code type]]
-  (let [value {:name name :code code :type type}]
-    (-> result
-      (assoc-in [:vsa vendor-id :attributes name] value)
-      (assoc-in [:vsa vendor-id :attributes code] value)))) ; reverse lookup
-                              
-(defn process-vendor-value [result [vendor-id collection name code]]
-    (-> result
-      (assoc-in [:vsa vendor-id :values collection name] code)
-      (assoc-in [:vsa vendor-id :values collection code] name))) ; reverse lookup
+(defn process-value 
+  ( [result vendor-name vendor-id [collection name code]]  ; vendor specific form
+    (let [key (str vendor-name ":" collection)
+          rev-key (str vendor-id ":" collection)]
+      (-> result
+          (assoc-in [:values key name] code)
+          (assoc-in [:values rev-key code] name)))) ; reverse lookup  
+  ( [result  [collection name code]]  ; standard form
+    (process-value result "" "" [collection name code])))                                                                                                                                                      
+                                                    
+(defn process-attribute
+  (   [ result vendor-id vendor-name [attribute-name attribute-code type]] ;vendor specific form
+    (let [value {:name attribute-name :code attribute-code :type type}
+          key (str vendor-name ":" attribute-name)
+          rev-key (str vendor-id ":" attribute-code)]
+      (-> result
+          (assoc-in [:attributes key] value)
+          (assoc-in [:attributes rev-key] value)))) ; reverse lookup
+  (   [result  [ attribute-name attribute-code type]] ; normal form
+    (process-attribute result "" "" [attribute-name attribute-code type]))) 
                                       
-(defn get-vendor [lines]
+(defn parse-vendor [lines]
   (let [lines-with-begin-vendor (filter (fn [l] (some? (re-find #"^BEGIN-VENDOR" l))) lines)]
     (if (not (empty? lines-with-begin-vendor))
       (let [
-            vendor-line (filter (fn [l] (some? (re-find #"^VENDOR" l))) lines)]
+            vendor-line (filter (fn [l] (some? (re-find #"^VENDOR" l))) lines)
+            result (rest (s/split (first vendor-line) #"\s+"))]
         (if (empty? vendor-line)
             nil
-            (s/split (first vendor-line) #"\s+")))
+            result))
       nil)))
     
 (defn load-dictionary
   [file-name]
   (let [  lines (-> file-name slurp s/split-lines)  ; todo - use canonical path?
-          [vendor vendor-id] (get-vendor lines)]
+          [vendor-name vendor-id] (parse-vendor lines)
+          base (if vendor-name 
+                  {:vendors {vendor-name vendor-id
+                              vendor-id vendor-name}}
+                  {})]
     (reduce (fn [result line]
               (let [tokens (s/split line #"\s+")]
                   (case (first tokens)
-                    "VALUE" (if vendor
-                              (process-vendor-value result (into [vendor-id] (rest tokens)))
-                              (process-value result (rest tokens)))
-                    "ATTRIBUTE" (if vendor
-                                    (process-vendor-attribute result (into [vendor-id] (rest tokens)))
-                                    (process-attribute result (rest tokens)))
-                    "VENDORATTR" (process-vendor-attribute result (rest tokens))
+                    "VALUE" (if vendor-name
+                              (process-value result vendor-id vendor-name (into [] (rest tokens)))
+                              (process-value result (into [] (rest tokens))))
+                    "ATTRIBUTE" (if vendor-name
+                                    (process-attribute result vendor-id vendor-name (into [] (rest tokens)))
+                                    (process-attribute result (into [] (rest tokens))))
+                    "VENDORATTR" (process-attribute result vendor-id vendor-name (into [] (rest tokens)))
                     result)))
-            {} lines)))
+            base lines)))
 
 (def dictionaries (atom {}))
 
@@ -67,9 +71,10 @@
                   {} files)]
       (reset! dictionaries ds)))
 
+(defn attr-key [vendor attribute-name]
+  (str vendor ":" attribute-name))
 
-
-(defn attribute [k]
-  (let [attr (get-in @dictionaries [:attributes k])]
-    attr))
+(defn attribute 
+  ([attr] (attribute "" attr))
+  ([vendor attr] (get-in @dictionaries [:attributes (attr-key vendor attr)])))
     

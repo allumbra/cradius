@@ -1,6 +1,6 @@
 (ns cradius.dictionary-test
   (:require [clojure.test :refer :all]
-            [clojure.pprint :as p ]
+            [clojure.pprint :as p]
             [cradius.dictionary :refer :all]))
 
 ; (deftest load-a-dictionary
@@ -13,7 +13,9 @@
 ;       (is (= (get-in dict [:vsa "Aruba" :attributes "Aruba-AP-IP-Address" :code]) "34")))))
 
       
-; (load-dictionaries)
+(load-dictionaries)
 ; (p/pprint @dictionaries)
 ; (spit "dictionaries.edn" (p/write @dictionaries :pretty true :stream nil))
-; (pprint (attribute "30"))
+(p/pprint (attribute "30"))
+(println "attribute get" (get-in @dictionaries [:attributes (attr-key "311" "23")]))
+
