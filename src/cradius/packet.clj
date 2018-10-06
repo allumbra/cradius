@@ -69,7 +69,8 @@
           val-byte-vec (o/read buff (o/repeat (:vendor-length vsa-head) o/byte) {:offset 6})
           attr-spec (d/attribute (:vendor-id vsa-head) (:vendor-type vsa-head))
           value (convert-type val-byte-vec (:type attr-spec))]
-        {:attributes
+        { :vendors #{(:vendor attr-spec)}
+          :attributes
             {(:name attr-spec) value}}))
           
 (defn to-human-readable [packet]

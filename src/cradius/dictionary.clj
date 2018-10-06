@@ -16,7 +16,7 @@
                                                     
 (defn process-attribute
   (   [ result vendor-id vendor-name [attribute-name attribute-code type]] ;vendor specific form
-    (let [value {:name attribute-name :code attribute-code :type type}
+    (let [value {:name attribute-name :code attribute-code :type type :vendor vendor-name}
           key (str vendor-name ":" attribute-name)
           rev-key (str vendor-id ":" attribute-code)]
       (-> result
