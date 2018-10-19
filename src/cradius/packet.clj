@@ -6,6 +6,7 @@
     [byte-transforms :as bt]
     [cradius.dictionary :as d]
     [cradius.util :as u]
+    [clojure.core.rrb-vector :as fv]
     [clojure.pprint :as p]))
 
 (defrecord Attribute [type length value])
@@ -91,11 +92,64 @@
       (load-radius-packet)
       (to-human-readable)))
 
+    
+; (defn md5hash [& args] ; all args are
+;   (bt/hash (apply concat args) :md5))
+(defn md5hash [secret suffix] ; takes a string and  byte array
+  (let [buf (o/allocate (+ (count secret) (count suffix)))]
+    (o/write! buf secret (o/string (count secret)))
+    (o/write! buf suffix (o/repeat (count suffix) o/byte))
+    (bt/hash buf :md5)))
+  
+(defn len16 [len]  ; round to the nearst 16
+  (-> len (/ 16) (Math/ceil) (* 16) (int)))
+(defn pad16 [s] ; pad with zeros
+  (let [cnt (count s)
+        diff (- (len16 cnt) cnt)]
+    (str s (apply str (repeat diff (char 0))))))
+
+(defn xor-segment [segment hash-arr] ; both should be same length
+  (let [  
+          chars (into [] segment)
+          hashed  (mapv (fn [i]
+                          (bit-xor  (int (nth chars i)) 
+                                    (nth hash-arr i)))
+                    (range (count hash-arr)))]
+      hashed)) 
+
+
+;; need to change the password, authenticator to be a byte array - to allow for decrypting with the same function
+(defn encrypt-password [password secret authenticator is-decrypt]
+  (let [buf-len (if (string? password) 
+                    (len16 (count password))
+                    (o/get-capacity password))
+        pw-buff (o/allocate buf-len)
+        xor-buffer (o/allocate buf-len)]
+    (if (string? password)
+        (o/write! pw-buff (pad16 password) (o/string buf-len)) ; encrypt string pw
+        (o/write! pw-buff (bs/to-byte-array password) (o/repeat buf-len o/byte))) ; decrypt encr password
+    (loop [ offset 0
+            hash-suffix authenticator]
+        ; (println "offset bufflen:" offset buf-len)
+        (if (>= offset buf-len) 
+            xor-buffer
+            (let [hsh (md5hash secret hash-suffix)
+                  seg (o/read pw-buff (o/repeat 16 o/byte) {:offset offset})
+                  xor-seg (xor-segment seg hsh)]
+              (prn hsh seg xor-seg)
+              (o/write! xor-buffer xor-seg (o/repeat 16 o/byte) {:offset offset})              
+              (recur (+ 16 offset) (if is-decrypt seg xor-seg)))))))
+
+; (defn decrypt-password [password secret authenticator]
+;   (let [pw-buff (o/allocate)]))
+  
+
     ; TODO
     ; user secret
     ; optimize octet specs
 
 ; encoding json -> radius
 ; start/stop UDP server
+; add udp server to it's own non/core file (do not initialize on start up)
 ; turn into includable lib
 
