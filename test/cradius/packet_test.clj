@@ -45,7 +45,7 @@
   (prn enc)
   (prn "decode:")
   (bs/print-bytes dec)
-  (prn (bs/to-string dec)))
+  (prn dec))
 
   ; (let [enc (packet/encrypt-password "password" "shhhhh" "1234567890" false)]
 ;   (bs/print-bytes enc)

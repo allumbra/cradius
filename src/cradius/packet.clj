@@ -130,13 +130,13 @@
         (o/write! pw-buff (bs/to-byte-array password) (o/repeat buf-len o/byte))) ; decrypt encr password
     (loop [ offset 0
             hash-suffix authenticator]
-        ; (println "offset bufflen:" offset buf-len)
         (if (>= offset buf-len) 
-            xor-buffer
+            (if (string? password)
+              xor-buffer
+              (s/trim (bs/to-string xor-buffer)))
             (let [hsh (md5hash secret hash-suffix)
                   seg (o/read pw-buff (o/repeat 16 o/byte) {:offset offset})
                   xor-seg (xor-segment seg hsh)]
-              (prn hsh seg xor-seg)
               (o/write! xor-buffer xor-seg (o/repeat 16 o/byte) {:offset offset})              
               (recur (+ 16 offset) (if is-decrypt seg xor-seg)))))))
 
