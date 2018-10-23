@@ -36,7 +36,12 @@
     (is (= (count (packet/pad16 "passwordpasswordpassword")) 
           32))))
 
-(prn (packet/xor-segment "password" (range 8)))
+(deftest pw-test
+  (testing "enc/dec"
+    (let [enc (packet/encrypt-password "passwordpasswordpassword" "shhhhh" [-8 -95 35 41 -57 -19 90 110 37 104 81 82 67 -17 -71 24] false)
+          dec (packet/encrypt-password enc "shhhhh" [-8 -95 35 41 -57 -19 90 110 37 104 81 82 67 -17 -71 24] true)]))
+      
+  (prn (packet/xor-segment "password" (range 8))))
 (prn "password:")
 (let [enc (packet/encrypt-password "passwordpasswordpassword" "shhhhh" [-8 -95 35 41 -57 -19 90 110 37 104 81 82 67 -17 -71 24] false)
       dec (packet/encrypt-password enc "shhhhh" [-8 -95 35 41 -57 -19 90 110 37 104 81 82 67 -17 -71 24] true)]
