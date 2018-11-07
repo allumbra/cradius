@@ -9,6 +9,12 @@
     [clojure.core.rrb-vector :as fv]
     [clojure.pprint :as p]))
 
+
+(defn buff-from-byte-array [arr]
+  (let [buff (o/allocate (count arr))]
+    (o/write! buff arr (o/repeat (count arr) o/byte))
+    buff))
+
 ;; en/decrypt password
 (defn md5hash [secret suffix] ; takes a string and  byte array
   (let [buf (o/allocate (+ (count secret) (count suffix)))]
@@ -31,7 +37,6 @@
                                     (nth hash-arr i)))
                     (range (count hash-arr)))]
       hashed)) 
-
 (defn encrypt-password [password secret authenticator is-decrypt]
   (let [buf-len (if (string? password) 
                     (len16 (count password))
@@ -44,7 +49,7 @@
     (loop [ offset 0
             hash-suffix authenticator]
         (if (>= offset buf-len) 
-            (if (string? password)
+            (if (string? password) ;this is doing nothing - should it be assigned to something?
               xor-buffer
               (re-find #"^.+?(?=\x00|$)" (-> xor-buffer bs/to-string s/trim)))
               ; (s/trim (bs/to-string xor-buffer)))
@@ -53,6 +58,13 @@
                   xor-seg (xor-segment seg hsh)]
               (o/write! xor-buffer xor-seg (o/repeat 16 o/byte) {:offset offset})              
               (recur (+ 16 offset) (if is-decrypt seg xor-seg)))))))
+(defn decrypt-password [pw-arr secret authenticator]
+  (let [pw-buff (buff-from-byte-array pw-arr)]
+    (prn "decrypt: ")
+    (prn pw-arr)
+    (prn pw-buff)
+    (encrypt-password pw-buff secret authenticator true)))
+              
 ;;;; end decryption            
 
 (defrecord Attribute [type length value])
@@ -93,10 +105,7 @@
     { :header header
       :attributes (read-attributes radius-buffer (:length header))})) 
 
-(defn buff-from-byte-array [arr]
-    (let [buff (o/allocate (count arr))]
-      (o/write! buff arr (o/repeat (count arr) o/byte))
-      buff))
+
 
 (defn convert-type [value attribute] ; value is byte array
     (let [type (:type attribute)
@@ -109,7 +118,7 @@
                     ("integer" "time") (o/read buff o/int32)
                     value)] 
         (if (= att-name "User-Password")
-            result
+            value ; keep it as byte array for now
             result)))
 
 (defn vsa [attr item]
@@ -149,8 +158,9 @@
 ;   (let [pw-buff (o/allocate)]))
   
 ; TODO
-  ; decrypt user-password
-
+  ; decrypt user-password - when making "human readable"
+  ;    - keep data as byte array until decrypted?
+  ; figure out how to manage secret
   ; 
     ; user secret
     ; optimize octet specs

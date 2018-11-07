@@ -9,8 +9,6 @@
             [byte-streams :as bs]
             [byte-transforms :as bt]
             [clojure.java.io :as io]))
-  ; (:use [gloss.core]
-  ;       [gloss.io]))
 
 (defn slurp-bytes
   "Slurp the bytes from a slurpable thing"
@@ -26,8 +24,19 @@
 
 (bs/print-bytes ba)
 
-(p/pprint (packet/parse-radius ba))
 
+(println "user-password")
+(let [aruba (packet/parse-radius ba)
+      _ (p/pprint aruba)
+      pw (get-in aruba [:attributes :attributes "User-Password"])
+      ; authenticator (get-in aruba [:attributes "Message-Authenticator"])
+      authenticator (get-in aruba [:header :authenticator])
+      aruba-pw (packet/decrypt-password  pw
+                    secret
+                    authenticator)]
+  (println "\n\naruba pw: " aruba-pw))
+                            
+  
 (deftest a-test
   (testing "packet size"
     (is (= (packet/len16 15) 16))
@@ -36,15 +45,16 @@
     (is (= (count (packet/pad16 "passwordpasswordpassword")) 
           32))))
 
+(def authenticator [74 69 -6 -32 -122 -39 -31 20 40 107 55 -75 -13 113 -20 108])
 (deftest pw-test
   (testing "enc/dec"
-    (let [enc (packet/encrypt-password "passwordpasswordpassword" "shhhhh" [-8 -95 35 41 -57 -19 90 110 37 104 81 82 67 -17 -71 24] false)
-          dec (packet/encrypt-password enc "shhhhh" [-8 -95 35 41 -57 -19 90 110 37 104 81 82 67 -17 -71 24] true)]))
-      
-  (prn (packet/xor-segment "password" (range 8))))
+    (let [enc (packet/encrypt-password "passwordpasswordpassword" "shhhhh" authenticator false)
+          dec (packet/encrypt-password enc "shhhhh" authenticator true)]
+      (println "classes enc/dec" (class enc) (class dec)))))
+(prn (packet/xor-segment "password" (range 8)))
 (prn "password:")
-(let [enc (packet/encrypt-password "passwordpasswordpassword" "shhhhh" [-8 -95 35 41 -57 -19 90 110 37 104 81 82 67 -17 -71 24] false)
-      dec (packet/encrypt-password enc "shhhhh" [-8 -95 35 41 -57 -19 90 110 37 104 81 82 67 -17 -71 24] true)]
+(let [enc (packet/encrypt-password "passwordpasswordpassword" "shhhhh" authenticator false)
+      dec (packet/encrypt-password enc "shhhhh" authenticator true)]
   (bs/print-bytes enc)
   (prn (bs/to-char-sequence enc))
   (prn enc)
