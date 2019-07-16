@@ -6,68 +6,16 @@
     [byte-transforms :as bt]
     [cradius.dictionary :as d]
     [cradius.util :as u]
+    [cradius.crypt :as c]
     [clojure.core.rrb-vector :as fv]
     [clojure.pprint :as p]))
 
-
-(defn buff-from-byte-array [arr]
-  (let [buff (o/allocate (count arr))]
-    (o/write! buff arr (o/repeat (count arr) o/byte))
-    buff))
-
-;; en/decrypt password
-(defn md5hash [secret suffix] ; takes a string and  byte array
-  (let [buf (o/allocate (+ (count secret) (count suffix)))]
-    (o/write! buf secret (o/string (count secret)))
-    (o/write! buf suffix (o/repeat (count suffix) o/byte))
-    (bt/hash buf :md5)))
-  
-(defn len16 [len]  ; round to the nearst 16
-  (-> len (/ 16) (Math/ceil) (* 16) (int)))
-(defn pad16 [s] ; pad with zeros
-  (let [cnt (count s)
-        diff (- (len16 cnt) cnt)]
-    (str s (apply str (repeat diff (char 0))))))
-
-(defn xor-segment [segment hash-arr] ; both should be same length
-  (let [  
-          chars (into [] segment)
-          hashed  (mapv (fn [i]
-                          (bit-xor  (int (nth chars i)) 
-                                    (nth hash-arr i)))
-                    (range (count hash-arr)))]
-      hashed)) 
-(defn encrypt-password [password secret authenticator is-decrypt]
-  (let [buf-len (if (string? password) 
-                    (len16 (count password))
-                    (o/get-capacity password))
-        pw-buff (o/allocate buf-len)
-        xor-buffer (o/allocate buf-len)]
-    (if (string? password)
-        (o/write! pw-buff (pad16 password) (o/string buf-len)) ; encrypt string pw
-        (o/write! pw-buff (bs/to-byte-array password) (o/repeat buf-len o/byte))) ; decrypt encr password
-    (loop [ offset 0
-            hash-suffix authenticator]
-        (if (>= offset buf-len) 
-            (if (string? password) ;this is doing nothing - should it be assigned to something?
-              xor-buffer
-              (re-find #"^.+?(?=\x00|$)" (-> xor-buffer bs/to-string s/trim)))
-              ; (s/trim (bs/to-string xor-buffer)))
-            (let [hsh (md5hash secret hash-suffix)
-                  seg (o/read pw-buff (o/repeat 16 o/byte) {:offset offset})
-                  xor-seg (xor-segment seg hsh)]
-              (o/write! xor-buffer xor-seg (o/repeat 16 o/byte) {:offset offset})              
-              (recur (+ 16 offset) (if is-decrypt seg xor-seg)))))))
-(defn decrypt-password [pw-arr secret authenticator]
-  (let [pw-buff (buff-from-byte-array pw-arr)]
-    (prn "decrypt: ")
-    (prn pw-arr)
-    (prn pw-buff)
-    (encrypt-password pw-buff secret authenticator true)))
-              
-;;;; end decryption            
-
 (defrecord Attribute [type length value])
+
+(def secret (atom ""))
+(defn set-secret [sec]
+  (reset! secret sec))
+(defn get-secret [] @secret)
 
 (def attribute-header 
   (o/spec 
@@ -106,16 +54,27 @@
       :attributes (read-attributes radius-buffer (:length header))})) 
 
 
+; item ex: {:type 61, :length 6, :value [0 0 0 19]}
+; ATTRIBUTE	Service-Type				6	integer
+;":Service-Type"
+;  {:name "Service-Type", :code "6", :type "integer", :vendor ""})
 
+; TODO - account for vendor prefix
 (defn convert-type [value attribute] ; value is byte array
     (let [type (:type attribute)
           att-name (:name attribute)
-          buff (buff-from-byte-array value)
+          buff (u/buff-from-byte-array value)
           result  (case type
                     ("string" "text") (o/read buff (o/string (count value)))
                     "ipaddr" (s/join "." value)
                     "date" (* 1000 (o/read buff o/int32))
-                    ("integer" "time") (o/read buff o/int32)
+                    "time" (o/read buff o/int32)
+                    ; if the result is an integer - it could be a table lookup
+                    "integer" (let [int-val (o/read buff o/int32)
+                                    table-val (d/value att-name int-val)]
+                                 (if (nil? table-val)
+                                    int-val
+                                    table-val))  
                     value)] 
         (if (= att-name "User-Password")
             value ; keep it as byte array for now
@@ -132,39 +91,52 @@
           value (convert-type val-byte-vec (:type attr-spec))]
         { :vendors #{(:vendor attr-spec)}
           :attributes
-            {(:name attr-spec) value}}))
+            {(:name attr-spec) (convert-type value attr-spec)}}))
           
+(defn convert-item-to-human-readable [item]
+  (let [attr (d/attribute (:type item))] 
+      (prn attr)
+      (if (= 26 (:type item))
+          (vsa attr item)
+          {:attributes   ; normal attribute
+            {(:name attr) (convert-type (:value item) attr)}})))
+
 (defn to-human-readable [packet]
     (let [new-attributes
-                        (reduce (fn [result item]
-                                  (let [attr (d/attribute (:type item)) 
-                                        attr-map (if (= 26 (:type item))
-                                                    (vsa attr item)
-                                                    {:attributes   ; normal attribute
-                                                      {(:name attr) (convert-type (:value item) attr)}})]
-                                    (u/deep-merge result attr-map))) ; might be slow
-                          {} (:attributes packet))
+            (reduce (fn [result item]
+                      (let [attr (d/attribute (str (:type item))) 
+                            attr-map (if (= 26 (:type item)) ; 26 is vsa
+                                        (vsa attr item)
+                                        {(:name attr) (convert-type (:value item) attr)})]
+                        (u/deep-merge result attr-map))) ; might be slow
+              {} (:attributes packet))
           attrs-and-vsas {}] 
       (assoc packet :attributes new-attributes)))
 
+(defn apply-values [obj]
+  ; "For each attribute, see if there is an associated VALUE table and replace VALUE id with
+  ;   string description"
+  (let [atts (get obj :attributes)
+        new-atts (map (fn [k v]
+                        {k (d/value k v)})
+                      atts)]
+      (assoc obj :attributes new-atts)))
+
 (defn parse-radius [radius-buffer]
-  (-> radius-buffer
-      (load-radius-packet)
-      (to-human-readable)))
+  (let [raw   (load-radius-packet radius-buffer)
+        prad  (to-human-readable raw)
+        pw-arr (get-in prad [:attributes "User-Password"])
+        pw-authenticator (get-in prad [:header :authenticator])
+        pw (c/decrypt-password pw-arr (get-secret) pw-authenticator)]
+    (prn raw)
+    (assoc-in prad [:attributes  "User-Password"] pw)))
 
-
-
-; (defn decrypt-password [password secret authenticator]
-;   (let [pw-buff (o/allocate)]))
-  
 ; TODO
-  ; decrypt user-password - when making "human readable"
-  ;    - keep data as byte array until decrypted?
-  ; figure out how to manage secret
-  ; 
-    ; user secret
+; Values lookups - needs to be a seperate pass on the data
     ; optimize octet specs
+; pull :vendors list out of attributes
 
+; remove :attributes in :attributes
 ; encoding json -> radius
 ; start/stop UDP server
 ; add udp server to it's own non/core file (do not initialize on start up)

@@ -7,8 +7,13 @@
             [octet.core :as o]
             [octet.core :as buf]
             [byte-streams :as bs]
+            [cradius.crypt :as c]
+            [cradius.dictionary :as d]
             [byte-transforms :as bt]
             [clojure.java.io :as io]))
+
+(d/load-dictionaries)
+(packet/set-secret "nearbuy")
 
 (defn slurp-bytes
   "Slurp the bytes from a slurpable thing"
@@ -24,43 +29,22 @@
 
 (bs/print-bytes ba)
 
+(deftest convert-item
+  (testing "convert-item"
+    (let [item {:type 4, :length 6, :value [10 0 0 90]}]
+      (is (= {:attributes {"NAS-IP-Address" "10.0.0.90"}} (packet/convert-item-to-human-readable item))))))
 
-(println "user-password")
 (let [aruba (packet/parse-radius ba)
       _ (p/pprint aruba)
-      pw (get-in aruba [:attributes :attributes "User-Password"])
-      ; authenticator (get-in aruba [:attributes "Message-Authenticator"])
-      authenticator (get-in aruba [:header :authenticator])
-      aruba-pw (packet/decrypt-password  pw
-                    secret
-                    authenticator)]
-  (println "\n\naruba pw: " aruba-pw))
-                            
-  
-(deftest a-test
-  (testing "packet size"
-    (is (= (packet/len16 15) 16))
-    (is (= (packet/len16 16) 16))
-    (is (= (packet/len16 17) 32))
-    (is (= (count (packet/pad16 "passwordpasswordpassword")) 
-          32))))
+      pw (get-in aruba [:attributes "User-Password"])
+      _ (prn (:arglists (meta #'packet/apply-values)))
+      st (packet/apply-values aruba)])
+    ; (prn st))
+  ;     aruba-pw (c/decrypt-password  pw
+  ;                   secret
+  ;                   authenticator)]
+  ; (println "\n\naruba pw: " aruba-pw))
 
-(def authenticator [74 69 -6 -32 -122 -39 -31 20 40 107 55 -75 -13 113 -20 108])
-(deftest pw-test
-  (testing "enc/dec"
-    (let [enc (packet/encrypt-password "passwordpasswordpassword" "shhhhh" authenticator false)
-          dec (packet/encrypt-password enc "shhhhh" authenticator true)]
-      (println "classes enc/dec" (class enc) (class dec)))))
-(prn (packet/xor-segment "password" (range 8)))
-(prn "password:")
-(let [enc (packet/encrypt-password "passwordpasswordpassword" "shhhhh" authenticator false)
-      dec (packet/encrypt-password enc "shhhhh" authenticator true)]
-  (bs/print-bytes enc)
-  (prn (bs/to-char-sequence enc))
-  (prn enc)
-  (prn "decode:")
-  (bs/print-bytes dec)
-  (prn dec))
 
   ; (let [enc (packet/encrypt-password "password" "shhhhh" "1234567890" false)]
 ;   (bs/print-bytes enc)

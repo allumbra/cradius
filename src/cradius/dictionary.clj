@@ -35,7 +35,15 @@
             nil
             result))
       nil)))
-    
+
+(def dictionary-resource-path "./resources/dictionaries")
+
+(defn dictionary-file [dict]
+  (->
+    (.getCanonicalPath (clojure.java.io/file (str dictionary-resource-path "/" dict)))
+    (clojure.java.io/file)))
+
+
 (defn load-dictionary
   [file-name]
   (let [  lines (-> file-name slurp s/split-lines)  ; todo - use canonical path?
@@ -78,3 +86,9 @@
   ([attr] (attribute "" attr))
   ([vendor attr] (get-in @dictionaries [:attributes (attr-key vendor attr)])))
     
+; for attributes that have an associated table, attempt to look up
+; english value name from integer referece code
+(defn value 
+  ([type val] (value "" type (str val)))
+  ( [vendor type val] 
+    (get-in @dictionaries [:values (attr-key vendor type) val])))
