@@ -6,6 +6,7 @@
   :dependencies [
                   [org.clojure/clojure "1.8.0"]
                   [udp-wrapper "0.1.1"]
+                  [org.clojure/core.incubator "0.1.4"]
                   [org.clojure/core.rrb-vector "0.0.13"]
                   [byte-streams "0.2.4"]
                   [byte-transforms "0.1.4"]

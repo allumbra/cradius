@@ -7,6 +7,7 @@
     [cradius.dictionary :as d]
     [cradius.util :as u]
     [cradius.crypt :as c]
+    [clojure.core.incubator :as inc]
     [clojure.core.rrb-vector :as fv]
     [clojure.pprint :as p]))
 
@@ -90,7 +91,7 @@
           attr-spec (d/attribute (:vendor-id vsa-head) (:vendor-type vsa-head))
           value (convert-type val-byte-vec (:type attr-spec))]
         { :vendors #{(:vendor attr-spec)}
-          :attributes
+          :vsa
             {(:name attr-spec) (convert-type value attr-spec)}}))
           
 (defn convert-item-to-human-readable [item]
@@ -128,8 +129,13 @@
         pw-arr (get-in prad [:attributes "User-Password"])
         pw-authenticator (get-in prad [:header :authenticator])
         pw (c/decrypt-password pw-arr (get-secret) pw-authenticator)]
-    (prn raw)
-    (assoc-in prad [:attributes  "User-Password"] pw)))
+    (-> prad  ; TODO can we make this unnecessary?
+      (assoc-in [:attributes  "User-Password"] pw)
+      (assoc-in [:header :code]  (d/value "code" (get-in prad [:header :code])))
+      (assoc :vsa (get-in prad [:attributes :vsa]))
+      (inc/dissoc-in [:attributes :vsa])
+      (assoc :vendors (get-in prad [:attributes :vendors]))
+      (inc/dissoc-in [:attributes :vendors]))))
 
 ; TODO
 ; Values lookups - needs to be a seperate pass on the data
